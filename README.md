@@ -1,27 +1,28 @@
-# Título do Projeto
+# <p align="center"> GROW </p>
 
-`CURSO`
+<p align="center"><code>Análise e Desenvolvimento de Sistemas - PUC Minas</code></p>
 
-`DISCIPLINA`
+<p align="center"><code>Desenvolvimento de aplicação web front-end</code></p>
 
-`SEMESTRE`
+<p align="center"><code>1º semestre/2025</code></p>
 
-Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
+## Sobre: ℹ️ 
+O objetivo geral do projeto é desenvolver um sistema de gamificação que auxilie pais e filhos a equilibrar o uso da tecnologia, promovendo hábitos saudáveis, organização, responsabilidade e interação familiar de forma lúdica e motivadora.
 
-## Integrantes
+## Integrantes 🤝
 
-* Nome completo do aluno 1
-* Nome completo do aluno 2
-* Nome completo do aluno 3
-* Nome completo do aluno 4
-* Nome completo do aluno 5
-* Nome completo do aluno 6
+* Amanda Maria Felipe Severo
+* Caroline Oliveira Neves
+* Edna dos Santos Martins
+* Fernanda Cunha Silva
+* Naiara Andrade Rodrigues de Oliveira
+* Rodrigo Andrade da Silva
 
-## Orientador
+## Orientadora 👩‍🏫
 
-* Nome completo do professor
+* Viviâne de Almeida Tôrres
 
-# Documentação
+# Documentação 🔍
 
 <ol>
 <li><a href="documentos/01-Documentação de Contexto.md"> Documentação de Contexto</a></li>
@@ -35,14 +36,14 @@ Descrever resumidamente, em um ou dois parágrafos, o projeto desenvolvido.
 <li><a href="documentos/09-Referências.md"> Referências Bibliográficas</a></li>
 </ol>
 
-# Hospedagem
+# Hospedagem ☁️ 
 
 * Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
 
-# Código-Fonte
+# Código-Fonte 💾
 
 * <a href="codigo-fonte/README.md">Código Fonte</a>
 
-# Apresentação
+# Apresentação 📽️
 
 * <a href="apresentacao/README.md">Apresentação do Projeto</a>
