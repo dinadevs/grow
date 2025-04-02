@@ -1,41 +1,36 @@
 
 # Metodologia
 
-Esta seção descreve a organização da equipe para a execução das tarefas do projeto e as ferramentas utilizadas para a manutenção dos códigos e demais artefatos.
-
-
 ## Gerenciamento de Projeto
-A metodologia ágil escolhida para o desenvolvimento deste projeto foi o SCRUM, pois como citam Amaral, Fleury e Isoni (2019, p. 68), seus benefícios são a
 
-“visão clara dos resultados a entregar; ritmo e disciplina necessários à execução; definição de papéis e responsabilidades dos integrantes do projeto (Scrum Owner, Scrum Master e Team); empoderamento dos membros da equipe de projetos para atingir o desafio; conhecimento distribuído e compartilhado de forma colaborativa; ambiência favorável para crítica às ideias e não às pessoas.”
+Para garantir a organização e a eficiência no desenvolvimento do projeto, a equipe adotou uma metodologia ágil baseada no SCRUM, estruturando o trabalho em sprints curtas e definindo papéis específicos para cada membro. A equipe se reúne semanalmente para revisar o progresso, ajustar estratégias e garantir a entrega contínua de funcionalidades.
 
 ### Divisão de Papéis
 
-A equipe utiliza o Scrum como base para definição do processo de desenvolvimento.
-[Adicione informações abaixo sobre a divisão de papéis entre os membros da equipe.]
-- Scrum Master: Nome de um membro da equipe, principal responsável pela gestão do projeto.
-- Product Owner: Nome de um membro da equipe, representante dos interesses de todos os envolvidos (Stakeholders), define as funcionalidades do produto e prioriza os itens de Product Backlog.
-- Equipe de Desenvolvimento: Nomes de todos os membros da equipe, pois todos os membros deverão implementar uma tela/funcionalidade.
-- Equipe de Design: Nomes dos membros da equipe que trabalharão com design.
-
-> **Links Úteis**:
-> - [11 Passos Essenciais para Implantar Scrum no seu 
-> Projeto](https://mindmaster.com.br/scrum-11-passos/)
-> - [Scrum em 9 minutos](https://www.youtube.com/watch?v=XfvQWnRgxG0)
-
+A equipe está organizada da seguinte forma:
+<ul>
+ <li>Scrum Master: Amanda Maria Felipe Severo</li>
+ <li>Product Owner: Rodrigo Andrade da Silva</li>
+ <li>Equipe de Desenvolvimento: Amanda Maria Felipe Severo, Caroline Oliveira Neves, Edna dos Santos Martins, Fernanda Cunha Silva, Naiara Andrade Rodrigues de Oliveira, Rodrigo Andrade da Silva  </li>
+</ul>
+ 
 ### Processo
 
-[Adicione informações sobre detalhes da implementação do Scrum seguido pela equipe. A equipe poderá fazer uso de ferramentas on-line (GitHub Project ou Trello) para acompanhar o andamento do projeto, a execução das tarefas e o status de desenvolvimento da solução. O quadro Kanban deverá apresentar a estrutura abaixo. Inserir despois das informações uma imagem do Kanban do projeto.]
-- Backlog: recebe as tarefas a serem trabalhadas e representa o Product Backlog. Todas as atividades identificadas no decorrer do projeto também devem ser incorporadas a esta lista. 
-- To Do: Esta lista representa o Sprint Backlog. Este é o Sprint atual que estamos trabalhando. 
-- Doing: Quando uma tarefa tiver sido iniciada, ela é movida para cá. 
-- Done: nesta lista são colocadas as tarefas que passaram pelos testes e controle de qualidade e estão prontos para ser entregues ao usuário. Não há mais edições ou revisões necessárias, ele está agendado e pronto para a ação.
+Para organização e distribuição das tarefas do projeto, a equipe está utilizando o GitHub, estruturado com as seguintes listas: 
 
-> **Links Úteis**:
-> - [Project management, made simple](https://github.com/features/project-management/)
-> - [Sobre quadros de projeto](https://docs.github.com/pt/github/managing-your-work-on-github/about-project-boards)
-> - [Como criar Backlogs no Github](https://www.youtube.com/watch?v=RXEy6CFu9Hk)
-> - [Tutorial Slack](https://slack.com/intl/en-br/)
+<ul>
+  <li>Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.</li>
+  <li>To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.</li>
+  <li>Prioritized: lista de tarefas priorizadas da sprint atual</li>
+  <li>In progress: lista das tarefas iniciadas.</li>
+  <li>In Review: lista de tarefas feitas pendentes de revisão</li>
+  <li>Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.</li>
+ </ul>
+
+ O quadro kanban do grupo no GitHub está disponível no link //pendente e é apresentado, no estado atual, na figura abaixo:
+
+
+
 
 
 ### Etiquetas
