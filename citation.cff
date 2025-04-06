@@ -1,26 +1,22 @@
 message: Please cite this software using these metadata.
 title:
 authors:
-  - family-names: Amanda Maria Felipe Severo
-    given-names: 
-  - family-names: Caroline Oliveira Neves
-    given-names: 
-  - family-names: Edna dos Santos Martins
-    given-names: 
-  - family-names: Fernanda Cunha Silva
-    given-names: 
-  - family-names: Naiara Andrade Rodrigues de Oliveira
-    given-names: 
-  - family-names: Rodrigo Andrade da Silva
-    given-names: 
-  - name-suffix: Viviâne de Almeida Tôrres
+  - family-names: Maria Felipe Severo
+    given-names: Amanda
+  - family-names: Oliveira Neves
+    given-names: Caroline
+  - family-names: Dos Santos Martins
+    given-names: Edna
+  - family-names: Cunha Silva
+    given-names: Fernanda
+  - family-names: Andrade Rodrigues de Oliveira
+    given-names: Naiara
+  - family-names: Andrade da Silva
+    given-names: Rodrigo
+  - name-suffix: Professor
     affiliation: PUC Minas
-    family-names: 
-    given-names: 
-  - name-suffix: Viviâne de Almeida Tôrres
-    affiliation: PUC Minas
-    family-names: 
-    given-names: 
+    family-names: De Almeida Tôrres
+    given-names: Viviâne
 keywords:
   - 
   - 
