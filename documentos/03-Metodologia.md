@@ -1,4 +1,3 @@
-
 # Metodologia
 
 ## Gerenciamento de Projeto
@@ -20,53 +19,73 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
 <ul>
   <li>Product Backlog: recebe as tarefas a serem trabalhadas e representa o Backlog do produto. Todas as atividades identificadas no decorrer do projeto são incorporadas a esta lista.</li>
-  <li>To Do: esta lista representa o Sprint Backlog que está sendo trabalhado.</li>
-  <li>Prioritized: lista de tarefas priorizadas da sprint atual</li>
-  <li>In progress: lista das tarefas iniciadas.</li>
-  <li>In Review: lista de tarefas feitas pendentes de revisão</li>
-  <li>Done: nesta lista são colocadas as tarefas finalizadas e as que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.</li>
+  <li>Prioritized: lista de tarefas priorizadas da sprint atual.</li>
+  <li>In progress: lista das tarefas em desenvolvimento.</li>
+  <li>In Review: lista de tarefas feitas, mas que estão pendentes de revisão e/ou alinhamentos.</li>
+  <li>Done: nesta lista são colocadas as tarefas finalizadas que passaram pelos testes e controle de qualidade, prontas para serem entregues aos usuários.</li>
  </ul>
 
  O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2029 e é apresentado, no estado atual, na figura abaixo:
 
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/main/documentos/img/Kanban_Grow.png?raw=true">
-    <figcaption>Figura 1- Tela do kanban no GitHub utilizada pelo grupo</figcaption>
-
-
-
+ <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/9d8bb3583aac3d90320db117bb501823e757db79/documentos/img/board_kanban.png">
+    <figcaption>Figura 1 - Tela do quadro kanban no GitHub utilizado pelo grupo</figcaption>
 
 ### Etiquetas
 <p>As tarefas são, ainda, etiquetadas em função da natureza da atividade e seguem o seguinte esquema de cores/categorias:</p>
 
 <ul>
-  <li>Bug (Erro no código)</li>
-  <li>Desenvolvimento (Development)</li>
-  <li>Documentação (Documentation)</li>
-  <li>Gerência de Projetos (Project Management)</li>
-  <li>Infraestrutura (Infrastructure)</li>
-  <li>Testes (Tests)</li>
+  <li>bug (Erro no código)</li>
+  <li>design (Tarefas relacionadas à design)</li>
+  <li>development (Documentação)</li>
+  <li>documentation (Desenvolvimento)</li>
+  <li>management (Gerenciamento do projeto)</li>
+  <li>test (Testes)</li>
 </ul>
-
 <figure> 
-  <img src="https://user-images.githubusercontent.com/100447878/164068979-9eed46e1-9b44-461e-ab88-c2388e6767a1.png"
-    <figcaption>Figura 3 - Tela do esquema de cores e categorias</figcaption>
+  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/f7fe9744b0e61c22f15cc30235752ade9472a270/documentos/img/etiquetas.png">
+  <figcaption>Figura 2 - Tela do esquema de cores e categorias das etiquetas</figcaption>
 </figure> 
   
 ### Ferramentas
 
-[Descreva aqui as ferramentas empregadas no projeto e os ambiente de trabalho utilizados pela  equipe para desenvolvê-lo. Abrange a relação de ambientes utilizados, a estrutura para gestão do código fonte, além da definição do processo e ferramenta através dos quais a equipe se organiza (Gestão de Times).]
+Atualmente, as ferramentas utilizadas no desenvolvimento do projeto são:
 
-Os artefatos do projeto são desenvolvidos a partir de diversas plataformas e a relação dos ambientes com seu respectivo propósito é apresentada na tabela que se segue.
+- Github - Ferramenta de administração do repositório e versões, usada para edição do conteúdo da documentação e versionamento.
+- Microsoft Teams e Whatsapp - Ferramentas de comunicação, usadas para alinhamentos síncronos e assíncronos visando bom andamento das tarefas.
+- Miro - Ferramenta para desenvolvimento de boards colaborativos, utilizada nos processos de ideação do projeto.
+- Figma - Ferramenta de design, onde o grupo desenhou os wireframes de baixa fidelidade, além de configurar o protótipo (userflow).
 
-| AMBIENTE                            | PLATAFORMA                         | LINK DE ACESSO                         |
+Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub, Figma e Miro. A tabela a seguir relaciona o propósito e plataforma de cada artefato, bem como seu link de acesso.
+
+| AMBIENTE/PROPÓSITO                  | PLATAFORMA                         | LINK DE ACESSO                         |
 |-------------------------------------|------------------------------------|----------------------------------------|
-| Repositório de código fonte         | GitHub                             | http://....                            |
-| Documentos do projeto               | GitHub                             | http://....                            |
-| Projeto de Interface                | Figma                              | http://....                            |
-| Gerenciamento do Projeto            | GitHub Projects                    | http://....                            |
-| Hospedagem                          | GitHub Pages                       | http://....                            |
+| Repositório de código fonte         | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/5c20725be80284a1758e16d4c5d3278662aa8aa0/codigo-fonte/README.md                            |
+| Documentos do projeto               | GitHub                             | https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow                           |
+| Projeto de Interface (wireframes)                | Figma                              | https://www.figma.com/design/RWJHBPy737PtE1Lvd0dw8O/Grow---Design?node-id=2798-5997&t=nc6BZH8L7tk8AfPb-1                           |
+| Protótipo interativo (userflows)               | Figma                              | https://www.figma.com/proto/RWJHBPy737PtE1Lvd0dw8O/Grow---Design?node-id=2805-6040&p=f&t=XzLseDVJZP9pUi7c-1&scaling=scale-down&content-scaling=fixed&page-id=2798%3A5997&starting-point-node-id=2805%3A6040&show-proto-sidebar=1                           |
+| Gerenciamento do Projeto            | GitHub Projects                    | https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2029                            |
+| Rascunho de userflows por meio de fluxogramas            | Miro                    | https://miro.com/app/board/uXjVILzXmcw=/?share_link_id=484732218163                            |
+| Board com dinâmica de descovery (É/NÃO É e FAZ/NÃO FAZ)           | Miro                   | https://miro.com/app/board/uXjVIaXyfxk=/?share_link_id=707322014092                            |
+
 
 
 ### Estratégia de Organização de Codificação 
 
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto do site deverão ser inseridos na pasta [codigo-fonte](http://https://github.com/ICEI-PUC-Minas-PMV-ADS/WebApplicationProject-Template-v2/tree/main/codigo-fonte). Consulte também a nossa sugestão referente a estratégia de organização de codificação a ser adotada pela equipe de desenvolvimento do projeto.
+Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto da aplicação foram inseridos na pasta [codigo-fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/tree/main/codigo-fonte).
+
+#### Convenção de commits
+A equipe do projeto está usando uma convenção que padroniza os titulos nos commits, visando maior organização e fácil entendimento das modificações.
+O padrão é: ```tipo de atuação: verbo + descrição```. Exemplos: 
+```
+docs: adiciona especificação do projeto
+fix: remove quebra de linha excedente
+```
+E os tipos adotados são:
+```
+docs: para documentações
+feat: para novas funcionalidades desenvolvidas
+refactor: para melhorias sem modificação da funcionalidade
+style: para aplicação de estilos CSS ou formatação do código sem alteração da função
+fix: para quaisquer consertos
+chore: para modificações na estrutura ou configuração base do projeto
+```
