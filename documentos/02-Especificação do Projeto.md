@@ -77,7 +77,7 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | **ID**  | **Descrição do Requisito**                                                                 | **Prioridade** | **Responsável** |
 |--------|----------------------------------------------------------------------------------------------|----------------|------------------|
 | RF-01 | Permitir que o usuário faça login na sua conta.                                              | ALTA           | Caroline Oliveira Neves                |
-| RF-02 | Permitir que o pai ou responsáveis cadastre sua conta e a de seus filhos.                    | ALTA           | Naiara Andrade Rodrigues de Oliveira                |
+| RF-02 | Permitir que pais ou responsáveis cadastrem sua conta e a de seus filhos.                    | ALTA           | Naiara Andrade Rodrigues de Oliveira                |
 | RF-03 | Permitir que pais ou responsáveis cadastrem atividades.                                      | ALTA           | Edna dos Santos Martins               |
 | RF-04 | Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.                        | ALTA           | Amanda Maria Felipe Severo               |
 | RF-05 | Possibilitar que os pais definam bonificações para cada estágio alcançado.                   | ALTA           | Fernanda Cunha Silva                |
