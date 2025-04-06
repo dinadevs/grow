@@ -74,20 +74,21 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 
 ### Requisitos Funcionais
 
-| **ID**    | **Descrição do Requisito**                                                                 | **Prioridade** |
-|-----------|---------------------------------------------------------------------------------------------|---------------|
-|RF-01| A aplicação deve permitir ao usuário fazer o login da sua conta.                            | ALTA          |
-|RF-02| A aplicação deve permitir que o pai/responsável cadastre sua conta e a de seus filhos.      | ALTA          |
-|RF-03| Permitir que pais ou responsáveis cadastrem atividades.                                     | ALTA          |
-|RF-04| Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.                       | ALTA          |
-|RF-05| Possibilitar que os pais definam bonificações para cada estágio alcançado.                  | ALTA          |
-|RF-06| Atividades finalizadas devem ser exibidas para aprovação dos pais.                          | ALTA          |
-|RF-07| Permitir o cadastro e contabilização de penalidades.                                        | ALTA          |
-|RF-08| Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar concluídas.   | ALTA          |
-|RF-09| Disponibilizar uma tela de visualização de trajetória (nível, XP, barra de progresso etc.). | ALTA          |
-|RF-10| Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.                          | MÉDIA         |
-|RF-11| A aplicação deve permitir que o filho utilize suas moedas para trocar por prêmios.          | MÉDIA         |
-|RF-12| Possibilitar a escolha de um avatar.                                                        | BAIXA         |
+| **ID**  | **Descrição do Requisito**                                                                 | **Prioridade** | **Responsável** |
+|--------|----------------------------------------------------------------------------------------------|----------------|------------------|
+| RF-01 | Permitir que o usuário faça login na sua conta.                                              | ALTA           | Caroline Oliveira Neves                |
+| RF-02 | Permitir que o pai ou responsáveis cadastre sua conta e a de seus filhos.                    | ALTA           | Naiara Andrade Rodrigues de Oliveira                |
+| RF-03 | Permitir que pais ou responsáveis cadastrem atividades.                                      | ALTA           | Edna dos Santos Martins               |
+| RF-04 | Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.                        | ALTA           | Amanda Maria Felipe Severo               |
+| RF-05 | Possibilitar que os pais definam bonificações para cada estágio alcançado.                   | ALTA           | Fernanda Cunha Silva                |
+| RF-06 | Exibir atividades finalizadas para aprovação do pai ou dos responsáveis..                    | ALTA           | Rodrigo Andrade da Silva               |
+| RF-07 | Permitir o cadastro e contabilização de penalidades.                                         | ALTA           | Rodrigo Andrade da Silva                |
+| RF-08 | Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar concluídas.    | ALTA           | Fernanda Cunha Silva                |
+| RF-09 | Disponibilizar uma tela de visualização de trajetória (nível, XP, barra de progresso etc.).  | ALTA           | Edna dos Santos Martins                |
+| RF-10 | Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.                           | MÉDIA          | Amanda Maria Felipe Severo                |
+| RF-11 | Permitir que o filho utilize suas moedas para trocar por prêmios.           | MÉDIA          | Caroline Oliveira Neves                 |
+| RF-12 | Possibilitar a escolha de um avatar.                                                         | BAIXA          | Naiara Andrade Rodrigues de Oliveira                |
+
 
 **Prioridade: Alta / Média / Baixa.  
 
