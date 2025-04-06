@@ -16,7 +16,7 @@
  <tr>
   <td><b>Necessidades</b></td>
   <td>
-<br>1. Acompanhar e incentivar hábitos saudáveis nos filhos de forma lúdica e organizada. 
+1. Acompanhar e incentivar hábitos saudáveis nos filhos de forma lúdica e organizada. 
 <br>2. Interface simples e de fácil navegação. 
 <br>3. Gerenciar as tarefas dos filhos e suas recompensas. 
 <br>4. Comunicação clara e objetiva que auxilie na interação com as crianças. 
@@ -40,7 +40,7 @@
   <tr> 
   <td><b>Necessidades</b></td>
    <td>
-<br>1. Desafios motivadores e recompensas que incentivem a participação contínua. 
+1. Desafios motivadores e recompensas que incentivem a participação contínua. 
 <br>2. Se divertir fazendo suas atividades. 
 <br>3. Poder gerenciar e mostrar aos pais sua rotina. 
 <br>4. Obter hábitos e conhecimentos saudáveis
