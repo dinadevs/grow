@@ -39,7 +39,7 @@ No que tange layout em comum, o projeto possui algumas estruturas que se repetem
   <figure> 
   <figcaption>Figura 6 - Padrão do cabeçalho
   </figure> 
-* E na maioria das telas, uma seção resumindo os dados de trajetória do filho.
+* E na maioria das telas, uma seção resumindo os dados de trajetória do filho, como seu avatar, nível, XP e moedas.
   ![image](https://github.com/user-attachments/assets/af2c765e-2950-4365-a85e-2d416b77eb78)
   <figure> 
   <figcaption>Figura 7 - Padrão da sessão de trajetória
@@ -47,21 +47,185 @@ No que tange layout em comum, o projeto possui algumas estruturas que se repetem
 
 ### Tela - Login
 A tela de login apresenta formulário de login e opção de cadastro
-   
-![homepage]([https://user-images.githubusercontent.com/81182674/167677975-53f61b97-4979-441b-813c-036c3cd153bf.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/86802a0db3cffde121760f57fb03d25df0307d0d/documentos/img/Login.png))
 
 <figure> 
-  <figcaption>Figura 8 - Tela de login - prototipada por Caroline
+  <figcaption>Figura 8 - Tela de login - prototipada por Caroline Oliveira Neves
 </figure> 
+   
 <hr>
 
 ### Tela - Cadastro
-A tela de cadastro apresenta formulário de cadastro
+A tela de cadastro apresenta formulário de cadastro com campos de nickname e senha do responsável e filho
    
-![homepage]([https://user-images.githubusercontent.com/81182674/167677975-53f61b97-4979-441b-813c-036c3cd153bf.png](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/86802a0db3cffde121760f57fb03d25df0307d0d/documentos/img/))
-
 <figure> 
-  <figcaption>Figura 8 - Tela de cadastro
+  <figcaption>Figura 9 - Tela de cadastro - prototipada por Naiara Andrade Rodrigues de Oliveira
 </figure> 
+   
 <hr>
 
+### Tela - Home (pais)
+A tela de home dos pais apresenta botões com as opções de Metas, Atividades, Prêmio, Aprovações, Penalidades e Trajetória do filho
+   
+
+<figure> 
+  <figcaption>Figura 10 - Tela de home - prototipada por Amanda Maria Felipe Severo
+</figure> 
+   
+<hr>
+
+### Tela - Metas
+A tela de metas apresenta a lista das metas cadastradas, seus dados e se já foram concluídas, além dos botões de voltar e cadastrar nova meta.
+   
+
+<figure> 
+  <figcaption>Figura 11 - Tela de metas - prototipada por Amanda Maria Felipe Severo
+</figure> 
+   
+<hr>
+
+### Tela - Nova meta
+A tela de nova meta apresenta o formulário de cadastro de uma nova meta com os campos de titulo, data de início e fim e quantos XPs e moedas a conclusão da meta vai gerar.
+   
+
+<figure> 
+  <figcaption>Figura 12 - Tela de nova meta - prototipada por Amanda Maria Felipe Severo
+</figure> 
+   
+<hr>
+
+### Tela - Atividades
+A tela de atividades apresenta a lista das atividades cadastradas, seus dados e se já foram concluídas, além dos botões de voltar e cadastrar nova atividade.
+   
+
+<figure> 
+  <figcaption>Figura 13 - Tela de atividades - prototipada por Edna dos Santos Martins
+</figure> 
+   
+<hr>
+
+### Tela - Nova atividade
+A tela de nova atividade apresenta o formulário de cadastro de uma nova atividade com os campos de titulo, recorrência (diária, semanal, etc) e quantos XPs e moedas a conclusão da atividade vai gerar.
+   
+
+<figure> 
+  <figcaption>Figura 14 - Tela de nova atividade - prototipada por Edna dos Santos Martins
+</figure> 
+   
+<hr>
+
+### Tela - Prêmios
+A tela de prêmios apresenta a lista dos prêmios cadastrados, seus dados, progresso e se já foram conquistados, além dos botões de voltar e cadastrar novo prêmio.
+   
+
+<figure> 
+  <figcaption>Figura 15 - Tela de prêmios - prototipada por Fernanda Cunha Silva
+</figure> 
+   
+<hr>
+
+### Tela - Novo prêmio
+A tela de novo prêmio apresenta o formulário de cadastro de um novo prêmio com os campos de titulo e quantos XPs e moedas a conclusão do prêmio vai gerar.
+   
+
+<figure> 
+  <figcaption>Figura 16 - Tela de novo prêmio - prototipada por Fernanda Cunha Silva
+</figure> 
+   
+<hr>
+
+### Tela - Aprovações
+A tela de aprovações apresenta a lista das atividades e metas concluídas pelo filho, além dos botões para aprovar ou negar a conclusão.
+
+
+<figure> 
+  <figcaption>Figura 17 - Tela de aprovações - prototipada por Rodrigo Andrade da Silva
+</figure> 
+   
+<hr>
+
+### Tela - Trajetória
+A tela de trajetória apresenta o progresso do filho na gamificação, com seu avatar, XP, moedas, nível e prêmios conquistados.
+   
+
+<figure> 
+  <figcaption>Figura 18 - Tela de trajetória - prototipada por Edna dos Santos Martins
+</figure> 
+   
+<hr>
+
+### Tela - Penalidades
+A tela de penalidades apresenta a lista das penalidades cadastradas e seus dados, além dos botões de voltar e cadastrar nova penalidade.
+   
+
+<figure> 
+  <figcaption>Figura 19 - Tela de penalidades - prototipada por Rodrigo Andrade da Silva
+</figure> 
+   
+<hr>
+
+### Tela - Nova penalidade
+A tela de nova penalidade apresenta o formulário de cadastro de uma nova penalidade com os campos de titulo e quantos XPs e moedas a aplicação da penalidade vai diminuir do filho.
+   
+
+<figure> 
+  <figcaption>Figura 20 - Tela de nova penalidade - prototipada por Rodrigo Andrade da Silva
+</figure>
+
+<hr>
+
+### Tela - Home (filhos)
+A tela de home dos filhos apresenta a seção com o resumo do progresso, em que é possivel clicar no avatar para modificá-lo, a checklist de atividades e metas a serem realizadas no dia atual, além da barra de navegação para as outras abas de loja e trajetória.
+   
+
+<figure> 
+  <figcaption>Figura 21 - Tela de home - prototipada por Amanda Maria Felipe Severo
+</figure> 
+   
+<hr>
+
+### Tela - Loja
+A tela de loja apresenta a lista de prêmios cadastrados, o progresso de XPs até conquistar cada prêmio e quantas moedas vale, além do botão para comprar.
+   
+
+<figure> 
+  <figcaption>Figura 22 - Tela de loja - prototipada por Amanda Maria Felipe Severo
+</figure>
+
+<hr>
+
+### Tela - Trajetória
+A tela de trajetória apresenta o progresso na gamificação, com seu avatar, XP, moedas, nível e prêmios conquistados. Além de manter a barra de navegação para as outras abas e a opção de voltar.
+   
+
+<figure> 
+  <figcaption>Figura 23 - Tela de trajetória - prototipada por Edna dos Santos Martins
+</figure> 
+   
+<hr>
+
+### Tela - Avatar
+A tela de avatar apresenta opções de avatar para que o filho escolha com qual se identifica, além do botão para salvar a escolha.
+   
+
+<figure> 
+  <figcaption>Figura 24 - Tela de avatar - prototipada por Naiara Andrade Rodrigues de Oliveira
+</figure> 
+   
+### Popups - feedback mapeados
+Mapeamos também alguns feedbacks.
+
+<figure> 
+  <figcaption>Figura 25 - Popup de senha - descreve como a senha deve ser
+</figure> 
+
+<figure> 
+  <figcaption>Figura 26 - Popup de cadastro - alerta cadastro realizado
+</figure> 
+
+<figure> 
+  <figcaption>Figura 27 - Popup de concluído - alerta atividade ou meta concluída
+</figure> 
+
+<figure> 
+  <figcaption>Figura 28 - Popup de comprado - alerta prêmio comprado
+</figure> 
