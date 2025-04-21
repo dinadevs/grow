@@ -1,5 +1,23 @@
 # Programação de Funcionalidades
 
+### Tela de Login (RF-001)
+
+#### Requisito atendido 
+
+RF-001: O site deve permitir ao usuário fazer o login da sua conta.
+
+#### Artefatos da funcionalidade
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:
+2.	Ao clicar em “Entrar”, terá acesso a página de login.
+
+#### Responsável
+Responsável: Naiara
+
+<hr>
+
 Implementação da aplicação descritas por meio dos requisitos codificados. 
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
