@@ -4,6 +4,13 @@
   box-sizing: border-box;
 }
 
+:root {
+  --surface-primary: rgba(30, 20, 53, 0.9);
+  --surface-secondary: #2C1B47;
+  --surface-tertiary: #3c2a63;
+  --stroke: #44405A;
+}
+
 body {
   background-image: url(../imagens/background.png);
   background-size: cover;
@@ -11,5 +18,23 @@ body {
   background-repeat: no-repeat;
 
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
+.main {
+  display: flex;
+  flex-direction: column;
+  margin-top: 2rem;
+  width: 75%;
+  height: 65%;
+}
+
+.container {
+  height: 100%;
+  background-color: var(--surface-primary);
+  padding: 1.5rem;
+  border-radius: 1.7rem;
+  border: solid 2px var(--stroke);
+}

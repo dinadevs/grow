@@ -1,8 +1,13 @@
+#componente-cabecalho {
+  width: 100%;
+}
+
 #cabecalho-global {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding: 3rem 4rem 0;
+  width: 100%;
 
   button {
     background: none;
