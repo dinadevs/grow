@@ -4,6 +4,23 @@
   box-sizing: border-box;
 }
 
+:root {
+  --pixel-text-lg: 1.5rem "Press Start 2P", system-ui;
+  --pixel-text-md: 1rem "Press Start 2P", system-ui;
+
+  --normal-text-lg: 600 2rem "Nunito", sans-serif;
+  --normal-text-md: 1.5rem "Nunito", sans-serif;
+  --normal-text-sm: 1rem "Nunito", sans-serif;
+
+  --surface-primary: rgba(30, 20, 53, 0.9);
+  --surface-secondary: #2C1B47;
+  --surface-tertiary: #3c2a63;
+  --stroke: #44405A;
+  --green: #5FFFA1;
+
+  --text-primary: #F4F4F4;
+}
+
 body {
   background-image: url(../imagens/background.png);
   background-size: cover;
@@ -11,5 +28,29 @@ body {
   background-repeat: no-repeat;
 
   height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  color: var(--text-primary);
+  font: var(--normal-text-md);
 }
 
+h1, h2, h3 {
+  font: inherit;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  gap: .3rem;
+  width: 70%;
+  height: 80%;
+}
+
+.container {
+  height: 100%;
+  background-color: var(--surface-primary);
+  border-radius: 1.7rem;
+  border: solid 2px var(--stroke);
+}

@@ -2,11 +2,22 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 3rem 4rem 0;
+  padding: 1.5rem 2.5rem 0;
+  width: 100%;
 
   button {
     background: none;
     border: none;
     cursor: pointer;
+
+    & > img {
+      height: 3rem;
+      width: auto;
+    }
+  }
+
+  & > img {
+    height: 5rem;
+    width: auto;
   }
 }
