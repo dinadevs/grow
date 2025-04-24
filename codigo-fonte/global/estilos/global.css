@@ -5,10 +5,16 @@
 }
 
 :root {
+  --pixel-text-lg: 1.5rem "Press Start 2P", system-ui;
+  --pixel-text-md: 1rem "Press Start 2P", system-ui;
+
   --surface-primary: rgba(30, 20, 53, 0.9);
   --surface-secondary: #2C1B47;
   --surface-tertiary: #3c2a63;
   --stroke: #44405A;
+  --green: #5FFFA1;
+
+  --text-primary: #F4F4F4;
 }
 
 body {
@@ -21,20 +27,25 @@ body {
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  color: var(--text-primary);
+}
+
+h1, h2, h3 {
+  font: inherit;
 }
 
 .main {
   display: flex;
   flex-direction: column;
-  margin-top: 2rem;
-  width: 75%;
-  height: 65%;
+  gap: .3rem;
+  width: 70%;
+  height: 80%;
 }
 
 .container {
   height: 100%;
   background-color: var(--surface-primary);
-  padding: 1.5rem;
   border-radius: 1.7rem;
   border: solid 2px var(--stroke);
 }
