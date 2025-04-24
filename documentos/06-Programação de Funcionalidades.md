@@ -15,6 +15,24 @@ RF-001: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Responsável
 Responsável: Naiara
+<hr>
+
+### Escolha de Avatar (RF-12)
+
+#### Requisito atendido
+
+**RF-12**: Possibilitar a escolha de um avatar.
+
+#### Artefatos da funcionalidade
+
+#### Estrutura de Dados
+
+#### Instruções de acesso
+
+
+#### Responsável
+
+**Caroline Oliveira Neves**
 
 <hr>
 
