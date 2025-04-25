@@ -22,34 +22,40 @@ Implementação da aplicação descritas por meio dos requisitos codificados.
 
 [Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
 
-### Título da funcionalidade
+### Tela de cadastro de prêmios (RF-005)
+
+O cadastro de prêmios com nome, descrição e pontuação poderá ser feito após o login do usuário.
 
 [Adicione imagem da funcionalidade/tela]
 
-
 #### Requisito atendido
 
-[RF-X: adicione a descrição do requisito atendido]
-
+RF-05:	Possibilitar que os pais definam bonificações para cada estágio alcançado.
 
 #### Artefatos da funcionalidade
 
 [Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
 
-
 #### Estrutura de Dados
 
-[Caso exista estrutura de dados, adicione aqui]
-
+As estruturas de dados foram baseadas em HTML, CSS e JS.
 
 #### Instruções de acesso
 
-[Adicione as orientações de acesso à funcionalidade]
+1. Faça **login** através da página disponivel no link [ ] .
+2. Clique em **"Pai" > "Prêmios" > "Cadastrar Prêmio"**.
+3. A tela de cadastro será exibida.
+4. Preencha os campos obrigatórios:
+   - Nome do prêmio
+   - Descrição
+   - Pontuação necessária
+5. Clique em **"Salvar"** para registrar o prêmio.
+6. A conclusão do prêmio vai gerar.
 
 
-#### Responsável
+#### Responsável: 
 
-[Adicione nome do responsável pelo desenvolvimento da funcionalidade]
+Edna Martins
 
 
 
