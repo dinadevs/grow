@@ -11,13 +11,47 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="../global/estilos/index.css" />
+    <link rel="stylesheet" href="./pagina-premios.css">
   </head>
   <body>
     <header id="cabecalho-global"></header>
     <main class="main">
       <div id="barra-status"></div>
       <div class="container">
+
+        <div class="cabecalho">
+          <div class="cabecalho-esquerda">
+            <button class="bt-voltar">
+              <img src="icone-voltar.svg" alt="Voltar" />
+            </button>
+            <h1>Novo</h1>
+          </div>
         
+          <div class="bt-acao">
+            <button class="bt-primario" type="submit">Cadastrar</button>
+          </div>
+        </div>
+        
+        <fieldset class="novo-premio">         
+          <div class="grupo-input">
+            <label for="titulo-premio">Título do prêmio</label>
+            <input type="text" id="titulo-premio" name="titulo-premio" />
+          </div>
+        
+          <div class="premios-input">
+            <div class="grupo-input">
+              <label for="xp">XP</label>
+              <input type="text" id="xp" name="xp" />
+            </div>
+        
+            <div class="grupo-input">
+              <label for="moedas">Moedas</label>
+              <input type="text" id="moedas" name="moedas" />
+            </div>
+          </div>
+        </fieldset>
+        
+          </div>      
       </div>
     </main>
   </body>
