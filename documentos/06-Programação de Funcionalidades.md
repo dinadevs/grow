@@ -17,6 +17,30 @@ RF-001: O site deve permitir ao usuário fazer o login da sua conta.
 Responsável: Naiara
 <hr>
 
+
+
+### Tela de Cadastro (RF-02)
+
+RF-02: A tela de cadastro poderá ser acessada através da opção “Cadastre-se”. 
+
+### Requisitos atendidos 
+
+**RF-02: A aplicação deve permitir que o pai/responsável cadastre a sua conta e a de seus filhos
+
+### Artefatos da funcionalidade
+
+### Estrutura de Dados
+
+#Instrução de acesso
+
+1.Abra um navegador de Internet e informe a seguinte URL:
+
+
+### Responsável: Fernanda
+
+<hr>
+
+
 ### Escolha de Avatar (RF-12)
 
 #### Requisito atendido
