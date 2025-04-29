@@ -14,3 +14,9 @@ MATOS, T. <b>Gamificação no ensino infantil</b>: um exemplo de aplicação. Re
 https://revistas.unilasalle.edu.br/index.php/conhecimento_diversidade/article/view/9927/pdf. Acesso em: 26 fev. 2025.
 
 SAILER, M.; HOMNER, L. <b>The gamification of learning</b>: A meta-analysis. Educational Psychology Review, v. 32, n. 1, p. 77-112, 2020. Disponível em: https://doi.org/10.1038/s41583-020-0285-3. Acesso em: 26 fev. 2025.
+
+SINGH, Satyendra. **Impact of color on marketing**. Management Decision, v. 44, n. 6, p. 783–789, 2006. Disponível em: https://newion.uwinnipeg.ca/~ssingh5/x/color.pdf. Acesso em: 25 abr. 2025. 
+
+NASSAU, Kurt. **The Physics and Chemistry of Color**. 2. ed. New York: Wiley, 2001. Disponível em: https://pt.scribd.com/document/336101355/LIVRO-Kurt-Nassau-The-Physics-and-Chemistry-of-Color-The-Fifteen-Causes-of-Color-Wiley-Interscience. Acesso em: 25 abr. 2025. 
+
+WRIGHT, Angela. **The Beginner’s Guide to Colour Psychology**. London: Colour Affects, 1995. Disponível em: https://openlibrary.org/books/OL22575458M/The_beginner%27s_guide_to_colour_psychology. Acesso em: 25 abr, 2025.
