@@ -8,13 +8,17 @@ RF-001: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Artefatos da funcionalidade
 
+- login.html
+- login.css
+- login.js
+
 #### Instruções de acesso
 
 1.	Abra um navegador de Internet e informe a seguinte URL:
-2.	Ao clicar em “Entrar”, terá acesso a página de login.
-
+2.	Preencha as credenciais de acesso (usuário e senha) e clique em "Entrar".
+   
 #### Responsável
-Responsável: Naiara
+Naiara Andrade Rodrigues de Oliveira
 <hr>
 
 
