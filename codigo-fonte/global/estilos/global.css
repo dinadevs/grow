@@ -49,6 +49,7 @@ h1, h2, h3 {
 }
 
 .container {
+  
   height: 100%;
   background-color: var(--surface-primary);
   border-radius: 1.7rem;
