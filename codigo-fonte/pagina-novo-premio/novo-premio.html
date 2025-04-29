@@ -18,19 +18,19 @@
     <main class="main">
       <div id="barra-status"></div>
       <div class="container">
-        <div class="container-premio">
-        <div class="cabecalho">
-          <div class="cabecalho-esquerda">
-            <button class="bt-voltar">
-              <img src="./ativos/icones/icone-voltar.svg" alt="Voltar" />
-            </button>
-            <h1>Novo</h1>
-          </div>
-        
-          <div class="bt-acao">
-            <button class="bt-primario" type="submit">Cadastrar</button>
-          </div>
+        <div class="titulo-e-botoes">
+          <button>
+            <img src="../global/imagens/voltar.svg" alt="voltar">
+          </button>
+          <h1>Novo prêmio</h1>
+          <button onclick="mostraToast()" class="botao">Cadastrar</button>
         </div>
+        
+        <div id="toast" class="toast oculta">
+          <img src="../global/imagens/salvo.svg" alt="Salvo">
+          <p>Tá salvo!</p>
+        </div>
+        <div class="container-premio">
         
         <fieldset class="novo-premio">         
           <div class="grupo-input">
