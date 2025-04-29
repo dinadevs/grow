@@ -2,38 +2,26 @@ label:hover{
     transform: scale(1.15);
 }
 
-.nav-avatar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 30px 0 10px;
-    padding: 0 20px;
-  }
-
-.nav-avatar h2{
-margin-bottom: 10px;
-font-size: 24px;
-font-family: "Press Start 2P", system-ui;
-
-}
-
-#btn-atualizar-avatar{
-    padding: 10px 20px;
-    border-radius: 8px;
-    background-color: #FFD700;
-    font-size:x-large;
-    cursor: pointer;
-    transition: transform 0.2s ease;
-}
-
-#btn-atualizar-avatar:hover{
-    transform: scale(1.05);
-}
-.selection-avatar{
+.opcoes-avatar{
     padding: 30px;
     display: flex;
     justify-content: space-around;
     margin-top: 30px;
+}
+
+.avatar-opcao input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #6e53a9; 
+    cursor: pointer;
+    position: relative;
+}
+.avatar-opcao input[type="radio"]:checked {
+    background-color: #5EDFFF;  
+    box-shadow: 0 0 0 3px #6e53a9;
 }
 
 .avatar-opcao img{
@@ -50,5 +38,6 @@ font-family: "Press Start 2P", system-ui;
     flex-direction: column;
     align-items: center;
     cursor: pointer;
+    gap: 12px;
 }
 
