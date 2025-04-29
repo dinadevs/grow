@@ -49,10 +49,12 @@ RF-02: A tela de cadastro poderá ser acessada através da opção “Cadastre-s
 
 #### Artefatos da funcionalidade
 
-#### Estrutura de Dados
-
 #### Instruções de acesso
-
+1. Abra um navegador de Internet e informe a seguinte URL:   
+2. No canto superior esquerdo da tela, clique sobre o **ícone do avatar**.
+3. Uma interface será aberta exibindo as opções disponíveis de avatares.  
+4. Clique sobre o avatar desejado para selecioná-lo.  
+5. O avatar escolhido será salvo como imagem de perfil do usuário.  
 
 #### Responsável
 
