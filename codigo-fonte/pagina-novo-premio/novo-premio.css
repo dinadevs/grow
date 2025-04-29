@@ -35,10 +35,10 @@
   border-radius: 6px;
   cursor: pointer;
   transition: background 0.3s;
-}
 
-.bt-acao .bt-primario:hover {
-  background-color: var(--green);
+  & .bt-acao .bt-primario:hover {
+    background-color: var(--green);
+  }
 }
 
 .novo-premio {
@@ -51,6 +51,17 @@
 .grupo-input input {
   width: 30.4rem;
   height: 4.0rem;
+  background: none;
+  border: 2px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+
+  & .grupo-input input:hover {
+    border: 2px solid var(--green);
+    box-shadow: 3px 1px 1px var(--green);
+  }
 }
 
 .grupo-input {
@@ -61,20 +72,6 @@
 .grupo-input label {
   font-size: 1rem;
   margin-bottom: 0.5rem;
-}
-
-.grupo-input input {
-  background: none;
-  border: 2px solid var(--text-primary);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  color: var(--text-primary);
-  font-size: 1rem;
-}
-
-.grupo-input input:hover {
-  border: 2px solid var(--green);
-  box-shadow: 3px 1px 1px var(--green);
 }
 
 .premios-input {
