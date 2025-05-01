@@ -2,6 +2,8 @@
 
 ### Tela de Login (RF-001)
 
+![pagina-login](https://github.com/user-attachments/assets/88a28180-0912-461b-ade0-7f96ac3566a2)
+
 #### Requisito atendido 
 
 RF-001: O site deve permitir ao usuário fazer o login da sua conta.
@@ -14,7 +16,7 @@ RF-001: O site deve permitir ao usuário fazer o login da sua conta.
 
 #### Instruções de acesso
 
-1.	Abra um navegador de Internet e informe a seguinte URL:
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
 2.	Preencha as credenciais de acesso (usuário e senha) e clique em "Entrar".
    
 #### Responsável
