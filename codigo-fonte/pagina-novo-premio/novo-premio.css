@@ -1,85 +1,33 @@
-.container-premio {
-  align-items: center;
+.flex-col-center {
   display: flex;
   flex-direction: column;
-  margin-top: 8.8rem;
-}
-
-.cabecalho {
-  width: 60%;
-  display: flex;
-  justify-content: space-between;
   align-items: center;
-  margin-bottom: 5rem;
 }
 
-.cabecalho-esquerda {
-  display: flex;
-  gap: 1rem;
-}
-
-.bt-voltar {
-  border: none;
-  cursor: pointer;
-  border-radius: 50%;
-}
-
-.bt-voltar img {
-  width: 32px;
-  height: 32px;
-}
-
-.bt-acao .bt-primario {
-  padding: 0.5rem 1rem;
-  border: none;
-  border-radius: 6px;
-  cursor: pointer;
-  transition: background 0.3s;
-
-  & .bt-acao .bt-primario:hover {
-    background-color: var(--green);
-  }
-}
-
-.novo-premio {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
+.container-premios {
+  padding: 6rem;
 }
 
 .grupo-input input {
-  width: 30.4rem;
-  height: 4.0rem;
-  background: none;
-  border: 2px solid var(--text-primary);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  color: var(--text-primary);
-  font-size: 1rem;
-
-  & .grupo-input input:hover {
-    border: 2px solid var(--green);
-    box-shadow: 3px 1px 1px var(--green);
-  }
-}
-
-.grupo-input {
-  display: flex;
-  flex-direction: column;
-}
-
-.grupo-input label {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
+  width: 30rem;
 }
 
 .premios-input {
   display: flex;
-  gap: 1.5rem;
+  gap: 0.5rem;
+  align-self: flex-start;
+  margin-top: 2rem;
+
+  & input {
+    width: 6.4rem;
+  }
+  & img {
+    width: 1.9rem;
+    height: auto;
+    margin-left: 0.5rem;
+  }
+  & img + input{
+    margin-left: 2rem;
+  }
 }
 
-.premios-input input {
-  width: 6.4rem;
-  height: 4.0rem;
-}

@@ -28,27 +28,21 @@
         
         <div id="toast" class="toast oculta">
           <img src="../global/imagens/salvo.svg" alt="Salvo">
-          <p>Tá salvo!</p>
+          <p>Salvo!</p>
         </div>
-        <div class="container-premio">
-        
-        <fieldset class="novo-premio">         
-          <div class="grupo-input">
-            <label for="titulo-premio">Título do prêmio</label>
-            <input type="text" id="titulo-premio" name="titulo-premio" />
-          </div>
-        
-          <div class="premios-input">
-            <div class="grupo-input">
-              <label for="xp">XP</label>
-              <input type="text" id="xp" name="xp" />
-            </div>
-        
-            <div class="grupo-input">
-              <label for="moedas">Moedas</label>
-              <input type="text" id="moedas" name="moedas" />
+        <div class="container-premios flex-col-center">
+          <div class="grupo-input flex-col-center">
+            <input class="input" type="text" placeholder="Título do prêmio" />
+
+            <div class="premios-input">
+              <input class="input" type="number" placeholder="XP" />
+              <img src="../global/imagens/xp.svg" alt="XP" />
+
+              <input class="input" type="number" placeholder="Moedas" />
+              <img src="../global/imagens/moeda.svg" alt="" />
             </div>
           </div>
+        </div>
         </fieldset>
       </div>
       </div>
