@@ -1,0 +1,31 @@
+.grupo-card {
+  margin: 3rem;
+  align-items: center;
+}
+
+.premio-card {
+  padding: 1rem; 
+}
+
+.linha-premio {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.info-premio {
+  display: flex;
+  gap: 2rem;
+}
+
+.info-premio div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  
+  img {
+    width: 1.9rem;
+    height: auto;
+  }
+}
