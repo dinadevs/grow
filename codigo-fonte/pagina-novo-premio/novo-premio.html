@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow - Prêmios</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../global/estilos/index.css" />
+    <link rel="stylesheet" href="./novo-premio.css">
+  </head>
+  <body>
+    <header id="cabecalho-global"></header>
+    <main class="main">
+      <div id="barra-status"></div>
+      <div class="container">
+        <div class="titulo-e-botoes">
+          <button>
+            <img src="../global/imagens/voltar.svg" alt="voltar">
+          </button>
+          <h1>Novo prêmio</h1>
+          <button onclick="mostraToast()" class="botao">Cadastrar</button>
+        </div>
+        
+        <div id="toast" class="toast oculta">
+          <img src="../global/imagens/salvo.svg" alt="Salvo">
+          <p>Tá salvo!</p>
+        </div>
+        <div class="container-premio">
+        
+        <fieldset class="novo-premio">         
+          <div class="grupo-input">
+            <label for="titulo-premio">Título do prêmio</label>
+            <input type="text" id="titulo-premio" name="titulo-premio" />
+          </div>
+        
+          <div class="premios-input">
+            <div class="grupo-input">
+              <label for="xp">XP</label>
+              <input type="text" id="xp" name="xp" />
+            </div>
+        
+            <div class="grupo-input">
+              <label for="moedas">Moedas</label>
+              <input type="text" id="moedas" name="moedas" />
+            </div>
+          </div>
+        </fieldset>
+      </div>
+      </div>
+    </main>
+  </body>
+
+  <script src="../global/componentes/componentes.js"></script>
+  <script src="./novo-premio.js"></script>
+</html>
