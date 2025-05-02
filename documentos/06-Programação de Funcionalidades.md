@@ -39,7 +39,7 @@ RF-02: A tela de cadastro poderá ser acessada através da opção “Cadastre-s
 
 #Instrução de acesso
 
-1.Abra um navegador de Internet e informe a seguinte URL:
+1.Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-de-cadastro/pagina-de-cadastro.html
 
 
 ### Responsável: Fernanda
