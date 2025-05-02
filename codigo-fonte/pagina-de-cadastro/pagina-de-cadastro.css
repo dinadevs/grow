@@ -1,0 +1,115 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --pixel-text-lg: 1.5rem "Press Start 2P", system-ui;
+  --pixel-text-md: 1rem "Press Start 2P", system-ui;
+
+  --normal-text-lg: 600 2rem "Nunito", sans-serif;
+  --normal-text-md: 1.5rem "Nunito", sans-serif;
+  --normal-text-sm: 1rem "Nunito", sans-serif;
+
+  --surface-primary: rgba(30, 20, 53, 0.9);
+  --surface-secondary: #2C1B47;
+  --surface-tertiary: #3c2a63;
+  --stroke: #44405A;
+  --green: #5FFFA1;
+
+  --text-primary: #F4F4F4;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: center;
+  gap: .3rem;
+  width: 70%;
+  height: 80%;
+}
+
+.container {
+  
+  height: 100%;
+  width: 100%;
+  background-color: var(--surface-primary);
+  border-radius: 1.7rem;
+  border: solid 2px var(--stroke);
+  
+}
+
+.header {
+  button {
+    display: none;
+  }
+}
+form {
+  padding: 2rem;
+  color: var(--text-primary);
+  max-width: 800px;
+  margin: auto;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.input-box {
+  margin-bottom: 1rem;
+}
+
+input {
+  width: 80%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-family: "Nunito", sans-serif;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 0.8rem 2rem;
+  background-color: white; /* Botão branco */
+  color: black; /* Texto preto */
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #f0f0f0; /* Um cinza clarinho ao passar o mouse */
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 1rem;
+  margin-top: 0;
+}

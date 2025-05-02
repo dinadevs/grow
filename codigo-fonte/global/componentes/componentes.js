@@ -35,3 +35,20 @@ if (botaoAbrir) {
     }
   });
 }
+
+// -- toasts --
+
+function mostraToast() {
+  const toast = document.getElementById('toast');
+  
+  toast.classList.remove('oculta');
+  toast.classList.add('ativa');
+  
+  // Esconde o toast depois de 3 segundos
+  setTimeout(() => {
+    toast.classList.remove('ativa');
+    setTimeout(() => {
+      toast.classList.add('oculta');
+    }, 500); // espera a transição acabar
+  }, 3000);
+}
