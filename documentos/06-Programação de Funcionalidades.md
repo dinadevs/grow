@@ -110,7 +110,7 @@ Edna Martins
 
 ### Tela de Aprovações (RF-006)
 
-![pagina-aprovacoes](xxx)
+ ![alt text](./img/funcionalidades-aprovacoes.png)
 
 #### Requisito atendido 
 
