@@ -108,7 +108,31 @@ As estruturas de dados foram baseadas em HTML, CSS e JS.
 Edna Martins
 
 
+### Tela de Aprovações (RF-006)
 
+![pagina-aprovacoes](xxx)
+
+#### Requisito atendido 
+
+RF-006: Exibir atividades finalizadas para aprovação do pai ou dos responsáveis.
+
+#### Artefatos da funcionalidade
+
+- mock-aprovacoes.html
+- pagina-aprovacoes.css
+- pagina-aprovacoes.js
+- pagina-aprovacoes.html
+
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-aprovacoes/pagina-aprovacoes.html
+2.	A lista de atividades pendentes será exibida automaticamente, com base nos dados armazenados no navegador (localStorage).
+3. Clique em "Aprovar" ou "Negar" para avaliar cada atividade.
+
+#### Responsável
+Rodrigo Andrade da Silva
+<hr>
 
 > **Links Úteis**:
 > - [Trabalhando com HTML5 Local Storage e JSON](https://www.devmedia.com.br/trabalhando-com-html5-local-storage-e-json/29045)
