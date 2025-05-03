@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grow Pagina de Cadastro</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../global/estilos/global.css">
+    <link rel="stylesheet" href="../global/estilos/index.css">
+    <link rel="stylesheet" href="./pagina-de-cadastro.css">
+</head>
+<body>
+    <header id="cabecalho-global">
+        <img src="/codigo-fonte/global/imagens/logo.png" alt="logo grow">
+    </header>
+    <main class="main">
+        <div class="container">
+            <nav id="nav-global"></nav>
+            <form>
+                <div class="header-cadastro">
+                    <img src="/codigo-fonte/global/imagens/voltar.svg" alt="Voltar" class="voltar-icon">
+                    <h1>Cadastro</h1>
+                </div>
+                <div class="form-row">
+                    <div class="form-column">
+                        <h2 class="titulo">Responsável</h2>
+                        <div class="input-box">
+                            <input id="responsavelNickname" placeholder="Nickname">
+                        </div>
+                        <div class="input-box">
+                            <label>
+                                Senha
+                                <span class="tooltip">ⓘ
+                                    <span class="tooltip-text">
+                                        A senha deve ter:<br>
+                                        • No mínimo 8 caracteres<br>
+                                        • Letras maiúsculas e minúsculas<br>
+                                        • Pelo menos 1 número<br>
+                                        • Pelo menos 1 caractere especial (!@#$...)
+                                    </span>
+                                </span>
+                            </label>
+                            <input id="responsavelSenha" placeholder="Senha" type="password">
+                        </div>
+                    </div>
+                    <div class="form-column">
+                        <h3 class="titulo">Filho(a)</h3>
+                        <div class="input-box">
+                            <input id="filhoNickname" placeholder="Nickname">
+                        </div>
+                        <div class="input-box">
+                            <label>
+                                Senha
+                                <span class="tooltip">ⓘ
+                                    <span class="tooltip-text">
+                                        A senha deve ter:<br>
+                                        • No mínimo 8 caracteres<br>
+                                        • Letras maiúsculas e minúsculas<br>
+                                        • Pelo menos 1 número<br>
+                                        • Pelo menos 1 caractere especial (!@#$...)
+                                    </span>
+                                </span>
+                            </label>
+                            <input id="filhoSenha" placeholder="Senha" type="password">
+                        </div>
+                    </div>
+                    <button type="submit">Cadastrar</button>
+                </div>
+            </form>
+        </div>
+    </main>
+    <script src="../global/componentes/componentes.js"></script>
+    <script src="./pagina-de-cadastro.js"></script>
+</body>
+</html>

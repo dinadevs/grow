@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Nunito", sans-serif;
+}
+
+:root {
+  --pixel-text-lg: 1.5rem "Press Start 2P", system-ui;
+  --pixel-text-md: 1rem "Press Start 2P", system-ui;
+
+  --normal-text-lg: 600 2rem "Nunito", sans-serif;
+  --normal-text-md: 1.5rem "Nunito", sans-serif;
+  --normal-text-sm: 1rem "Nunito", sans-serif;
+
+  --surface-primary: rgba(30, 20, 53, 0.9);
+  --surface-secondary: #2C1B47;
+  --surface-tertiary: #3c2a63;
+  --stroke: #44405A;
+  --green: #5FFFA1;
+
+  --text-primary: #F4F4F4;
+}
+
+body {
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: center;
+  gap: .3rem;
+  width: 70%;
+  height: 80%;
+}
+
+.container {
+  height: 100%;
+  width: 100%;
+  background-color: var(--surface-primary);
+  border-radius: 1.7rem;
+  border: solid 2px var(--stroke);
+}
+
+.header {
+  button {
+    display: none;
+  }
+}
+
+form {
+  padding: 2rem;
+  color: var(--text-primary);
+  max-width: 800px;
+  margin: auto;
+}
+
+form h1 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.form-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.form-column {
+  flex: 1;
+  min-width: 300px;
+}
+
+.input-box {
+  margin-bottom: 2rem;
+}
+
+input {
+  width: 80%;
+  padding: 0.6rem;
+  border: none;
+  border-radius: 0.4rem;
+  font-family: "Nunito", sans-serif;
+}
+
+button[type="submit"] {
+  display: block;
+  margin: 2rem auto 0 auto;
+  padding: 0.8rem 2rem;
+  background-color: white;
+  color: black;
+  border: none;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+  background-color: #f0f0f0;
+}
+
+form h1 {
+  text-align: left;
+  margin-bottom: 1rem;
+  margin-top: 0;
+  font-size: 2rem;
+}
+
+.logo-grow {
+  width: 100px;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+}
+
+.header-cadastro {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.header-cadastro h1 {
+  font-size: 2rem;
+  margin: 0;
+}
+
+.voltar-icon {
+  width: 30px;
+  height: auto;
+  cursor: pointer;
+}
+
+.custom-toast {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #2f1b3a;
+  color: white;
+  border: 2px solid #8357c5;
+  border-radius: 8px;
+  padding: 10px 16px;
+  display: flex;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.3);
+  gap: 8px;
+  z-index: 1000;
+  transition: opacity 0.5s ease;
+}
+
+.toast-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.custom-toast.fade-out {
+  opacity: 0;
+}
+
+/* Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  font-size: 1rem;
+  margin-left: 0.5rem;
+}
+
+.tooltip-text {
+  visibility: hidden;
+  width: 200px;
+  background-color: #2f1b3a;
+  color: #fff;
+  text-align: left;
+  border-radius: 6px;
+  padding: 8px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* posição acima */
+  left: 50%;
+  margin-left: -100px;
+  opacity: 0;
+  transition: opacity 0.3s;
+  font-size: 0.9rem;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+  opacity: 1;
+}
