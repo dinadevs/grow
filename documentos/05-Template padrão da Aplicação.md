@@ -12,7 +12,7 @@ A identidade visual do protótipo possui as seguintes características:
 </ul>
 
 O código utilizado para a construção dos elementos citados, pode ser consultado [aqui](../codigo-fonte/). As imagens e ícones utilizados no projeto estão disponíveis [aqui](../codigo-fonte/global/imagens/).
-A seguir, há dois exemplos visuais das telas do protótipo, que podem ser consultadas em sua totalidade na página [Projeto de Interface](../documentos/04-Projeto%20de%20Interface.md/).
+A seguir, há dois exemplos visuais das telas do protótipo, que podem ser consultadas em sua totalidade na página [Projeto de Interface](../documentos/04-Projeto%20de%20Interface.md).
 
 ---
 
