@@ -49,6 +49,7 @@
  </tbody>
 </table>
 
+## Requisitos
 
 ## Requisitos funcionais e Histórias de Usuários
 
@@ -68,25 +69,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | RF-10 | Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.                                                             | Filho(a)                   | Ganhar moedas e/ou XP ao concluir tarefas.                                   | Poder usar em prêmios e manter a motivação alta.                           | Média          | Amanda Maria Felipe Severo |
 | RF-11 | Permitir que o filho utilize suas moedas para trocar por prêmios.                                             | Filho(a)                   | Trocar moedas acumuladas na “loja de conquistas”.                            | Escolher prêmios e continuar motivado.                                     | Média          |  Rodrigo Andrade da Silva  |
 | RF-12 | Possibilitar ao filho escolher um avatar.                                                                                       | Filho(a)                   | Escolher meu próprio avatar.                                                | Para que eu possa personalizar meu jogo.                                   | Baixa          | Caroline Oliveira Neves |
-
-## Requisitos
-
-### Requisitos Funcionais
-
-| **ID**  | **Descrição do Requisito**                                                                 | **Prioridade** | **Responsável** |
-|--------|----------------------------------------------------------------------------------------------|----------------|------------------|
-| RF-01 | Permitir que o usuário faça login na sua conta.                                              | ALTA           |               |
-| RF-02 | Permitir que pais ou responsáveis cadastrem sua conta e a de seus filhos.                    | ALTA           |               |
-| RF-03 | Permitir que pais ou responsáveis cadastrem atividades.                                      | ALTA           |               |
-| RF-04 | Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.                        | ALTA           |               |
-| RF-05 | Possibilitar que os pais definam bonificações para cada estágio alcançado.                   | ALTA           |               |
-| RF-06 | Exibir atividades finalizadas para aprovação do pai ou dos responsáveis..                    | ALTA           |               |
-| RF-07 | Permitir o cadastro e contabilização de penalidades.                                         | ALTA           |               |
-| RF-08 | Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar concluídas.    | ALTA           |               |
-| RF-09 | Disponibilizar uma tela de visualização de trajetória (nível, XP, barra de progresso etc.).  | ALTA           |               |
-| RF-10 | Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.                           | MÉDIA          |               |
-| RF-11 | Permitir que o filho utilize suas moedas para trocar por prêmios.                            | MÉDIA          |               |
-| RF-12 | Possibilitar a escolha de um avatar.                                                         | BAIXA          |               |
 
 
 **Prioridade: Alta / Média / Baixa.  
