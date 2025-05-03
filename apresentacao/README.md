@@ -1,7 +1,7 @@
 # Apresentação do Projeto
 
 ## Apresentação de Slides
-[Grow_slide.pdf](https://github.com/user-attachments/files/19625063/Grow_slide.2.pdf)
+[Grow_slide.pdf](./Grow_slide.pdf)
 
 
 ## Vídeo de apresentação
