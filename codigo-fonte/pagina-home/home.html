@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+
+  
+  <link rel="stylesheet" href="/codigo-fonte/global/estilos/index.css">
+  <link rel="stylesheet" href="/codigo-fonte/pagina-home/home.css">
+</head>
+<body>
+  <main class="main">
+    <!-- Header -->
+    <div id="cabecalho-global"></div>
+
+    <!-- Status Bar -->
+    <div id="barra-status"></div>
+  </main>
+
+  <div class="container">
+    <!-- Grid menu -->
+    <div id="grid-menu">
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Atividades</span>
+      </div>
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Metas</span>
+      </div>
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Prêmios</span>
+      </div>
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Aprovações</span>
+      </div>
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Penalidades</span>
+      </div>
+      <div class="grid-item">
+        <img src="" alt="">
+        <span>Trajetória filho</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bottom navigation -->
+  <div id="nav-global"></div>
+
+  <!-- JS Scripts. TODO: move to standalone file -->
+  <script src="/codigo-fonte/global/componentes/componentes.js"></script>
+  <script>
+    carregaComponente(
+      '/codigo-fonte/global/componentes/cabecalho/cabecalho.html',
+      'cabecalho-global',
+      '/codigo-fonte/global/componentes/cabecalho/cabecalho.js'
+    );
+
+    carregaComponente(
+      '/codigo-fonte/global/componentes/barra-status/barra-status.html',
+      'barra-status',
+      '/codigo-fonte/global/componentes/barra-status/barra-status.js'
+    );
+
+    carregaComponente(
+      '/codigo-fonte/global/componentes/nav-global/nav-global.html',
+      'nav-global',
+      '/codigo-fonte/global/componentes/nav-global/nav-global.js'
+    );
+  </script>
+</body>
+</html>
