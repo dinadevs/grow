@@ -1,3 +1,9 @@
+carregaComponente(
+    '../global/componentes/cabecalho/cabecalho.html',
+    'cabecalho-global',
+    '../global/componentes/cabecalho/cabecalho.js',    
+    );
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
     const voltarBtn = document.querySelector('.voltar-icon');
