@@ -1,3 +1,3 @@
-function navigateTo(page) {
-    window.location.href = `../${page}`;
+function navegarPara(pagina) {
+    window.location.href = `../${pagina}`;
   }
