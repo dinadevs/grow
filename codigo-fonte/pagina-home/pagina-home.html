@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Grow - Home</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="../global/estilos/index.css" />
+  <link rel="stylesheet" href="pagina-home.css" />
+</head>
+<body>
+  <header id="cabecalho-global"></header>
+
+  <main class="main">
+    <div id="barra-status"></div>
+
+    <div class="container">
+      <div id="grid-menu">
+        <div class="grid-item" onclick="navigateTo('pagina-checklist/pagina-checklist.html')">
+          <img src="../global/imagens/xp.svg" alt="Atividades" />
+          <span>Atividades</span>
+        </div>
+
+        <div class="grid-item" onclick="navigateTo('pagina-metas/pagina-metas.html')">
+          <img src="../global/imagens/moeda.svg" alt="Metas" />
+          <span>Metas</span>
+        </div>
+
+        <div class="grid-item" onclick="navigateTo('pagina-premios/pagina-premios.html')">
+          <img src="../global/imagens/trofeu.png" alt="Prêmios" />
+          <span>Prêmios</span>
+        </div>
+
+        <div class="grid-item" onclick="navigateTo('pagina-aprovacoes/pagina-aprovacoes.html')">
+          <img src="../global/imagens/salvo.svg" alt="Aprovações" />
+          <span>Aprovações</span>
+        </div>
+
+        <div class="grid-item" onclick="navigateTo('pagina-penalidades/pagina-penalidades.html')">
+          <img src="../global/imagens/xp.svg" alt="Penalidades" />
+          <span>Penalidades</span>
+        </div>
+
+        <div class="grid-item" onclick="navigateTo('pagina-trajetoria/pagina-trajetoria.html')">
+          <img src="../global/imagens/avatar-gato.png" alt="Trajetória" />
+          <span>Trajetória filho</span>
+        </div>
+      </div>
+
+      <nav id="nav-global"></nav>
+    </div>
+  </main>
+
+  <script src="../global/componentes/componentes.js"></script>
+  <script src="../global/componentes/navegacao.js"></script>
+  <script src="pagina-home.js"></script>
+  </body>
+  </html>
