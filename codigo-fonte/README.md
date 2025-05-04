@@ -9,10 +9,10 @@ Nesse primeiro eixo do curso, para simplificar a utilização do Git e a organiz
 
 ## Instalação do Site
 
-O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique <a href="#">aqui</a> para acessá-lo. 
+O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em servidores como em navegadores web. Clique <a href= "https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html">aqui</a> para acessá-lo. 
 
 ## Histórico de versões
 
-### [0.1.0] - DD/MM/AAAA
-#### Adicionado/Atualizado/Removido
-- Relação de artefatos ...
+### [0.1.0] - 04/05/2025
+#### Adicionado
+- Homepage: arquivos HTML, CSS, JS e imagens.
