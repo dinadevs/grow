@@ -70,7 +70,6 @@ Com base na análise das personas, foram identificadas as seguintes histórias d
 | RF-11 | Permitir que o filho utilize suas moedas para trocar por prêmios.                                             | Filho(a)                   | Trocar moedas acumuladas na “loja de conquistas”.                            | Escolher prêmios e continuar motivado.                                     | Média          |  Rodrigo Andrade da Silva  |
 | RF-12 | Possibilitar ao filho escolher um avatar.                                                                                       | Filho(a)                   | Escolher meu próprio avatar.                                                | Para que eu possa personalizar meu jogo.                                   | Baixa          | Caroline Oliveira Neves |
 
-
 **Prioridade: Alta / Média / Baixa.  
 
 ### Requisitos Não Funcionais

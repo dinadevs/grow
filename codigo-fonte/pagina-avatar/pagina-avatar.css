@@ -1,0 +1,43 @@
+label:hover{
+    transform: scale(1.15);
+}
+
+.opcoes-avatar{
+    padding: 30px;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+}
+
+.avatar-opcao input[type="radio"] {
+    appearance: none;
+    -webkit-appearance: none;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    border: 2px solid #6e53a9; 
+    cursor: pointer;
+    position: relative;
+}
+.avatar-opcao input[type="radio"]:checked {
+    background-color: #5EDFFF;  
+    box-shadow: 0 0 0 3px #6e53a9;
+}
+
+.avatar-opcao img{
+    width:200px;
+    height:200px;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    transition: border 0.2s;
+
+}
+
+.avatar-opcao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+    gap: 12px;
+}
+
