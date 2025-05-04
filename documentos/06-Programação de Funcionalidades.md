@@ -2,7 +2,7 @@
 
 ### Tela de Login (RF-001)
 
-![pagina-login](https://github.com/user-attachments/assets/88a28180-0912-461b-ade0-7f96ac3566a2)
+![pagina-login](./img/pagina-login.png)
 
 #### Requisito atendido 
 
