@@ -10,51 +10,45 @@ carregaComponente(
     '../global/componentes/barra-status/barra-status.js'
 );
 
-var avatarSalvo = localStorage.getItem("avatarSelecionado"); 
-
-if (avatarSalvo) {
-  var radios = document.getElementsByName("avatar"); 
-  for (var i = 0; i < radios.length; i++) {
-    if (radios[i].value === avatarSalvo) {
-      radios[i].checked = true; 
-    }
-  }
-
-
-  var avatarTopo = document.getElementById("avatar");
-  if (avatarTopo) {
-    avatarTopo.src = avatarSalvo ; 
-  }
+function configurarBotaoVoltar() {
+  const btn = document.querySelector('.titulo-e-botoes button');
+  btn.onclick = () => window.history.back();
 }
 
+function marcarAvatarAtual() {
+  const jogadores   = JSON.parse(localStorage.getItem('jogadores')) || [];
+  const logado      = localStorage.getItem('jogadorLogado');
+  const avatarName  = jogadores[logado]?.avatar;
+  if (!avatarName) return;
 
-var botaoAtualizar = document.querySelector('input[type="submit"]');
+  const radio = document.querySelector(
+    `input[name="avatar"][value$="avatar-${avatarName}.png"]`
+  );
+  if (radio) radio.checked = true;
+}
 
-botaoAtualizar.onclick = function () {
-  var radios = document.getElementsByName("avatar");
-  var avatarEscolhido = null;
+function configurarBotaoAtualizar() {
 
-  for (var i = 0; i < radios.length; i++) {
-    if (radios[i].checked) {
-      avatarEscolhido = radios[i].value;
-      break;
+  const btn = document.querySelector('input.botao');
+  btn.onclick = function(event) {
+    const selecionado = document.querySelector('input[name="avatar"]:checked');
+    if (!selecionado) return; 
+    const nomeAvatar = selecionado.value;
+
+    const jogadores = JSON.parse(localStorage.getItem('jogadores')) || [];
+    const logado    = localStorage.getItem('jogadorLogado');
+    jogadores[logado].avatar = nomeAvatar;
+    localStorage.setItem('jogadores', JSON.stringify(jogadores));
+
+    if (typeof window.atualizarBarraStatus === 'function') {
+      window.atualizarBarraStatus();
     }
-  }
 
-  if (avatarEscolhido) {
-    localStorage.setItem("avatarSelecionado", avatarEscolhido); 
+  };
+}
 
-    var avatarGlobal = document.getElementById("avatar");
-    if (avatarGlobal) {
-      avatarGlobal.src = avatarEscolhido ;
-    }
-
-  }
-};
-
-
-var botaoVoltar = document.querySelector(".titulo-e-botoes button");
-
-botaoVoltar.onclick = function () {
-  window.location.href = history.back;
+window.onload = () => {
+  configurarBotaoVoltar();
+  marcarAvatarAtual();
+  configurarBotaoAtualizar();
 };
