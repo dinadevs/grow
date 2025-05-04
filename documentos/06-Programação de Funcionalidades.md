@@ -46,32 +46,6 @@ RF-02: A tela de cadastro poderá ser acessada através da opção “Cadastre-s
 
 <hr>
 
-
-### Escolha de Avatar (RF-12)
-
-#### Requisito atendido
-
-**RF-12**: Possibilitar a escolha de um avatar.
-
-#### Artefatos da funcionalidade
-
-#### Instruções de acesso
-1. Abra um navegador de Internet e informe a seguinte URL:   
-2. No canto superior esquerdo da tela, clique sobre o **ícone do avatar**.
-3. Uma interface será aberta exibindo as opções disponíveis de avatares.  
-4. Clique sobre o avatar desejado para selecioná-lo.  
-5. O avatar escolhido será salvo como imagem de perfil do usuário.  
-
-#### Responsável
-
-**Caroline Oliveira Neves**
-
-<hr>
-
-Implementação da aplicação descritas por meio dos requisitos codificados. 
-
-[Utilize a estrutura abaixo para cada funcionalidade entregue na etapa]
-
 ### Tela de cadastro de prêmios (RF-005)
 
 O cadastro de prêmios com nome, descrição e pontuação poderá ser feito após o login do usuário.
@@ -132,6 +106,29 @@ RF-006: Exibir atividades finalizadas para aprovação do pai ou dos responsáve
 
 #### Responsável
 Rodrigo Andrade da Silva
+<hr>
+
+### Escolha de Avatar (RF-12)
+![pagina-avatar](./img/pagina-avatar.png)
+
+#### Requisito atendido
+
+**RF-12**: Possibilitar a escolha de um avatar.
+
+#### Artefatos da funcionalidade
+- pagina-avatar.html
+- pagina-avatar.css
+- pagina-avatar.js
+#### Instruções de acesso
+1. Abra um navegador de Internet e informe a seguinte URL: https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-avatar/pagina-avatar.html
+2. Uma interface será aberta exibindo as opções disponíveis de avatares.  
+3. Clique sobre o avatar desejado para selecioná-lo.  
+4. Para atualizar seu avatar clique no botão **"atualizar"**  
+
+#### Responsável
+
+**Caroline Oliveira Neves**
+
 <hr>
 
 > **Links Úteis**:
