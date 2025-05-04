@@ -1,5 +1,4 @@
 carregaComponente(
-<<<<<<< HEAD
     '../global/componentes/cabecalho/cabecalho.html',
     'cabecalho-global',
     '../global/componentes/cabecalho/cabecalho.js',    
