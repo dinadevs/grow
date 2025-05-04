@@ -6,13 +6,7 @@ carregaComponente(
 
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.querySelector('form');
-    const voltarBtn = document.querySelector('.voltar-icon');
     const inputs = form.querySelectorAll('input');
-
-    voltarBtn.addEventListener('click', (e) => {
-        e.preventDefault();
-        window.location.href = 'https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html';
-    });
 
     form.addEventListener('submit', (e) => {
         e.preventDefault();
@@ -58,10 +52,11 @@ document.addEventListener('DOMContentLoaded', () => {
         localStorage.setItem('contas', JSON.stringify(contas));
         localStorage.setItem('jogadores', JSON.stringify(jogadores));
 
-        showToast('Cadastro realizado!');
+        mostraToast();
 
+    
         setTimeout(() => {
-            window.location.href = 'https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html';
+            voltarParaLogin();
         }, 2000);
     });
 });
@@ -71,20 +66,7 @@ function validarSenha(senha) {
     return regex.test(senha);
 }
 
-function showToast(mensagem) {
-    const toast = document.createElement('div');
-    toast.classList.add('custom-toast');
 
-    const texto = document.createElement('span');
-    texto.textContent = mensagem;
-
-    toast.appendChild(texto);
-    document.body.appendChild(toast);
-
-    setTimeout(() => {
-        toast.classList.add('fade-out');
-        setTimeout(() => {
-            toast.remove();
-        }, 500);
-    }, 1000);
+function voltarParaLogin() {
+    window.location.href = '../pagina-login/login.html';
 }

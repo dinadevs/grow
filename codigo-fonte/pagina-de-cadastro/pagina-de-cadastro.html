@@ -1,33 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Grow Página de Cadastro</title>
+
+    <title>Grow - Página de Cadastro</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="../global/estilos/global.css">
+    
     <link rel="stylesheet" href="../global/estilos/index.css">
     <link rel="stylesheet" href="./pagina-de-cadastro.css">
 </head>
+
 <body>
     <header id="cabecalho-global"></header>
     <main class="main">
         <div class="container">
-            <nav id="nav-global"></nav>
-            <form>
-                <div class="header-cadastro">
-                    <img src="../global/imagens/voltar.svg" alt="Voltar" class="voltar-icon">
+            <div class="centraliza">
+                <div class="titulo-e-botoes">
+                    <button onclick="voltarParaLogin()" class="voltar-icon">
+                        <img src="../global/imagens/voltar.svg" alt="voltar">
+                    </button>
                     <h1>Cadastro</h1>
                 </div>
-                <div class="form-row">
-                    <div class="form-column">
-                        <h2 class="titulo">Responsável</h2>
-                        <div class="input-box">
-                            <input id="responsavelNickname" placeholder="Nickname">
-                        </div>
-                        <div class="input-box">
+                <form>
+                    <div class="form-row">
+                        <div class="form-column">
+                            <h2 class="titulo">Responsável</h2>
+                            
+                            <input id="responsavelNickname" class="input" placeholder="Nickname">
                             <label>
                                 Senha
                                 <span class="tooltip">ⓘ
@@ -40,15 +43,11 @@
                                     </span>
                                 </span>
                             </label>
-                            <input id="responsavelSenha" placeholder="Senha" type="password">
+                            <input id="responsavelSenha" placeholder="Senha" type="password" class="input">
                         </div>
-                    </div>
-                    <div class="form-column">
-                        <h3 class="titulo">Filho(a)</h3>
-                        <div class="input-box">
-                            <input id="filhoNickname" placeholder="Nickname">
-                        </div>
-                        <div class="input-box">
+                        <div class="form-column">
+                            <h3 class="titulo">Filho(a)</h3>
+                            <input id="filhoNickname" placeholder="Nickname" class="input">
                             <label>
                                 Senha
                                 <span class="tooltip">ⓘ
@@ -61,17 +60,22 @@
                                     </span>
                                 </span>
                             </label>
-                            <input id="filhoSenha" placeholder="Senha" type="password">
+                            <input id="filhoSenha" placeholder="Senha" type="password" class="input">
                         </div>
                     </div>
-                </div>
-
-                <!-- Botão com estilo pixel -->
-                <button type="submit" class="pixel-button">Cadastrar</button>
-            </form>
+                    
+                    <button type="submit" class="botao">Cadastrar</button>
+                </form>
+            </div>
+            
+            <div id="toast" class="toast">
+                <img src="../global/imagens/salvo.svg" alt="Salvo">
+                <p>Cadastrado!</p>
+            </div>
         </div>
     </main>
     <script src="../global/componentes/componentes.js"></script>
     <script src="./pagina-de-cadastro.js"></script>
 </body>
+
 </html>
