@@ -9,7 +9,7 @@ Para visualizar o protótipo interativo, acesse o [ambiente no figma do projeto]
  <img src="./img/sitemap.png"/>
  <figcaptiion>Figura 1 - sitemap</figcaptiion>
 </figure>
-<br><br>
+<br>
 <figure>
  <img src="./img/user_flow.png"/>
  <figcaptiion>Figura 2 - wireframes com userflow</figcaptiion>
@@ -17,33 +17,36 @@ Para visualizar o protótipo interativo, acesse o [ambiente no figma do projeto]
 
 ### Orientações
 - Para acessar os userflows das diferentes personas **Pai** e **Filhos**, selecione no menu ao lado esquerdo.
-  ![image](./img/menu.png)
-  <figure> 
-  <figcaption>Figura 3 - Menu de seleção de fluxo de usuário
-  </figure> 
+![image](./img/menu.png)
+<figure> 
+<figcaption>Figura 3 - Menu de seleção de fluxo de usuário
+</figure> 
+
 - Para entender os elementos clicáveis em cada tela, clique em qualquer espaço e eles serão destacados em azul.
-  ![image](./img/botoes-destacados.png)
-  <figure> 
-  <figcaption>Figura 4 - Exemplo de como os botões são destacados
-  </figure> 
+![image](./img/botoes-destacados.png)
+<figure> 
+<figcaption>Figura 4 - Exemplo de como os botões são destacados
+</figure> 
 
 ## Protótipo de baixa fidelidade
 No que tange layout em comum, o projeto possui algumas estruturas que se repetem, são elas:
-* Bloco centralizado com o conteúdo de cada página.
-  ![image](./img/padrao-bloco-centralizado.png)
-  <figure> 
-  <figcaption>Figura 5 - Padrão do bloco centralizado
-  </figure> 
-* Em páginas pós login, cabeçalho com logo e botão de logout.
-  ![image](./img/padrao-cabecalho.png)
-  <figure> 
-  <figcaption>Figura 6 - Padrão do cabeçalho
-  </figure> 
-* E na maioria das telas, uma seção resumindo os dados de trajetória do filho, como seu avatar, nível, XP e moedas.
-  ![image](./img/padrao-trajetoria.png)
-  <figure> 
-  <figcaption>Figura 7 - Padrão da sessão de trajetória
-  </figure> 
+- Bloco centralizado com o conteúdo de cada página.
+![image](./img/padrao-bloco-centralizado.png)
+<figure> 
+<figcaption>Figura 5 - Padrão do bloco centralizado
+</figure> 
+
+- Em páginas pós login, cabeçalho com logo e botão de logout.
+![image](./img/padrao-cabecalho.png)
+<figure> 
+<figcaption>Figura 6 - Padrão do cabeçalho
+</figure> 
+
+- E na maioria das telas, uma seção resumindo os dados de trajetória do filho, como seu avatar, nível, XP e moedas.
+![image](./img/padrao-trajetoria.png)
+<figure> 
+<figcaption>Figura 7 - Padrão da sessão de trajetória
+</figure> 
 
 ### Tela - Login
 A tela de login apresenta formulário de login e opção de cadastro

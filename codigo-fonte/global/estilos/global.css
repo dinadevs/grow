@@ -188,7 +188,7 @@ button {
   }
 
   h1 {
-    font: var(--normal-text-lg);
+    font: var(--pixel-text-lg);
   }
 
   :nth-child(3) {

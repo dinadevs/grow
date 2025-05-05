@@ -1,5 +1,4 @@
 #cabecalho-global {
-  display: flex;
   justify-content: center;
   button {
     display: none;
@@ -9,6 +8,8 @@
     height: 7rem;
     width: auto;
   }
+
+  margin-bottom: 2rem;
 }
 
 .container {
