@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grow - Prêmios</title>
+    <title>Grow - Novo Prêmio</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -24,28 +24,31 @@
           </button>
           
           <h1>Novo prêmio</h1>
-          <button onclick="mostraToast()" class="botao">Cadastrar</button>
+          <button type="submit" form="novo-premio" class="botao">Cadastrar</button>
         </div>
         
         <div id="toast" class="toast oculta">
           <img src="../global/imagens/salvo.svg" alt="Salvo">
           <p>Salvo!</p>
         </div>
-        <div class="container-premios flex-col-center">
-          <div class="grupo-input flex-col-center">
-            <input class="input" type="text" placeholder="Título do prêmio" />
-
-            <div class="premios-input">
-              <input class="input" type="number" placeholder="XP" />
-              <img src="../global/imagens/xp.svg" alt="XP" />
-
-              <input class="input" type="number" placeholder="Moedas" />
-              <img src="../global/imagens/moeda.svg" alt="" />
+        
+        <form id="novo-premio" class="formulario-premios" onsubmit="salvarPremio(event)">
+          <div>
+            <input id="titulo" name="titulo" class="input" type="text" placeholder="Título do prêmio" required/>
+            <div class="inputs-numericos">
+              <input id="xp" name="xp" class="input" type="number" placeholder="XP" required />
+              <label for="xp">
+                <img src="../global/imagens/xp.svg" alt="XP" />
+              </label>
+            
+              <input id="moedas" name="moedas" class="input" type="number" placeholder="Moedas" required/>
+              <label for="moedas">
+                <img src="../global/imagens/moeda.svg" alt="moedas" />
+              </label>
             </div>
           </div>
-        </div>
-        </fieldset>
-      </div>
+        </form>
+
       </div>
     </main>
   </body>
