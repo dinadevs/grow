@@ -10,69 +10,62 @@ carregaComponente(
   '../global/componentes/barra-status/barra-status.js'
 );
 
-document.addEventListener('DOMContentLoaded', function() {
-  const jogadorLogado = localStorage.getItem('jogadorLogado'); // Obtém o jogador logado
-  const containerPremios = document.getElementById('container-premios'); // O contêiner onde os prêmios serão inseridos
+// Processo:
+// - Primeiro, consulta se já existe o objeto premios no localstorage, senão, deixa a página vazia
+document.addEventListener("DOMContentLoaded", () => {
+  let premios = localStorage.getItem("premios");
+  if(premios) {
+    // - Depois, consulta se já existe a propriedade do jogadorLogado no objeto premios, senão, deixa a página vazia
+    const jogadorLogado = localStorage.getItem("jogadorLogado");
+    premios = JSON.parse(premios);
+    if(premios[jogadorLogado]) {
+      // - Caso existam, preenche o HTML de forma dinâmica (com um loop) percorrendo o array de premios do jogadorLogado, exibindo cada dado em uma tag HTML por meio dos IDS
+      const divPremios = document.getElementById("lista-premios");
 
-  // Verifica se o jogador tem prêmios cadastrados
-  let premios = JSON.parse(localStorage.getItem('premios')) || {};
+      // - Para cada premio, é preciso fazer uma conta pra exibir a barra de progresso:
+      //   - Consultar o xp atual do usuário usando o array jogadores + chave jogadorLogado
+      const jogadores = JSON.parse(localStorage.getItem("jogadores")) || {};
 
-  if (premios[jogadorLogado]) {
-    // Exibe os prêmios cadastrados para o jogador
-    const premiosDoJogador = premios[jogadorLogado];
-    premiosDoJogador.forEach(premio => {
-      const divPremio = document.createElement('div');
-      divPremio.classList.add('premio-card');
+      const xp_atual = jogadores.find(
+        (jogador) => jogador.nickname === jogadorLogado
+      ).xp;
 
-      const linhaPremio = document.createElement('div');
-      linhaPremio.classList.add('linha-premio');
+      
+      premios[jogadorLogado].forEach(premio => {
+        //   - Subtrair o xp_inicio - xp atual para entender quantos xps o jogador já ganhou desde que o premio foi cadastrado
+        let diferenca_xp = (premio.xp_inicio - xp_atual) * -1;
+        //   - Pegar a porcentagem desse valor subtraído frente ao que ele precisa ganhar
+        //   - Editar no css o quanto a barra deve estar preenchida pela porcentagem 
+        let porcentagem = diferenca_xp * 100 / premio.xp;
+        // - Também é preciso lidar com a variável conquistado, para exibir ou não uma tag de conquistado no premio
 
-      const tituloPremio = document.createElement('h3');
-      tituloPremio.classList.add('titulo-premio');
-      tituloPremio.textContent = premio.titulo;
-
-      const infoPremio = document.createElement('div');
-      infoPremio.classList.add('info-premio');
-
-      const moedas = document.createElement('div');
-      moedas.classList.add('moedas');
-      const imgMoeda = document.createElement('img');
-      imgMoeda.src = "../global/imagens/moeda.svg";
-      const spanMoedas = document.createElement('span');
-      spanMoedas.textContent = premio.moedas;
-      moedas.appendChild(imgMoeda);
-      moedas.appendChild(spanMoedas);
-
-      const xp = document.createElement('div');
-      xp.classList.add('xp');
-      const imgXp = document.createElement('img');
-      imgXp.src = "../global/imagens/xp.svg";
-      const spanXp = document.createElement('span');
-      spanXp.textContent = premio.xp;
-      xp.appendChild(imgXp);
-      xp.appendChild(spanXp);
-
-      infoPremio.appendChild(moedas);
-      infoPremio.appendChild(xp);
-
-      linhaPremio.appendChild(tituloPremio);
-      linhaPremio.appendChild(infoPremio);
-
-      const containerProgresso = document.createElement('div');
-      containerProgresso.classList.add('container-progresso');
-      const barraProgresso = document.createElement('div');
-      barraProgresso.classList.add('barra-progresso');
-      barraProgresso.style.width = `${(premio.xpAtual / premio.xp) * 100}%`; // Progresso da barra
-      containerProgresso.appendChild(barraProgresso);
-
-      divPremio.appendChild(linhaPremio);
-      divPremio.appendChild(containerProgresso);
-
-      containerPremios.appendChild(divPremio);
-    });
-  } else {
-    const mensagem = document.createElement('p');
-    mensagem.textContent = 'Nenhum prêmio cadastrado.';
-    containerPremios.appendChild(mensagem);
+        divPremios.innerHTML += `
+          <div class="premio">
+            <div class="linha-premio">
+              <h3 class="titulo-premio">${premio.titulo}</h3>
+              <div class="info-premio">
+                ${premio.conquistado ?
+                  `<span class="tag transparente">
+                    <img src="../global/imagens/coroa.svg" alt="coroa">
+                    Conquistado!
+                  </span>` : ""
+                }
+                <div class="xp">
+                  <img src="../global/imagens/xp.svg" alt="XP" />
+                  <span>${premio.xp}</span>
+                </div>
+                <div class="moedas">
+                  <img src="../global/imagens/moeda.svg" alt="Moedas" />
+                  <span>${premio.moedas}</span>
+                </div>
+              </div>
+            </div>
+            <div class="container-progresso">
+              <div class="barra-progresso" style="width:${porcentagem}%;"></div>
+            </div>
+          </div>
+        `
+      });
+    }
   }
-});
+})
