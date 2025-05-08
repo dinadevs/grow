@@ -27,7 +27,7 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
 
  O quadro kanban do grupo no GitHub está disponível no link https://github.com/orgs/ICEI-PUC-Minas-PMV-ADS/projects/2029 e é apresentado, no estado atual, na figura abaixo:
 
- <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/9d8bb3583aac3d90320db117bb501823e757db79/documentos/img/board_kanban.png">
+ ![alt text](./img/board_kanban.png)
     <figcaption>Figura 1 - Tela do quadro kanban no GitHub utilizado pelo grupo</figcaption>
 
 ### Etiquetas
@@ -41,8 +41,10 @@ Para organização e distribuição das tarefas do projeto, a equipe está utili
   <li>management (Gerenciamento do projeto)</li>
   <li>test (Testes)</li>
 </ul>
+
+ ![alt text](./img/etiquetas.png)
+
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/f7fe9744b0e61c22f15cc30235752ade9472a270/documentos/img/etiquetas.png">
   <figcaption>Figura 2 - Tela do esquema de cores e categorias das etiquetas</figcaption>
 </figure> 
   
@@ -71,7 +73,7 @@ Os artefatos do projeto são desenvolvidos a partir das plataformas GitHub, Figm
 
 ### Estratégia de Organização de Codificação 
 
-Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto da aplicação foram inseridos na pasta [codigo-fonte](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/tree/main/codigo-fonte).
+Todos os artefatos relacionados a implementação e visualização dos conteúdos do projeto da aplicação foram inseridos na pasta [codigo-fonte](../codigo-fonte).
 
 #### Convenção de commits
 A equipe do projeto está usando uma convenção que padroniza os titulos nos commits, visando maior organização e fácil entendimento das modificações.

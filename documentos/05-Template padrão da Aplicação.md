@@ -11,8 +11,8 @@ A identidade visual do protótipo possui as seguintes características:
 <li><b>Font-size:</b> 40px para títulos / 16px para conteúdos e botões</li>
 </ul>
 
-O código utilizado para a construção dos elementos citados, pode ser consultado [aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/tree/main/codigo-fonte). As imagens e ícones utilizados no projeto estão disponíveis [aqui](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/tree/main/codigo-fonte/global/imagens).
-A seguir, há dois exemplos visuais das telas do protótipo, que podem ser consultadas em sua totalidade na página [Projeto de Interface](https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/main/documentos/04-Projeto%20de%20Interface.md).
+O código utilizado para a construção dos elementos citados, pode ser consultado [aqui](../codigo-fonte/). As imagens e ícones utilizados no projeto estão disponíveis [aqui](../codigo-fonte/global/imagens/).
+A seguir, há dois exemplos visuais das telas do protótipo, que podem ser consultadas em sua totalidade na página [Projeto de Interface](../documentos/04-Projeto%20de%20Interface.md).
 
 ---
 
@@ -21,7 +21,7 @@ A tela inicial do usuário "filho" apresenta o perfil com indicadores de progres
 É por meio dela que o usuário acessa e marca suas tarefas como concluídas.
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/main/documentos/img/Home-1.png?raw=true">
+  <img src="./img/home-filho.png">
   <figcaption><b>Figura 1</b> – Tela inicial da conta do filho</figcaption>
 </figure>
 
@@ -32,7 +32,7 @@ Na tela inicial do usuário "pai", há uma estrutura de navegação em blocos, p
 Essa tela centraliza o gerenciamento das ações de recompensa, aprovação e visualização do progresso.
 
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/main/documentos/img/Home.png?raw=true">
+  <img src="./img/home-pai.png">
   <figcaption><b>Figura 2</b> – Tela inicial da conta do pai</figcaption>
 </figure>
 
@@ -40,7 +40,7 @@ Essa tela centraliza o gerenciamento das ações de recompensa, aprovação e vi
 ### Logotipo
 Para a criação do logotipo do site foram utilizadas principalmente as cores amarelo e verde, que evocam sensações de energia e crescimento. O conteúdo carrega o nome da plataforma em uma tipografia _pixelada_, geralmente associada a jogos, uma planta em crescimento representando o desenvolvimento infantil, além dos brilhos ao redor trazendo a ideia de magia, que é o tema geral.
 <figure> 
-  <img src="https://github.com/ICEI-PUC-Minas-PMV-ADS/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/blob/main/codigo-fonte/global/imagens/logo.png?raw=true">
+  <img src="./img/logo.png">
   <figcaption><b>Figura 3</b> – Logotipo da aplicação Grow</figcaption>
 </figure>
 
@@ -88,6 +88,6 @@ As cores que mais recebem destaque são amarelo, roxo e verde, essa escolha foi 
 ### Exemplo ilustrado
 A seguir, imagem com o protótipo de alta fidelidade, contendo o design de modo geral, ícones e imagem de fundo.
 <figure> 
-  <img src="https://github.com/user-attachments/assets/74cdcbff-6570-4fd3-9108-e515cebfc93a?raw=true">
+  <img src="./img/prototipo-altafidelidade.png">
   <figcaption><b>Figura 4</b> – Protótipo de alta fidelidade</figcaption>
 </figure>

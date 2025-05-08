@@ -1,0 +1,58 @@
+#cabecalho-global {
+  justify-content: center;
+  button {
+    display: none;
+  }
+
+  & > img {
+    height: 7rem;
+    width: auto;
+  }
+
+  margin-bottom: 2rem;
+}
+
+.container {
+  width: 30%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+h1 {
+  font: var(--pixel-text-lg);
+  text-transform: uppercase;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  button {
+    margin-top: 1.5rem;
+  }
+}
+
+.input {
+  width: 100%;
+}
+
+.link-cadastro {
+  font: var(--pixel-text-md);
+  font-size: x-small;
+  text-align: center;
+}
+
+.link-cadastro a {
+  text-decoration: none;
+  color: var(--text-primary);
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

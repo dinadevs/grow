@@ -66,6 +66,7 @@ button {
 }
 
 .container {
+  
   height: 100%;
   width: 100%;
   background-color: var(--surface-primary);
@@ -187,7 +188,7 @@ button {
   }
 
   h1 {
-    font: var(--normal-text-lg);
+    font: var(--pixel-text-lg);
   }
 
   :nth-child(3) {
