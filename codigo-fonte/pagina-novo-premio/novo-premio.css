@@ -17,6 +17,13 @@
 
   & input {
     width: 6.4rem;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+     -moz-appearance: textfield; /*Firefox */
   }
 
   & label {
