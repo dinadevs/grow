@@ -1,4 +1,6 @@
-# <p align="center"> GROW </p>
+<p align="center">
+  <img src="codigo-fonte/global/imagens/logo.png" alt="GROW Logo" width="200">
+</p>
 
 <p align="center"><code>Análise e Desenvolvimento de Sistemas - PUC Minas</code></p>
 
