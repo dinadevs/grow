@@ -1,0 +1,71 @@
+.container-nova-atividade { 
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-top: 6rem;
+  gap: 2rem;
+     
+}
+
+.nova-atividade{
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+.grupo-input input {  /* dentro do campo input*/
+  width: 6.4rem;
+  height: 4.0rem;
+  background: none;
+  border: 2px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font: var(--pixel-text-md); /* font do texto que será inserido*/
+
+     
+}
+
+
+#titulo-atividade {
+  width: 35.4rem;
+}
+ 
+ .grupo-input {  /* GERAL*/
+  display:flex;
+  flex-direction: column;
+  width: 30.4rem;
+  height: 4.0rem;
+  background: none;
+  font: var(--pixel-text-md);*/
+  
+  
+  }
+
+  .grupo-input #recorrencia { /* apenas recorrencia*/
+  width: 7.5rem;
+  height: 4.0rem;
+  background: none;
+  border: 2px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font: var(--pixel-text-md);
+  font-size: x-small;
+  }
+
+
+.grupo-input label { /* tamanho da font da label*/
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  }
+
+
+
+
+
+
+
+

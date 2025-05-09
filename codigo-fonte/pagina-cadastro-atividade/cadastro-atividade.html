@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href="../global/estilos/index.css" />
-    <link rel="stylesheet" href="cadastro-atividades.css">
+    <link rel="stylesheet" href="../pagina-cadastro-atividade/cadastro-atividade.css">
     <link
         href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap"
         rel="stylesheet" />
@@ -27,29 +27,41 @@
                 <button class="botao" id="botao" type="submit">Cadastrar</button>
             </div>
 
-            <input type="text" id="titulo-atividade" required>
-            <label for="titulo-atividade">Título da atividade:</label>
+            <div class="container-nova-atividade">
+             <form>
+             <fieldset class="nova-atividade">   
+             <div class="grupo-input">
+             <label for="titulo-atividade">Título da atividade:</label>
+             <input type="text" id="titulo-atividade" required>
+             </div>
 
-            <input type="text" id="xp" required>
-            <label for="xp">XP:</label>
+             <div class="grupo-input">
+             <label for="xp">XP:</label>
+             <input type="text" id="xp" required>
+             </div>
 
+             <div class="grupo-input">
+             <label for="moedas">Moedas:</label> 
+             <input type="text" id="moedas" required>
+             </div>
 
-            <input type="text" id="moedas" required>
-            <label for="moedas">Moedas:</label>
-
-            <label for="recurrence">Recorrência:</label>
-            <select id="recorrencia" name="recorrencia">
-                <option value="unica">Única</option>
-                <option value="diaria">Diária</option>
-                <option value="semanal">Semanal</option>
-                <option value="mensal">Mensal</option>
-
-            </select>
+             <div class="grupo-input">
+             <label for="recorrencia">Recorrência:</label>
+               <select id="recorrencia" name="recorrencia" required>
+                 <option value="unica">Única</option>
+                 <option value="diaria">Diária</option>
+                 <option value="semanal">Semanal</option>
+                 <option value="mensal">Mensal</option>
+                </select>
+              </div>
+              </fieldset>
+            </form>
+            </div>
         </div>
 
 
 </body>
 <script src="../global/componentes/componentes.js"></script>
-<script src="cadastro-atividades.js"></script>
+<script src="../pagina-cadastro-atividade/cadastro-atividade.js"></script>
 
 </html>
