@@ -73,7 +73,7 @@ select {
 
 
 
-  .grupo-input #recorrencia { /* apenas recorrencia*/
+#recorrencia{ /* apenas recorrencia*/
   width: 11.5rem;
   height: 4.0rem;
   background: none;
@@ -83,7 +83,13 @@ select {
   color: var(--text-primary);
   font: var(--pixel-text-md);
   font-size: x-small;
+}
+
+
+#option {
+    background: none;
   }
+  
 
 
 
