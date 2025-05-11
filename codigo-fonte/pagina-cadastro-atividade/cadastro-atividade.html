@@ -23,18 +23,19 @@
       <div class="container">
         <div class="titulo-e-botoes">
           <button>
-            <img src="../global/imagens/voltar.svg" alt="voltar">
+            <img src="../global/imagens/voltar.svg" alt="voltar" />
           </button>
           <h1>Nova atividade</h1>
-          <button class="botao" id="botao" type="submit">Cadastrar</button>
-          <!--<button  onclick="mostrarToast()"class="botao" id="botao" type="submit">Cadastrar</button>-->
-
-          <!--<div id="toast" class="toast oculta">
-              <img src="../global/imagens/salvo.svg" alt="Salvo">
-             <p>Tá salvo!</p>-->
-          <!-- COLOCAR NO js OU  HTML-->
+          <button
+            onclick="mostraToast()"
+            class="botao"      
+            >Cadastrar</button>
         </div>
-
+          <div id="toast" class="toast oculta">
+            <img src="../global/imagens/salvo.svg" alt="Salvo" />
+            <p>Tá salvo!</p>
+          </div>
+        
         <div class="container-nova-atividade">
           <form>
             <fieldset class="nova-atividade">
@@ -44,29 +45,29 @@
                   type="text"
                   id="titulo-atividade"
                   name="titulo-atividade"
-                  required
+                  
                 />
               </div>
 
               <div class="atividade-input">
                 <div class="grupo-input">
                   <label for="xp">XP</label>
-                  <input type="text" id="xp" name="xp" required />
+                  <input type="text" id="xp" name="xp" />
                 </div>
 
                 <div class="grupo-input">
                   <label for="moedas">Moedas</label>
-                  <input type="text" id="moedas" required />
+                  <input type="text" id="moedas"  />
                 </div>
-              
-               <div class="grupo-input">
-                <label for="recorrencia">Recorrência</label>
-                <select id="recorrencia" name="recorrencia" required>
-                  <option value="diaria">Diária</option>
-                  <option value="semanal">Semanal</option>
-                  <option value="mensal">Mensal</option>
-                </select>
-              </div>
+
+                <div class="grupo-input">
+                  <label for="recorrencia">Recorrência</label>
+                  <select id="recorrencia" name="recorrencia" >
+                    <option value="diaria">Diária</option>
+                    <option value="semanal">Semanal</option>
+                    <option value="mensal">Mensal</option>
+                  </select>
+                </div>
               </div>
             </fieldset>
           </form>
