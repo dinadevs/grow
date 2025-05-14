@@ -217,3 +217,22 @@ button {
   opacity: 1;
   transform: translateY(0);
 }
+
+::-webkit-scrollbar {
+  background-color: var(--surface-primary);
+  border-radius: 1rem;
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: var(--surface-secondary);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--surface-tertiary);
+}
+
+::-webkit-scrollbar-track {
+  background-color: var(--surface-primary);
+}
