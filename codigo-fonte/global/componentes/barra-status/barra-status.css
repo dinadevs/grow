@@ -60,9 +60,9 @@
 
 .barra-progresso {
   height: 100%;
-  width: 30%;
+  width: 0%;
   background-color: var(--green);
-  transition: width 0.3s ease;
+  transition: width 2s ease;
 }
 
 #info-nivel {

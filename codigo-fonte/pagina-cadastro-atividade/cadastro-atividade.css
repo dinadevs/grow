@@ -1,0 +1,89 @@
+
+.container-nova-atividade {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 8.8rem;
+}
+
+fieldset{
+  border: none;
+}
+
+.novo-atividade {
+  border: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+select {
+  outline: none;
+  border: none; 
+}
+
+/* dentro do campo input*/
+.grupo-input input { 
+  width: 31.4rem;
+  height: 4.0rem;
+  background: none;
+  border: 2px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font-size: 1rem;
+  font: var(--pixel-text-md);/* font do texto que será inserido*/
+
+  & .grupo-input input:hover {
+    border: 2px solid var(--green);
+    box-shadow: 3px 1px 1px var(--green);
+  }
+} 
+
+
+.grupo-input { /*geral*/
+  display: flex;
+  flex-direction: column;
+  background: none;
+  border: none;
+  padding: 0.75rem 1rem;
+    
+}
+
+.grupo-input label {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  font: var(--pixel-text-md);
+  
+
+
+}
+
+.atividade-input {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  
+}
+
+.atividade-input input {
+  width: 6.4rem;
+  height: 4.0rem;
+}
+
+
+
+#recorrencia{ /* apenas recorrencia*/
+  width: 11.5rem;
+  height: 4.0rem;
+  background: none;
+  border: 2px solid var(--text-primary);
+  border-radius: 6px;
+  padding: 0.75rem 1rem;
+  color: var(--text-primary);
+  font: var(--pixel-text-md);
+  font-size: x-small;
+}
+
+
+
