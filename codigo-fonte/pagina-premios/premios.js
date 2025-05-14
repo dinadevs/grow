@@ -1,54 +1,56 @@
 carregaComponente(
-  '../global/componentes/cabecalho/cabecalho.html', 
-  'cabecalho-global',
-  '../global/componentes/cabecalho/cabecalho.js'
+  "../global/componentes/cabecalho/cabecalho.html",
+  "cabecalho-global",
+  "../global/componentes/cabecalho/cabecalho.js"
 );
 
 carregaComponente(
-  '../global/componentes/barra-status/barra-status.html', 
-  'barra-status',
-  '../global/componentes/barra-status/barra-status.js'
+  "../global/componentes/barra-status/barra-status.html",
+  "barra-status",
+  "../global/componentes/barra-status/barra-status.js"
 );
 
-// Processo:
-// - Primeiro, consulta se já existe o objeto premios no localstorage, senão, deixa a página vazia
+const divPremios = document.getElementById("lista-premios");
+divPremios.classList.remove("oculta");
+const divSemPremios = document.getElementById("sem-premios");
+divSemPremios.classList.add("oculta");
+
+function mostrarSemPremios() {
+  const divPremios = document.getElementById("lista-premios");
+  divPremios.classList.add("oculta");
+  const divSemPremios = document.getElementById("sem-premios");
+  divSemPremios.classList.remove("oculta");
+}
+
 document.addEventListener("DOMContentLoaded", () => {
   let premios = localStorage.getItem("premios");
-  if(premios) {
-    // - Depois, consulta se já existe a propriedade do jogadorLogado no objeto premios, senão, deixa a página vazia
+  if (premios) {
     const jogadorLogado = localStorage.getItem("jogadorLogado");
     premios = JSON.parse(premios);
-    if(premios[jogadorLogado]) {
-      // - Caso existam, preenche o HTML de forma dinâmica (com um loop) percorrendo o array de premios do jogadorLogado, exibindo cada dado em uma tag HTML por meio dos IDS
+    if (premios[jogadorLogado]) {
+      
       const divPremios = document.getElementById("lista-premios");
-
-      // - Para cada premio, é preciso fazer uma conta pra exibir a barra de progresso:
-      //   - Consultar o xp atual do usuário usando o array jogadores + chave jogadorLogado
       const jogadores = JSON.parse(localStorage.getItem("jogadores")) || {};
-
       const xp_atual = jogadores.find(
         (jogador) => jogador.nickname === jogadorLogado
       ).xp;
 
-      
-      premios[jogadorLogado].forEach(premio => {
-        //   - Subtrair o xp_inicio - xp atual para entender quantos xps o jogador já ganhou desde que o premio foi cadastrado
+      premios[jogadorLogado].forEach((premio, index) => {
         let diferenca_xp = (premio.xp_inicio - xp_atual) * -1;
-        //   - Pegar a porcentagem desse valor subtraído frente ao que ele precisa ganhar
-        //   - Editar no css o quanto a barra deve estar preenchida pela porcentagem 
-        let porcentagem = diferenca_xp * 100 / premio.xp;
-        // - Também é preciso lidar com a variável conquistado, para exibir ou não uma tag de conquistado no premio
+        let porcentagem = (diferenca_xp * 100) / premio.xp;
 
         divPremios.innerHTML += `
-          <div class="premio">
+          <div class="premio" id="premio-${index}">
             <div class="linha-premio">
               <h3 class="titulo-premio">${premio.titulo}</h3>
               <div class="info-premio">
-                ${premio.conquistado ?
-                  `<span class="tag transparente">
-                    <img src="../global/imagens/coroa.svg" alt="coroa">
-                    Conquistado!
-                  </span>` : ""
+                ${
+                  premio.conquistado
+                    ? `<span class="tag transparente">
+                        <img src="../global/imagens/coroa.svg" alt="coroa">
+                        Conquistado!
+                      </span>`
+                    : ""
                 }
                 <div class="xp">
                   <img src="../global/imagens/xp.svg" alt="XP" />
@@ -61,11 +63,24 @@ document.addEventListener("DOMContentLoaded", () => {
               </div>
             </div>
             <div class="container-progresso">
-              <div class="barra-progresso" style="width:${porcentagem}%;"></div>
+              <div class="barra-progresso"></div>
             </div>
           </div>
-        `
+        `;
+
+        setTimeout(() => {
+          const barraProgresso = document.querySelector(
+            `#premio-${index} .barra-progresso`
+          );
+          if (barraProgresso) {
+            barraProgresso.style.width = `${porcentagem}%`;
+          }
+        }, 100);
       });
+    } else {
+      mostrarSemPremios();
     }
+  } else {
+    mostrarSemPremios();
   }
-})
+});
