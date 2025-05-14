@@ -23,7 +23,7 @@
       -webkit-appearance: none;
       margin: 0;
     }
-     -moz-appearance: textfield; /*Firefox */
+    -moz-appearance: textfield; /*Firefox */
   }
 
   & label {

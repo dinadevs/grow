@@ -1,13 +1,13 @@
 carregaComponente(
-  '../global/componentes/cabecalho/cabecalho.html', 
-  'cabecalho-global',
-  '../global/componentes/cabecalho/cabecalho.js'
+  "../global/componentes/cabecalho/cabecalho.html",
+  "cabecalho-global",
+  "../global/componentes/cabecalho/cabecalho.js"
 );
 
 carregaComponente(
-  '../global/componentes/barra-status/barra-status.html', 
-  'barra-status',
-  '../global/componentes/barra-status/barra-status.js'
+  "../global/componentes/barra-status/barra-status.html",
+  "barra-status",
+  "../global/componentes/barra-status/barra-status.js"
 );
 
 function salvarPremio(e) {
