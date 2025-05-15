@@ -93,7 +93,7 @@ RF-06: Exibir atividades finalizadas para aprovação do pai ou dos responsávei
 
 #### Artefatos da funcionalidade
 
-- mock-aprovacoes.html
+- mock-aprovacoes.js
 - pagina-aprovacoes.css
 - pagina-aprovacoes.js
 - pagina-aprovacoes.html
