@@ -25,21 +25,25 @@
           <button>
             <img src="../global/imagens/voltar.svg" alt="voltar" />
           </button>
+
           <h1>Nova atividade</h1>
+
           <button
            type="submit" form="nova-atividade" class="botao">Cadastrar
-          </button>
-        </div>
+           </button>
+       </div>
         
           <div id="toast" class="toast oculta">
             <img src="../global/imagens/salvo.svg" alt="Salvo" />
             <p>Salvo!</p>
           </div>
 
-        <form id="nova-atividade"    class="formulario-atividades" onsubmit="salvarAtividade(event)">
+         <form id="nova-atividade"    class="formulario-atividades" onsubmit="salvarAtividade(event)">
 
-        <div>
-              <input id="titulo" name="titulo" class="input"   type="text" placeholder="Título do prêmio"  required/>
+          <div>
+              <input id="titulo" name="titulo" class="input"   type="text" placeholder="Título da atividade"  required/>
+
+              
 
               <div class="inputs-numericos">
                <input id="xp" name="xp" class="input" type="number" placeholder="XP" required />
@@ -54,16 +58,12 @@
                 <img src="../global/imagens/moeda.svg" alt="moedas" />
                </label>  
 
+               <input id="recorrencia" name="recorrencia" class="input" type="text" placeholder="Recorrência" required/>
+
                
               </div>
 
-              <div class="input">
-                <select id="recorrencia" name="recorrencia" >
-                    <option value="diaria">Diária</option>
-                    <option value="semanal">Semanal</option>
-                    <option value="mensal">Mensal</option>
-                  </select>
-                </div>
+              
 
 
           </div>
