@@ -27,52 +27,51 @@
           </button>
           <h1>Nova atividade</h1>
           <button
-            onclick="mostraToast()"
-            class="botao"      
-            >Cadastrar</button>
+           type="submit" form="nova-atividade" class="botao">Cadastrar
+          </button>
         </div>
+        
           <div id="toast" class="toast oculta">
             <img src="../global/imagens/salvo.svg" alt="Salvo" />
-            <p>Tá salvo!</p>
+            <p>Salvo!</p>
           </div>
-        
-        <div class="container-nova-atividade">
-          <form>
-            <fieldset class="nova-atividade">
-              <div class="grupo-input">
-                <label for="titulo-atividade">Título da atividade</label>
-                <input
-                  type="text"
-                  id="titulo-atividade"
-                  name="titulo-atividade"
-                  
-                />
+
+        <form id="nova-atividade"    class="formulario-atividades" onsubmit="salvarAtividade(event)">
+
+        <div>
+              <input id="titulo" name="titulo" class="input"   type="text" placeholder="Título do prêmio"  required/>
+
+              <div class="inputs-numericos">
+               <input id="xp" name="xp" class="input" type="number" placeholder="XP" required />
+
+               <label for="xp">
+                <img src="../global/imagens/xp.svg" alt="XP" />
+               </label>
+            
+               <input id="moedas" name="moedas" class="input" type="number" placeholder="Moedas" required/>
+
+               <label for="moedas">
+                <img src="../global/imagens/moeda.svg" alt="moedas" />
+               </label>  
+
+               
               </div>
 
-              <div class="atividade-input">
-                <div class="grupo-input">
-                  <label for="xp">XP</label>
-                  <input type="text" id="xp" name="xp" />
-                </div>
-
-                <div class="grupo-input">
-                  <label for="moedas">Moedas</label>
-                  <input type="text" id="moedas"  />
-                </div>
-
-                <div class="grupo-input">
-                  <label for="recorrencia">Recorrência</label>
-                  <select id="recorrencia" name="recorrencia" >
+              <div class="input">
+                <select id="recorrencia" name="recorrencia" >
                     <option value="diaria">Diária</option>
                     <option value="semanal">Semanal</option>
                     <option value="mensal">Mensal</option>
                   </select>
                 </div>
-              </div>
-            </fieldset>
-          </form>
-        </div>
+
+
+          </div>
+              
+          </div>
+        </form>
       </div>
+      
     </main>
   </body>
   <script src="../global/componentes/componentes.js"></script>
