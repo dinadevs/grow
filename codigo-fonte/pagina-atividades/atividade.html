@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow - Atividades</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../global/estilos/index.css" />
+    <link rel="stylesheet" href="./atividade.css" />
+  </head>
+  <body>
+    <header id="cabecalho-global"></header>
+    <main class="main">
+      <div id="barra-status"></div>
+      <div class="container">
+        <div class="titulo-e-botoes">
+          <button onclick="window.location.href = '../pagina-home/pagina-home.html';">
+            <img src="../global/imagens/voltar.svg" alt="voltar" />
+          </button>
+          <h1>Atividades</h1>
+          <button
+            onclick="window.location.href = '../pagina-cadastro-atividade/cadastro-atividade.html';"
+            class="botao"
+          >Nova atividade</button>
+        </div>
+        <div class="nao-atividade" id="sem-atividade">
+          <img src="../global/imagens/estrela-triste.svg" alt="Não há atividades." />
+          <h2>Não há atividades</h2>
+        </div>
+        <div id="lista-atividades"></div>
+      </div>
+    </main>
+    <script src="../global/componentes/componentes.js"></script>
+    <script src="./atividade.js"></script>
+  </body>
+</html>
