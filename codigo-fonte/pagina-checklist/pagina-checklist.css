@@ -57,6 +57,11 @@
     &:checked {
       background-color: var(--green);
       position: relative;
+
+      & + label {
+        color: var(--stroke);
+        text-decoration: line-through;
+      }
     }
     
     &:checked::before {
