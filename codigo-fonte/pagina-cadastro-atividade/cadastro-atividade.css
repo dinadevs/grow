@@ -1,88 +1,64 @@
-
-.container-nova-atividade {
+.formulario-atividades {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
   align-items: center;
-  display: flex;
-  flex-direction: column;
-  margin-top: 8.8rem;
-}
 
-fieldset{
-  border: none;
-}
-
-.novo-atividade {
-  border: none;
-  display: flex;
-  flex-direction: column;
-  gap: 2rem;
-}
-
-select {
-  outline: none;
-  border: none; 
-}
-
-/* dentro do campo input*/
-.grupo-input input { 
-  width: 31.4rem;
-  height: 4.0rem;
-  background: none;
-  border: 2px solid var(--text-primary);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  color: var(--text-primary);
-  font-size: 1rem;
-  font: var(--pixel-text-md);/* font do texto que será inserido*/
-
-  & .grupo-input input:hover {
-    border: 2px solid var(--green);
-    box-shadow: 3px 1px 1px var(--green);
+  & input {
+    width: 35.5rem;
   }
-} 
+}
 
-
-.grupo-input { /*geral*/
+.inputs-numericos {
   display: flex;
-  flex-direction: column;
-  background: none;
-  border: none;
-  padding: 0.75rem 1rem;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+
+  & input {
+    width: 6.4rem;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+    -moz-appearance: textfield; /*Firefox */
+  }
+
+  & label {
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    width: 1.9rem;
+    height: auto;
+  }
+
+  & label + input {
+    margin-left: 2rem;
+  }
+}
+
+#recorrencia {
+  color:rgb(118, 115, 115);
+
+}
+
+.input-recorrencia{
+  display: flex;
+  gap: 1rem;
+  margin-left: 2rem;
+  align-items: center;
+  
+
+  & img {
+    width: 2.6rem;
+    height: auto;
+  }
+
     
-}
-
-.grupo-input label {
-  font-size: 1rem;
-  margin-bottom: 0.5rem;
-  font: var(--pixel-text-md);
-  
-
-
-}
-
-.atividade-input {
-  display: flex;
-  justify-content: center;
-  gap: 1.5rem;
-  
-}
-
-.atividade-input input {
-  width: 6.4rem;
-  height: 4.0rem;
-}
-
-
-
-#recorrencia{ /* apenas recorrencia*/
-  width: 11.5rem;
-  height: 4.0rem;
-  background: none;
-  border: 2px solid var(--text-primary);
-  border-radius: 6px;
-  padding: 0.75rem 1rem;
-  color: var(--text-primary);
-  font: var(--pixel-text-md);
-  font-size: x-small;
 }
 
 
