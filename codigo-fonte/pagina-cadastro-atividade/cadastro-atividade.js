@@ -40,8 +40,7 @@ function salvarAtividade(e) {
   moedas,
   recorrencia,
   concluido:false,
-  dataCadastro,
-
+  
  }); 
 
 
