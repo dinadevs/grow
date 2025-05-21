@@ -6,7 +6,7 @@ carregaComponente('../global/componentes/barra-status/barra-status.html', 'barra
 function salvarAtividade(e) {
   e.preventDefault(); 
 
-  const atividades = JSON.parse(localStorage.getItem("Atividades")) || {}; 
+  const atividades = JSON.parse(localStorage.getItem("atividades")) || {}; 
 
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
@@ -16,4 +16,40 @@ function salvarAtividade(e) {
     atividades[jogadorLogado] = []; 
   } 
 
-  
+  const form = document.getElementById("nova-atividade");
+  const dadosForm = new FormData(form);
+
+  const titulo = dadosForm.get("titulo");
+  const xp = parseInt(dadosForm.get("xp"));
+  const moedas = parseInt(dadosForm.get("moedas"));
+  const recorrencia = dadosForm.get("recorrencia");
+
+  let id=0;
+
+  if(atividades[jogadorLogado].length > 0) {
+    const ultimaPosicao = atividades[jogadorLogado].length - 1; 
+    id = atividades[jogadorLogado][ultimaPosicao]["id"] + 1;
+  }
+ 
+  const jogadores = JSON.parse(localStorage.getItem("jogadores")) ||{};
+
+ atividades[jogadorLogado].push({
+  id, 
+  titulo,
+  xp,
+  moedas,
+  recorrencia,
+  concluido:false,
+  dataCadastro,
+
+ }); 
+
+
+ localStorage.setItem("atividades",JSON.stringify(atividades));
+ 
+ mostraToast();
+
+ setTimeout(() => {
+  window.location.href = "../pagina-checklist/pagina-checklist.html"
+ },4000);
+}
