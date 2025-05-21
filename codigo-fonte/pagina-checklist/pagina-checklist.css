@@ -1,0 +1,81 @@
+.cabecalho-checklist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  & h1 {
+    font: var(--pixel-text-lg);
+  }
+}
+
+.cabecalho-checklist > div {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+
+  & span {
+    font: var(--normal-text-md);
+    color: var(--text-secondary);
+  }
+
+  & img {
+    width: 2rem;
+    height: auto;
+  }
+}
+
+#checklist {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 2rem 0;
+
+  height: 18rem;
+  overflow-y: auto;
+}
+
+.checklist-item {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  font: var(--normal-text-lg);
+  font-weight: 400;
+
+  & input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+
+    background-color: transparent;
+    border: 2px solid var(--green);
+    transition: all 0.2s ease-in-out;
+
+    &:checked {
+      background-color: var(--green);
+      position: relative;
+
+      & + label {
+        color: var(--stroke);
+        text-decoration: line-through;
+      }
+    }
+    
+    &:checked::before {
+      content: "✓";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 1.5rem;
+      color: var(--text-primary);
+    }
+    
+    &:hover {
+      border-color: var(--stroke);
+    }
+  }
+}

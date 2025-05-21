@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,19 +8,33 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="../global/estilos/index.css">
-  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./pagina-checklist.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap"
+    rel="stylesheet">
 </head>
+
 <body>
   <header id="cabecalho-global"></header>
   <main class="main">
     <div id="barra-status"></div>
     <div class="container">
       <nav id="nav-global"></nav>
-      
-    </div>
+      <div class="cabecalho-checklist">
+        <h1>Atividades e Metas</h1>
+        <div>
+          <img src="../global/imagens/calendario.svg" alt="calendario">
+          <span>19 - abr</span>
+        </div>
+      </div>
+
+      <div id="checklist">
+      </div>
+    </div>  
   </main>
 </body>
 
 <script src="../global/componentes/componentes.js"></script>
 <script src="./pagina-checklist.js"></script>
+
 </html>
