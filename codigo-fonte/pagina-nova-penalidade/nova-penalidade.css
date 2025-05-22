@@ -1,0 +1,47 @@
+.formulario-penalidades {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  & input {
+    width: 30rem;
+  }
+}
+
+.inputs-numericos {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  align-items: center;
+
+  & input {
+    width: 6.4rem;
+
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+      margin: 0;
+    }
+}
+
+input[type="number"] {
+  appearance: textfield;
+  -webkit-appearance: none;  /* Chrome, Safari, Edge */
+  -moz-appearance: textfield; /* Firefox */
+}  
+
+  & label {
+    display: flex;
+    align-items: center;
+  }
+
+  & img {
+    width: 1.9rem;
+    height: auto;
+  }
+
+  & label + input {
+    margin-left: 2rem;
+  }
+}

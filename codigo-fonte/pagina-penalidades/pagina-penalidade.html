@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grow - Penalidades</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../global/estilos/index.css" />
+    <link rel="stylesheet" href="./pagina-penalidade.css" />
+     </head>
+  <body>
+    <header id="cabecalho-global"></header>
+    <main class="main">
+      <div id="barra-status"></div>
+      <div class="container">
+        <div class="titulo-e-botoes">
+          <button onclick="window.location.href = '../pagina-home/pagina-home.html';">
+            <img src="../global/imagens/voltar.svg" alt="voltar" />
+          </button>
+          <h1>Penalidades</h1>
+          <button
+            onclick="window.location.href = '../pagina-nova-penalidade/nova-penalidade.html';"
+
+            class="botao"> Nova penalidade
+          </button>
+           </div>
+        <div class="nao-penalidades" id="sem-penalidades">
+          <img src="../global/imagens/estrela-triste.svg" alt="Não há Penalidades" />
+          <h2>Não há Penalidades</h2>
+        </div>
+         <div id="lista-penalidades"></div>
+      </div>
+    </main>
+    <script src="../global/componentes/componentes.js"></script>
+    <script src="./pagina-penalidades.js"></script>
+
+   </body>
+</html>
