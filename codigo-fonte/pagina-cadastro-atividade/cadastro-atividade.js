@@ -30,7 +30,9 @@ function salvarAtividade(e) {
     const ultimaPosicao = atividades[jogadorLogado].length - 1; 
     id = atividades[jogadorLogado][ultimaPosicao]["id"] + 1;
   }
- 
+
+  const unica = recorrencia === "unica"; // ou use um campo no formulário
+  const dia = recorrencia === "semanal" ? new Date().getDay() : null;
   const jogadores = JSON.parse(localStorage.getItem("jogadores")) ||{};
 
  atividades[jogadorLogado].push({
@@ -40,6 +42,8 @@ function salvarAtividade(e) {
   moedas,
   recorrencia,
   concluido:false,
+  unica,
+  dia
   
  }); 
 
