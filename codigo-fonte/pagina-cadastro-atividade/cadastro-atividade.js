@@ -31,7 +31,7 @@ function salvarAtividade(e) {
     id = atividades[jogadorLogado][ultimaPosicao]["id"] + 1;
   }
 
-  const unica = recorrencia === "unica"; // ou use um campo no formulário
+  const unica = recorrencia === "unica"; 
   const dia = recorrencia === "semanal" ? new Date().getDay() : null;
   const jogadores = JSON.parse(localStorage.getItem("jogadores")) ||{};
 
