@@ -17,6 +17,9 @@ carregaComponente(
 );
 
 document.addEventListener("DOMContentLoaded", () => {
+  preencheData();
+  setaAvatar();
+
   let checklist = localStorage.getItem("checklist");
   if (checklist) {
     checklist = JSON.parse(checklist);
@@ -102,4 +105,66 @@ function criaChecklist() {
     localStorage.setItem("checklist", JSON.stringify(checklist));
     carregaChecklist(checklist.items);
   }
+}
+
+function preencheData() {
+  const data = new Date();
+  const dataFormatada = data.toLocaleDateString("pt-BR", {
+    weekday: "long",
+    day: "numeric",
+    month: "long",
+  });
+  document.getElementById("data").innerText = dataFormatada;
+}
+
+function setaAvatar() {
+  const jogadorLogado = localStorage.getItem("jogadorLogado");
+  const avatar = JSON.parse(localStorage.getItem("jogadores")).find(jogador => jogador.nickname == jogadorLogado).avatar;
+  const avatarFeliz = document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
+}
+
+// Administração de eventos para os checkboxes
+document.getElementById("checklist").addEventListener("change", function(event) {
+  const target = event.target;
+  if (target.type === "checkbox") {
+    const index = parseInt(target.id.split("-")[1]);
+    let checklist = JSON.parse(localStorage.getItem("checklist"));
+    const tipo = checklist.items[index].prazo ? "metas" : "atividades";
+    // quando checa
+    if (target.checked) {
+      adiministraAprovacao(checklist.items[index].id, tipo, true); 
+      tocaAudio();
+      mostraToast();
+      checklist.items[index].feito = true;
+    } else { // quando "descheca"
+      if(adiministraAprovacao(checklist.items[index].id, tipo, false)) {
+        alerta("Ops, você não pode desmarcar porque a tarefa já foi aprovada!");
+        target.checked = true;
+      } else {
+        checklist.items[index].feito = false;
+      }
+    }
+    localStorage.setItem("checklist", JSON.stringify(checklist));
+  }
+});
+
+function adiministraAprovacao(id, tipoDeTarefa, valor) {
+  let tarefas = JSON.parse(localStorage.getItem(tipoDeTarefa));
+  const jogadorLogado = localStorage.getItem("jogadorLogado");
+
+  if (tarefas && tarefas[jogadorLogado]) {
+    const index = tarefas[jogadorLogado].findIndex(item => item.id == id);
+    if (index !== -1) {
+      if(tarefas[jogadorLogado][index].concluido == true) {
+        return true;
+      }
+      tarefas[jogadorLogado][index].pendente = valor;
+      localStorage.setItem(tipoDeTarefa, JSON.stringify(tarefas));
+    }
+  }
+}
+
+function tocaAudio() {
+  const audio = new Audio("../global/sons/feito.mp3");
+  audio.play();
 }
