@@ -5,7 +5,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Grow - Nova Meta </title>
+    <title>Grow - Nova Meta</title>
     <link
       href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap"
       rel="stylesheet"
@@ -19,39 +19,43 @@
       <div id="barra-status"></div>
       <div class="container">
         <div class="titulo-e-botoes">
-          <button onclick="window.location.href = '../cadastro-de-metas/cadastro-de-metas.html';">
+          <button onclick="window.location.href = '../pagina-metas/metas.html';">
             <img src="../global/imagens/voltar.svg" alt="voltar">
           </button>
           
-          <h1>Nova Meta </h1>
-          <button type="submit" form="cadastro-de-metas" class="botao">Cadastrar</button>
+          <h1>Nova meta</h1>
+          <button type="submit" form="cadastro-meta" class="botao">Cadastrar</button>
         </div>
         
         <div id="toast" class="toast oculta">
           <img src="../global/imagens/salvo.svg" alt="Salvo">
-          <p>Salvo!</p>
+          <p>Meta salva!</p>
         </div>
-        
-        <form id="nova-meta" class="formulario-nova-meta" onsubmit="salvarPremio(event)">
-          <div class="linha-superior">
-            <input id="titulo" name="titulo" class="input" type="text" placeholder="Título da meta" required/>
-            <input id="data-inicio" name="dataInicio" class="input" type="date" required />
-          </div>
-
-          <div class="linha-inferior">
-            <div class="grupo-com-icone"> </div>
-            <div class="inputs-numericos">
-              <input id="xp" name="xp" class="input" type="number" placeholder="XP" required />
-              <label for="xp">
+        <div> 
+          <form>
+            <div class="form-row">
+              <div class="form-column">
+             <form id="cadastro-meta" class="formulario-metas" onsubmit="salvarMeta(event)">
+            <input id="titulo-meta" name="titulo-meta" class="input" type="text" placeholder="Título da meta" required/>   
+          <div class="inputs-numericos">
+              <input id="XP" name="progresso" class="input" type="number" placeholder="XP" required />
+              <label for="XP">
                 <img src="../global/imagens/xp.svg" alt="XP" />
               </label>
-            </div> 
-              <input id="moedas" name="moedas" class="input" type="number" placeholder="Moedas" required/>
-              <label for="moedas">
-                <img src="../global/imagens/moeda.svg" alt="moedas" />
+              <input id="Moedas" name="Moedas" class="input" type="number" placeholder="Moedas" required/>
+              <label for="Moedas">
+                <img src="../global/imagens/moeda.svg" alt="Moedas" />
               </label>
-              
-          <input id="data-fim" name="dataFim" class="input" type="date" required />
+            </div>    
+          </div>
+            </div>
+          </form>
+        </div>
+        <div class="form-column">
+         <label for="dataInicio">Data-de-início</label>
+          <input type="date" name="dataInicio" id="dataInicio">  
+          <label for="dataFim">Data-de-fim</label>
+          <input type="date" name="dataFim" id="dataFim">
           </div>
         </form>
 
