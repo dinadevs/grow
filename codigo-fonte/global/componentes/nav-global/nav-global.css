@@ -1,2 +1,23 @@
+nav > ul {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 1rem 2rem;
+  background-color: var(--surface-secondary);
+  border-top-right-radius: 1.7rem;
+  border-top-left-radius: 1.7rem;
+  font: var(--normal-text-md);
+  font-weight: 600;
 
-  
+  a {
+    color: var(--text-primary);
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: .8rem;
+
+    &:hover {
+      filter: var(--orange-filter)
+    }
+  }
+}
