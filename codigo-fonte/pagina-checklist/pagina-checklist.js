@@ -121,7 +121,7 @@ function preencheData() {
 function setaAvatar() {
   const jogadorLogado = localStorage.getItem("jogadorLogado");
   const avatar = JSON.parse(localStorage.getItem("jogadores")).find(jogador => jogador.nickname == jogadorLogado).avatar;
-  const avatarFeliz = document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
+  document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
 }
 // Administração de eventos para os checkboxes
 document.getElementById("checklist").addEventListener("change", function(event) {
@@ -171,7 +171,6 @@ function tocaAudio() {
 
 function concluiChecklistAnterior(checklist) {
   const jogadorLogado = localStorage.getItem("jogadorLogado");
-  let jogadores = JSON.parse(localStorage.getItem("jogadores"));
 
   checklist.items.forEach(item => {
     if(item.feito) {
@@ -205,10 +204,11 @@ function concluiChecklistAnterior(checklist) {
 
 function contabilizaPontos(tarefa, jogadorLogado) {
   let jogadores = JSON.parse(localStorage.getItem("jogadores"));
-  jogadores[jogadorLogado].xp += tarefa.xp;
-  jogadores[jogadorLogado].moedas += tarefa.moedas;
-  jogadores[jogadorLogado].historico_moedas += tarefa.moedas;
-  jogadores[jogadorLogado].nivel = Math.floor(jogadores[jogadorLogado].xp / 100);
+  let jogador = jogadores.find(jogador => jogador.nickname === jogadorLogado);
+  jogador.xp += tarefa.xp;
+  jogador.moedas += tarefa.moedas;
+  jogador.historico_moedas += tarefa.moedas;
+  jogador.nivel = Math.floor(jogador.xp / 100);
 
   localStorage.setItem("jogadores", JSON.stringify(jogadores));
 }
