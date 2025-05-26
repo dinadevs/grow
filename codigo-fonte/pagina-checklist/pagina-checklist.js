@@ -19,7 +19,7 @@ carregaComponente(
 document.addEventListener("DOMContentLoaded", () => {
   preencheData();
   setaAvatar();
-
+  
   let checklist = localStorage.getItem("checklist");
   if (checklist) {
     checklist = JSON.parse(checklist);
@@ -29,6 +29,7 @@ document.addEventListener("DOMContentLoaded", () => {
     if (diaChecklist == diaHoje && items.length > 0) {
       carregaChecklist(items);
     } else {
+      concluiChecklistAnterior(checklist);
       criaChecklist();
     }
   } else {
@@ -122,7 +123,6 @@ function setaAvatar() {
   const avatar = JSON.parse(localStorage.getItem("jogadores")).find(jogador => jogador.nickname == jogadorLogado).avatar;
   const avatarFeliz = document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
 }
-
 // Administração de eventos para os checkboxes
 document.getElementById("checklist").addEventListener("change", function(event) {
   const target = event.target;
@@ -132,12 +132,12 @@ document.getElementById("checklist").addEventListener("change", function(event) 
     const tipo = checklist.items[index].prazo ? "metas" : "atividades";
     // quando checa
     if (target.checked) {
-      adiministraAprovacao(checklist.items[index].id, tipo, true); 
+      administraAprovacao(checklist.items[index].id, tipo, true); 
       tocaAudio();
       mostraToast();
       checklist.items[index].feito = true;
     } else { // quando "descheca"
-      if(adiministraAprovacao(checklist.items[index].id, tipo, false)) {
+      if(administraAprovacao(checklist.items[index].id, tipo, false)) {
         alerta("Ops, você não pode desmarcar porque a tarefa já foi aprovada!");
         target.checked = true;
       } else {
@@ -148,7 +148,7 @@ document.getElementById("checklist").addEventListener("change", function(event) 
   }
 });
 
-function adiministraAprovacao(id, tipoDeTarefa, valor) {
+function administraAprovacao(id, tipoDeTarefa, valor) {
   let tarefas = JSON.parse(localStorage.getItem(tipoDeTarefa));
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
@@ -167,4 +167,48 @@ function adiministraAprovacao(id, tipoDeTarefa, valor) {
 function tocaAudio() {
   const audio = new Audio("../global/sons/feito.mp3");
   audio.play();
+}
+
+function concluiChecklistAnterior(checklist) {
+  const jogadorLogado = localStorage.getItem("jogadorLogado");
+  let jogadores = JSON.parse(localStorage.getItem("jogadores"));
+
+  checklist.items.forEach(item => {
+    if(item.feito) {
+      const tipo = item.prazo ? "metas" : "atividades";
+      if (tipo === "metas") {
+        let metas = JSON.parse(localStorage.getItem("metas"));
+        if (metas && metas[jogadorLogado]) {
+          let meta = metas[jogadorLogado].find(m => m.id === item.id);
+          if (meta.pendente) {
+            meta.pendente = false;
+            contabilizaPontos(meta, jogadorLogado);
+            meta.concluido = true;
+            localStorage.setItem("metas", JSON.stringify(metas));
+          }
+        }
+      } else {
+        let atividades = JSON.parse(localStorage.getItem("atividades"));
+        if (atividades && atividades[jogadorLogado]) {
+          let atividade = atividades[jogadorLogado].find(a => a.id === item.id);
+          if (atividade.pendente) {
+            atividade.pendente = false;
+            contabilizaPontos(atividade, jogadorLogado);
+            atividade.concluido = !!atividade.unica;
+            localStorage.setItem("atividades", JSON.stringify(atividades));
+          }
+        }
+      }
+    }
+  });
+}
+
+function contabilizaPontos(tarefa, jogadorLogado) {
+  let jogadores = JSON.parse(localStorage.getItem("jogadores"));
+  jogadores[jogadorLogado].xp += tarefa.xp;
+  jogadores[jogadorLogado].moedas += tarefa.moedas;
+  jogadores[jogadorLogado].historico_moedas += tarefa.moedas;
+  jogadores[jogadorLogado].nivel = Math.floor(jogadores[jogadorLogado].xp / 100);
+
+  localStorage.setItem("jogadores", JSON.stringify(jogadores));
 }
