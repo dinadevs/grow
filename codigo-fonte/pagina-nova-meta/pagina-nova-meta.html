@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Grow - Nova Meta</title>
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Press+Start+2P&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../global/estilos/index.css">
+  <link rel="stylesheet" href="./cadastro-de-metas.css">
+</head>
+<body>
+  <header id="cabecalho-global"></header>
+  <main class="main">
+    <div id="barra-status"></div>
+    <div class="container">
+      <div class="titulo-e-botoes">
+        <button onclick="window.location.href = '../cadastro-de-metas/cadastro-de-metas.html';">
+          <img src="../global/imagens/voltar.svg" alt="voltar">
+        </button>
+        <h1>Nova Meta</h1>
+        <button type="submit" form="nova-meta" class="botao">Cadastrar</button>
+      </div>
+
+      <div id="toast" class="toast oculta">
+        <img src="../global/imagens/salvo.svg" alt="Salvo">
+        <p>Salvo!</p>
+      </div>
+
+      <form id="nova-meta" class="formulario-nova-meta" onsubmit="salvarPremio(event)">
+        <div class="grupo-inputs-linha">
+          <input id="titulo" name="titulo" class="input" type="text" placeholder="Título da meta" required>
+          <input id="data-inicio" name="dataInicio" class="input" type="date" required>
+        </div>
+
+        <div class="grupo-inputs-linha">
+          <div class="xp-moedas-container">
+            <div class="inputs-numericos"> <input id="xp" name="xp" class="input input-pequeno" type="number" placeholder="XP" required>
+              <label for="xp"><img src="../global/imagens/xp.svg" alt="XP"></label>
+            </div>
+            <div class="campo-moedas"> <input id="moedas" name="moedas" class="input input-pequeno" type="number" placeholder="Moedas" required>
+              <label for="moedas"><img src="../global/imagens/moeda.svg" alt="moedas"></label>
+            </div>
+          </div>
+          <div class="campo-data-fim"> <input id="data-fim" name="dataFim" class="input" type="date" required>
+          </div>
+        </div>
+      </form>
+    </div>
+  </main>
+
+  <script src="../global/componentes/componentes.js"></script>
+  <script src="./cadastro-de-metas.js"></script>
+</body>
+</html>
