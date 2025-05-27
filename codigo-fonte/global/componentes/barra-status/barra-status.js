@@ -40,6 +40,6 @@ function atualizarNivel(jogador) {
   nivelSeguinte.textContent = `${++jogador.nivel}`;
 
   const barraProgresso = document.querySelector(`.barra-progresso`);
-  const progresso = (jogador.xp / (jogador.nivel * 100)) * 100;
+  const progresso = jogador.xp%100;
   barraProgresso.style.width = `${progresso}%`;
 }
