@@ -4,6 +4,40 @@
   overflow-y: auto;
   padding-right: 1rem;
 }
+.penalidade + div {
+  margin-top: 1rem;
+}
+
+.linha-penalidade {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.info-penalidade {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-penalidade div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  img {
+    width: 1.6rem;
+    height: auto;
+  }
+
+  span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 5ch;
+  }
+}
+
 
 .tag {
   padding: 0.2rem 0.5rem;
