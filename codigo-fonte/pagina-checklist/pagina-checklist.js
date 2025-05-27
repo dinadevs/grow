@@ -19,7 +19,7 @@ carregaComponente(
 document.addEventListener("DOMContentLoaded", () => {
   preencheData();
   setaAvatar();
-  
+
   let checklist = localStorage.getItem("checklist");
   if (checklist) {
     checklist = JSON.parse(checklist);
@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", () => {
     const diaChecklist = checklist.dia;
     const items = checklist.items;
     if (diaChecklist == diaHoje && items.length > 0) {
+      atualizaChecklist(items);
       carregaChecklist(items);
     } else {
       concluiChecklistAnterior(checklist);
@@ -36,6 +37,53 @@ document.addEventListener("DOMContentLoaded", () => {
     criaChecklist();
   }
 });
+
+function atualizaChecklist(items) {
+  const jogadorLogado = localStorage.getItem("jogadorLogado");
+  let atividades = JSON.parse(localStorage.getItem("atividades")) || { jogadorLogado: [] };
+  let metas = JSON.parse(localStorage.getItem("metas")) || { jogadorLogado: [] };
+
+  if (atividades && atividades[jogadorLogado]?.length > 0) {
+    atividades = atividades[jogadorLogado];
+
+    const atividadesUnicas = atividades.filter(atividade => !items.some(item => item.id === atividade.id) && atividade.unica && !atividade.concluido);
+    const atividadesDiarias = atividades.filter(atividade => !items.some(item => item.id === atividade.id) && atividade.recorrencia == "diaria");
+    const atividadesSemanais = atividades.filter(atividade => !items.some(item => item.id === atividade.id) && atividade.recorrencia == "semanal" && atividade.dia == new Date().getDay());
+    atividades = [...atividadesUnicas, ...atividadesDiarias, ...atividadesSemanais];
+
+    if (atividades.length > 0) {
+      atividades.forEach(atividade => {
+        items.push({
+          id: atividade.id,
+          titulo: atividade.titulo,
+          feito: false,
+          prazo: null
+        });
+      });
+    }
+  }
+
+  if (metas && metas[jogadorLogado]?.length > 0) {
+    metas = metas[jogadorLogado].filter(meta => {
+      const dataInicio = new Date(meta.inicio);
+      const dataFim = new Date(meta.fim);
+      const dataHoje = new Date();
+      console.log(dataInicio, dataFim, dataHoje, meta.concluido);
+      return !items.some(item => item.id === meta.id) && !meta.concluido && dataInicio <= dataHoje && dataHoje <= dataFim;
+    });
+
+    if (metas.length > 0) {
+      metas.forEach(meta => {
+        items.push({
+          id: meta.id,
+          titulo: meta.titulo,
+          feito: false,
+          prazo: meta.fim
+        });
+      });
+    }
+  }
+}
 
 function carregaChecklist(items) {
   const divChecklist = document.getElementById("checklist");
@@ -66,7 +114,7 @@ function criaChecklist() {
   let metas = JSON.parse(localStorage.getItem("metas"));
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
-  if (atividades && atividades[jogadorLogado].length > 0) {
+  if (atividades && atividades[jogadorLogado]?.length > 0) {
     atividades = atividades[jogadorLogado];
 
     const atividadesUnicas = atividades.filter(atividade => atividade.unica && !atividade.concluido);
@@ -84,8 +132,8 @@ function criaChecklist() {
     });
   }
 
-  if (metas && metas.length > 0) {
-    let metas = metas[jogadorLogado].filter(meta => {
+  if (metas && metas[jogadorLogado]?.length > 0) {
+    metas = metas[jogadorLogado].filter(meta => {
       const dataInicio = new Date(meta.inicio);
       const dataFim = new Date(meta.fim);
       const dataHoje = new Date();
@@ -124,7 +172,7 @@ function setaAvatar() {
   document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
 }
 // Administração de eventos para os checkboxes
-document.getElementById("checklist").addEventListener("change", function(event) {
+document.getElementById("checklist").addEventListener("change", function (event) {
   const target = event.target;
   if (target.type === "checkbox") {
     const index = parseInt(target.id.split("-")[1]);
@@ -132,12 +180,13 @@ document.getElementById("checklist").addEventListener("change", function(event) 
     const tipo = checklist.items[index].prazo ? "metas" : "atividades";
     // quando checa
     if (target.checked) {
-      administraAprovacao(checklist.items[index].id, tipo, true); 
+      administraAprovacao(checklist.items[index].id, tipo, true);
       tocaAudio();
       mostraToast();
       checklist.items[index].feito = true;
     } else { // quando "descheca"
-      if(administraAprovacao(checklist.items[index].id, tipo, false)) {
+      if (administraAprovacao(checklist.items[index].id, tipo, false)) {
+        // nao funcional
         alerta("Ops, você não pode desmarcar porque a tarefa já foi aprovada!");
         target.checked = true;
       } else {
@@ -155,7 +204,7 @@ function administraAprovacao(id, tipoDeTarefa, valor) {
   if (tarefas && tarefas[jogadorLogado]) {
     const index = tarefas[jogadorLogado].findIndex(item => item.id == id);
     if (index !== -1) {
-      if(tarefas[jogadorLogado][index].concluido == true) {
+      if (tarefas[jogadorLogado][index].concluido == true) {
         return true;
       }
       tarefas[jogadorLogado][index].pendente = valor;
@@ -173,7 +222,7 @@ function concluiChecklistAnterior(checklist) {
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
   checklist.items.forEach(item => {
-    if(item.feito) {
+    if (item.feito) {
       const tipo = item.prazo ? "metas" : "atividades";
       if (tipo === "metas") {
         let metas = JSON.parse(localStorage.getItem("metas"));
