@@ -17,30 +17,25 @@ document.addEventListener("DOMContentLoaded", () => {
   const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
-  // Verifica se o jogador logado existe
   if (!jogadores[jogadorLogado]) {
     return mostrarSemPenalidades();
   }
 
   let historico = jogadores[jogadorLogado].historico_moedas;
 
-  // Se for 0 ou não for array, não há histórico
   if (!Array.isArray(historico)) {
     return mostrarSemPenalidades();
   }
 
-  // Filtra apenas penalidades
   const penalidades = historico.filter(item => item.tipo === "penalidade");
 
   if (penalidades.length === 0) {
     return mostrarSemPenalidades();
   }
 
-  // Exibe lista, oculta mensagem
   divPenalidades.classList.remove("oculta");
   if (divSemPenalidades) divSemPenalidades.classList.add("oculta");
 
-  // Mostra penalidades
   penalidades.reverse().forEach((penalidade, index) => {
     divPenalidades.innerHTML += `
       <div class="penalidade" id="penalidade-${index}">
@@ -67,3 +62,4 @@ function mostrarSemPenalidades() {
   if (divPenalidades) divPenalidades.classList.add("oculta");
   if (divSemPenalidades) divSemPenalidades.classList.remove("oculta");
 }
+
