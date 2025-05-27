@@ -6,12 +6,10 @@
   width: 100%;
 }
 
-
 .container {
   width: 54rem; 
   margin: 0 auto;
 }
-
 
 .titulo-e-botoes {
   display: flex;
@@ -20,7 +18,6 @@
   width: 100%; 
   margin-bottom: 3rem;
 }
-
 
 .input {
   height: 48px;
@@ -33,9 +30,6 @@
   box-sizing: border-box;
 }
 
-
-
-
 .grupo-inputs-linha {
   display: grid;
   grid-template-columns: 30rem 20rem;
@@ -45,39 +39,26 @@
   align-items: center; 
 }
 
-
 .xp-moedas-container {
   display: flex; 
   align-items: center; 
   gap: 1rem; 
 
 }
-
-
 .inputs-numericos,
 .campo-moedas {
   display: flex;
   align-items: center;
   gap: 0.5rem; 
 }
-
-
 .inputs-numericos img,
 .campo-moedas img {
   max-height: 36px; 
   width: auto;  
 }
-
-
 .input-pequeno {
   width: 10rem !important; 
 }
-
-
-.campo-data-fim {
-}
-
-
 .toast {
   position: fixed;
   bottom: 2rem;
@@ -92,11 +73,9 @@
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 .toast.oculta {
   opacity: 0;
 }
-
 .toast.visivel {
   opacity: 1;
 }

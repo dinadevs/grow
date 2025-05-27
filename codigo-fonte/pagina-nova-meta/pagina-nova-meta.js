@@ -25,8 +25,8 @@ function salvarMeta(e) {
   const dadosForm = new FormData(form);
 
   const titulo = dadosForm.get("titulo");
-  const progresso = parseInt(dadosForm.get("progresso")); // em porcentagem
-  const prazo = dadosForm.get("prazo"); // você pode validar formato depois
+  const progresso = parseInt(dadosForm.get("progresso")); 
+  const prazo = dadosForm.get("prazo"); 
 
   let id = 0;
   if (metas[jogadorLogado].length > 0) {
