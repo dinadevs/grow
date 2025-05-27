@@ -21,20 +21,23 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   </thead>
   <tbody>
     <tr>
-      <td><strong>CT-01</strong><br>...</td>
+      <td><strong>CT-01:</strong><br>Escolha de avatar</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-12: Escolha de avatar</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Testar se o avatar é salvo e refletido na interface.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar a home do filho</li>
+          <li>Clicar no icone de avatar</li>
+          <li>Selecionar novo avatar</li>
+          <li>Clicar em “Atualizar”</li>
+          <li>Voltar à página anterior</li>
         </ol>
       </td>
-      <td>...</td>
+      <td>Avatar selecionado salvo e visível na barra de status.</td>
       <td>...</td>
     </tr>
     <tr>

@@ -10,6 +10,14 @@
   font: var(--pixel-text-lg);
 }
 
+#avatar {
+  cursor: pointer;       /* Mãozinha ao passar o mouse */
+  transition: transform 0.2s;
+}
+
+#avatar:hover {
+  transform: scale(1.05); /* Efeito de leve zoom */
+}
 #info-status {
   display: flex;
   gap: 2rem;
