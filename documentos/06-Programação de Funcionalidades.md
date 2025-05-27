@@ -50,6 +50,23 @@ Fernanda Cunha Silva
 
 ---
 
+### Tela de Cadastro de Metas (RF-04)
+
+
+
+#### Requisitos atendidos 
+
+RF-02: Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.
+
+#### Artefatos da funcionalidade
+
+- pagina-de-cadastro.html
+- pagina-de-cadastro.css
+- pagina-de-cadastro.js
+
+#### Instrução de acesso
+
+
 ### Tela de Cadastro de Prêmios (RF-05)
 
 O cadastro de prêmios com nome, descrição e pontuação poderá ser feito após o login do usuário.
