@@ -72,9 +72,6 @@ button {
   background-color: var(--surface-primary);
   border-radius: 1.7rem;
   border: solid 2px var(--stroke);
-}
-
-.container > :not(nav) {
   padding: 2rem;
 }
 

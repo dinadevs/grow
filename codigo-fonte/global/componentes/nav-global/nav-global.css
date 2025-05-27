@@ -1,3 +1,13 @@
+.container {
+  padding: 0;
+  & > :not(nav) {
+    padding: 2rem;
+  }
+  & > div + div {
+    padding-top: 0;
+  }
+}
+
 nav > ul {
   display: flex;
   justify-content: space-between;
