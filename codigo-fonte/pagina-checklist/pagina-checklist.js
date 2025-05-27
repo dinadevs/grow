@@ -16,18 +16,21 @@ carregaComponente(
   '../global/componentes/nav-global/nav-global.js'
 );
 
+const jogadorLogado = localStorage.getItem("jogadorLogado");
+
 document.addEventListener("DOMContentLoaded", () => {
   preencheData();
   setaAvatar();
-
-  let checklist = localStorage.getItem("checklist");
-  if (checklist) {
-    checklist = JSON.parse(checklist);
+  
+  let checklists = JSON.parse(localStorage.getItem("checklists")) || {};
+  if (checklists[jogadorLogado]) {
+    let checklist = checklists[jogadorLogado];
     const diaHoje = new Date().toLocaleDateString("pt-BR");
     const diaChecklist = checklist.dia;
     const items = checklist.items;
     if (diaChecklist == diaHoje && items.length > 0) {
       atualizaChecklist(items);
+      localStorage.setItem("checklists", JSON.stringify(checklists));
       carregaChecklist(items);
     } else {
       concluiChecklistAnterior(checklist);
@@ -39,7 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function atualizaChecklist(items) {
-  const jogadorLogado = localStorage.getItem("jogadorLogado");
   let atividades = JSON.parse(localStorage.getItem("atividades")) || { jogadorLogado: [] };
   let metas = JSON.parse(localStorage.getItem("metas")) || { jogadorLogado: [] };
 
@@ -105,14 +107,14 @@ function carregaChecklist(items) {
 
 function criaChecklist() {
   const diaHoje = new Date().toLocaleDateString("pt-BR");
-  const checklist = {
+  let checklists = JSON.parse(localStorage.getItem("checklists")) || {};
+  checklists[jogadorLogado] = {
     dia: diaHoje,
     items: []
   };
 
   let atividades = JSON.parse(localStorage.getItem("atividades"));
   let metas = JSON.parse(localStorage.getItem("metas"));
-  const jogadorLogado = localStorage.getItem("jogadorLogado");
 
   if (atividades && atividades[jogadorLogado]?.length > 0) {
     atividades = atividades[jogadorLogado];
@@ -123,7 +125,7 @@ function criaChecklist() {
     atividades = [...atividadesUnicas, ...atividadesDiarias, ...atividadesSemanais];
 
     atividades.forEach(atividade => {
-      checklist.items.push({
+      checklists[jogadorLogado].items.push({
         id: atividade.id,
         titulo: atividade.titulo,
         feito: false,
@@ -141,7 +143,7 @@ function criaChecklist() {
     });
 
     metas.forEach(meta => {
-      checklist.items.push({
+      checklists[jogadorLogado].items.push({
         id: meta.id,
         titulo: meta.titulo,
         feito: false,
@@ -150,9 +152,9 @@ function criaChecklist() {
     });
   }
 
-  if (checklist.items.length > 0) {
-    localStorage.setItem("checklist", JSON.stringify(checklist));
-    carregaChecklist(checklist.items);
+  if (checklists[jogadorLogado].items.length > 0) {
+    localStorage.setItem("checklists", JSON.stringify(checklists));
+    carregaChecklist(checklists[jogadorLogado].items);
   }
 }
 
@@ -167,7 +169,6 @@ function preencheData() {
 }
 
 function setaAvatar() {
-  const jogadorLogado = localStorage.getItem("jogadorLogado");
   const avatar = JSON.parse(localStorage.getItem("jogadores")).find(jogador => jogador.nickname == jogadorLogado).avatar;
   document.getElementById("avatar-feliz").src = `../global/imagens/feliz-${avatar}.png`;
 }
@@ -176,7 +177,8 @@ document.getElementById("checklist").addEventListener("change", function (event)
   const target = event.target;
   if (target.type === "checkbox") {
     const index = parseInt(target.id.split("-")[1]);
-    let checklist = JSON.parse(localStorage.getItem("checklist"));
+    let checklists = JSON.parse(localStorage.getItem("checklists")) || {};
+    let checklist = checklists[jogadorLogado];
     const tipo = checklist.items[index].prazo ? "metas" : "atividades";
     // quando checa
     if (target.checked) {
@@ -199,12 +201,11 @@ document.getElementById("checklist").addEventListener("change", function (event)
 
 function administraAprovacao(id, tipoDeTarefa, valor) {
   let tarefas = JSON.parse(localStorage.getItem(tipoDeTarefa));
-  const jogadorLogado = localStorage.getItem("jogadorLogado");
 
   if (tarefas && tarefas[jogadorLogado]) {
     const index = tarefas[jogadorLogado].findIndex(item => item.id == id);
     if (index !== -1) {
-      if (tarefas[jogadorLogado][index].concluido == true) {
+      if (tarefas[jogadorLogado][index].concluido) {
         return true;
       }
       tarefas[jogadorLogado][index].pendente = valor;
@@ -219,7 +220,6 @@ function tocaAudio() {
 }
 
 function concluiChecklistAnterior(checklist) {
-  const jogadorLogado = localStorage.getItem("jogadorLogado");
 
   checklist.items.forEach(item => {
     if (item.feito) {
