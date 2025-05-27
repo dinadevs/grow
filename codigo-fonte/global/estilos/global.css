@@ -28,6 +28,7 @@
   --purple-filter: brightness(0) saturate(100%) invert(7%) sepia(17%) saturate(6722%) hue-rotate(240deg) brightness(99%) contrast(96%);
   --green-filter: brightness(0) saturate(100%) invert(100%) sepia(78%) saturate(1766%) hue-rotate(61deg) brightness(115%) contrast(100%);
   --blue-filter: brightness(0) saturate(100%) invert(73%) sepia(18%) saturate(1509%) hue-rotate(164deg) brightness(103%) contrast(108%);
+  --orange-filter: brightness(0) saturate(100%) invert(71%) sepia(16%) saturate(2564%) hue-rotate(325deg) brightness(101%) contrast(101%);
 }
 
 body {
@@ -66,7 +67,6 @@ button {
 }
 
 .container {
-  
   height: 100%;
   width: 100%;
   background-color: var(--surface-primary);

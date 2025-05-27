@@ -110,6 +110,62 @@ Rodrigo Andrade da Silva
 
 ---
 
+### Tela de Checklist (RF-08)
+
+![pagina-checklist](./img/pagina-checklist.png)
+
+#### Requisito atendido 
+
+RF-08: Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar itens como concluídos ou não.
+
+#### Artefatos da funcionalidade
+
+- pagina-checklist.html
+- pagina-checklist.css
+- pagina-checklist.js
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
+2.	Preencha as credenciais de acesso (usuário e senha) de um usuário do tipo **filho** e clique em "Entrar".
+3. A página deverá aparecer com as atividades e metas do dia, ou em branco caso não haja nenhuma.
+   
+#### Responsável
+Amanda Maria Felipe Severo
+
+---
+
+### Contabilização de progresso (RF-10)
+
+Esse requisito não se trata de uma tela, mas sim de um conjunto de processos nos quais os dados de progresso (moedas, xp e nível) são salvos e disponibilizados para visualização.
+
+![pagina-checklist](./img/pagina-checklist.png)
+
+#### Requisito atendido 
+
+RF-10: Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.
+
+#### Artefatos da funcionalidade
+
+- pagina-checklist.js
+- pagina-aprovacoes.js *(funções específicas)*
+- barra-status.html
+- barra-status.css
+- barra-status.js
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
+2.	Preencha as credenciais de acesso (usuário e senha) de um usuário do tipo **filho** e clique em "Entrar".
+3. A página deverá aparecer com as atividades e metas do dia, ou em branco caso não haja nenhuma.
+4. O requisito já poderá ser observado na barra de status do usuário na página, para ver a atualização é necessário concluir uma tarefa do checklist e também que ela seja aprovada pelo responsável.
+5. Após o processo de aprovação, quando a página for recarregada, o progresso da barra irá atualizar.
+   
+#### Responsável
+Amanda Maria Felipe Severo
+
+---
+
 ### Tela de Escolha de Avatar (RF-12)
 
 ![pagina-avatar](./img/pagina-avatar.png)
