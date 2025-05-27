@@ -16,7 +16,7 @@ carregaComponente(
   '../global/componentes/nav-global/nav-global.js'
 );
 
-const jogadorLogado = localStorage.getItem("jogadorLogado");
+jogadorLogado = localStorage.getItem("jogadorLogado");
 
 document.addEventListener("DOMContentLoaded", () => {
   preencheData();
@@ -188,14 +188,13 @@ document.getElementById("checklist").addEventListener("change", function (event)
       checklist.items[index].feito = true;
     } else { // quando "descheca"
       if (administraAprovacao(checklist.items[index].id, tipo, false)) {
-        // nao funcional
-        alerta("Ops, você não pode desmarcar porque a tarefa já foi aprovada!");
+        alert("Ops, você não pode desmarcar porque a tarefa já foi aprovada!");
         target.checked = true;
       } else {
         checklist.items[index].feito = false;
       }
     }
-    localStorage.setItem("checklist", JSON.stringify(checklist));
+    localStorage.setItem("checklists", JSON.stringify(checklists));
   }
 });
 
@@ -205,7 +204,7 @@ function administraAprovacao(id, tipoDeTarefa, valor) {
   if (tarefas && tarefas[jogadorLogado]) {
     const index = tarefas[jogadorLogado].findIndex(item => item.id == id);
     if (index !== -1) {
-      if (tarefas[jogadorLogado][index].concluido) {
+      if (!tarefas[jogadorLogado][index].pendente && !valor) {
         return true;
       }
       tarefas[jogadorLogado][index].pendente = valor;
