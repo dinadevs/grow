@@ -17,11 +17,14 @@ document.addEventListener("DOMContentLoaded", () => {
   const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
   const jogadorLogado = localStorage.getItem("jogadorLogado");
 
-  if (!jogadores[jogadorLogado]) {
+  // Busque o jogador pelo nickname, não pelo índice!
+  const jogador = jogadores.find(j => j.nickname === jogadorLogado);
+
+  if (!jogador) {
     return mostrarSemPenalidades();
   }
 
-  let historico = jogadores[jogadorLogado].historico_moedas;
+  let historico = jogador.historico_moedas;
 
   if (!Array.isArray(historico)) {
     return mostrarSemPenalidades();
@@ -49,6 +52,9 @@ document.addEventListener("DOMContentLoaded", () => {
             <div class="moedas">
               <img src="../global/imagens/moeda.svg" alt="Moedas" />
               <span>${penalidade.moedas}</span>
+            </div>
+            <p class="data-penalidade">${penalidade.data}</p>
+          </div>
         </div>
       </div>
     `;

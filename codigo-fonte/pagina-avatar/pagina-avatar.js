@@ -12,18 +12,19 @@ carregaComponente(
 
 function configurarBotaoVoltar() {
   const btn = document.querySelector('.titulo-e-botoes button');
-  btn.onclick = () => window.history.back();
+  btn.onclick = () => window.location.href = "../pagina-home/pagina-home.html";
 }
 
 function marcarAvatarAtual() {
   const jogadores   = JSON.parse(localStorage.getItem('jogadores')) || [];
   const logado      = localStorage.getItem('jogadorLogado');
-  const avatarName  = jogadores[logado]?.avatar;
+  const jogador     = jogadores.find(j => j.nickname === logado);
+  const avatarName  = jogador?.avatar;
   if (!avatarName) return;
 
   const radio = document.querySelector(
-    `input[name="avatar"][value$="avatar-${avatarName}.png"]`
-  );
+  `input[name="avatar"][value="${avatarName}"]`
+);
   if (radio) radio.checked = true;
 }
 
@@ -37,12 +38,16 @@ function configurarBotaoAtualizar() {
 
     const jogadores = JSON.parse(localStorage.getItem('jogadores')) || [];
     const logado    = localStorage.getItem('jogadorLogado');
-    jogadores[logado].avatar = nomeAvatar;
+    const jogador   = jogadores.find(j => j.nickname === logado);
+    if (!jogador) return;
+    jogador.avatar = nomeAvatar;
     localStorage.setItem('jogadores', JSON.stringify(jogadores));
 
     if (typeof window.atualizarBarraStatus === 'function') {
       window.atualizarBarraStatus();
     }
+
+    window.location.reload();
 
   };
 }
