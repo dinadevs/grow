@@ -40,7 +40,7 @@
 
           <form id="nova-atividade"    class="formulario-atividades" onsubmit="salvarAtividade(event)">
 
-             <div>
+             
                 <input id="titulo" name="titulo" class="input"   type="text" placeholder="Título da atividade"  required/>
 
               
@@ -48,27 +48,45 @@
                    <input id="xp" name="xp" class="input" type="number" placeholder="XP" required />
                    <label for="xp">
                       <img src="../global/imagens/xp.svg" alt="XP" />
-                    </label/label>
+                    </label>
             
                     <input id="moedas" name="moedas" class="input" type="number" placeholder="Moedas" required/>
                     <label for="moedas">
                      <img src="../global/imagens/moeda.svg" alt="moedas" />
                     </label> 
                  
-                  <div class="input-recorrencia">
+                  
+                </div>
+              <div class="input-recorrencia">
               
                    <select id="recorrencia" name="recorrencia" class="input" required>
-                     <option value="recorrencia"></option>
+                     <option selected disabled hidden value="">Recorrência</option>
                      <option value="unica">Única</option>
                      <option value="diaria">Diária</option>
                      <option value="semanal">Semanal</option>
                      
                    </select>
-
+                   <label for="recorrencia">
                    <img src="../global/imagens/calendario.png" alt="calendario"/>
-                  </div>  
-                </div>
-              </div>
+                   </label>
+              
+                   <select id="dia" name="dia" class="input" required>
+                     <option selected disabled hidden value="">Dia da semana</option>
+                     <option value="0">Domingo</option>
+                     <option value="1">Segunda-feira</option>
+                     <option value="2">Terça-feira</option>
+                     <option value="3">Quarta-feira</option>
+                     <option value="4">Quinta-feira</option>
+                     <option value="5">Sexta-feira</option>
+                     <option value="6">Sábado</option>
+                     
+                     
+                     
+                   </select>
+                   <label for="dia">
+                   <img src="../global/imagens/calendario.png" alt="calendario"/>
+                   </label>
+                   </div>
               
             </form>
         </div>
