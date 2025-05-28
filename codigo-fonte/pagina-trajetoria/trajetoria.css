@@ -17,12 +17,19 @@
   border-radius: 1.7rem;
 }
 
+#nav-global {
+  margin: -2rem -2rem 0 -2rem;  
+}
+
 .oculta {
   display: none;
 }
 
 .titulo-e-botoes {
-  margin-top: 2rem;
+  margin-top: 1.5rem; 
+  display: flex;
+  align-items: center;
+  gap: 1rem;
 }
 
 #info-trajetoria {
@@ -267,5 +274,6 @@
     transform: scale(1.2);
   }
 }
+
 
 

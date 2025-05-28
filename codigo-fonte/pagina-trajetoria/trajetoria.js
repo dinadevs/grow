@@ -4,6 +4,12 @@ carregaComponente(
   "../global/componentes/cabecalho/cabecalho.js"
 );
 
+carregaComponente(
+  '../global/componentes/nav-global/nav-global.html',
+  'nav-global',
+  '../global/componentes/nav-global/nav-global.js'
+);
+
 document.addEventListener("DOMContentLoaded", () => {
   mostrarPremiosConquistados();
   configurarBotaoVoltar();
