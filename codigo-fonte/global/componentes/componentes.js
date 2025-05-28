@@ -52,3 +52,19 @@ function mostraToast() {
     }, 500); // espera a transição acabar
   }, 3000);
 }
+
+// Função para adicionar favicon a todas as páginas
+function adicionarFavicon() {
+  // Verifica se já existe um favicon
+  if (!document.querySelector("link[rel='icon']")) {
+    const favicon = document.createElement('link');
+    favicon.rel = 'icon';
+    favicon.type = 'image/ico';
+    favicon.href = '../global/imagens/favicon.ico'; 
+    document.head.appendChild(favicon);
+  }
+}
+
+document.addEventListener('DOMContentLoaded', function() {
+  adicionarFavicon();
+});
