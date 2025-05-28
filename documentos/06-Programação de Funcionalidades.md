@@ -65,7 +65,7 @@ RF-02: Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.
 - pagina-de-cadastro.js
 
 #### Instrução de acesso
-
+-
 
 ### Tela de Cadastro de Prêmios (RF-05)
 
