@@ -42,8 +42,8 @@ function salvarAtividade(e) {
   moedas,
   recorrencia,
   concluido:false,
-  unica,
-  dia
+  
+  
   
  }); 
 
