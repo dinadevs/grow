@@ -1,0 +1,271 @@
+.flex-between-center {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.flex-column-center {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.bordered {
+  border: 3px solid var(--stroke);
+  border-radius: 1.7rem;
+}
+
+.oculta {
+  display: none;
+}
+
+.titulo-e-botoes {
+  margin-top: 2rem;
+}
+
+#info-trajetoria {
+  margin: 1.5rem auto;
+}
+
+.info-container {
+  width: 100%;
+}
+
+.info-item, #info-nivel{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  background-color: var(--surface-primary);
+  padding: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.info-item:hover, #info-nivel:hover {
+  transform: scale(1.05);
+  filter: hue-rotate(7deg) contrast(101%) saturate(120%);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.info-item:hover img {
+  transform: scale(1.15);
+  transition: transform 0.4s ease-in-out;
+}
+
+.info-item img {
+  width: 2.5rem;
+  height: 2.5rem;
+}
+
+.info-text span {
+  position: absolute;
+  top: -25px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--surface-secondary);
+  padding: 0.3rem 1rem;
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
+  font-weight: bold; 
+  border-radius: 1rem;
+}
+
+.avatar-container {
+  gap: 0.5rem;
+  position: relative;
+  transition: all 0.3s ease-in-out;
+}
+
+.avatar-container img {
+  position: relative;
+  z-index: 1;
+}
+
+.avatar-container:hover img {
+  transform: scale(1.05);
+  transition: transform 0.4s ease-in-out;
+}
+
+.avatar-container::before {
+  content: "";
+  position: absolute;
+  width: calc(100% + 30px);
+  height: calc(100% + 30px);
+  background: linear-gradient(
+    45deg,
+    #ffff00,
+    #5fffa1,
+    #5edfff,
+    #1e1435,
+    #ff914d
+  );
+  background-size: 300%;
+  filter: blur(50px);
+  animation: glow 6s ease infinite;
+  z-index: 0;
+  border-radius: 50%; 
+}
+
+@keyframes glow {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.premios-conquistados {
+  --startY: 100%;
+  animation: move 2.3s;
+}
+
+@keyframes move {
+  from {
+    transform: translateY(var(--startY));
+  }
+}
+
+.premios-conquistados h2 {
+  display: flex;
+  gap: 1rem;
+}
+
+.conquistas-e-nivel {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 3rem;
+  align-items: flex-start; 
+}
+
+.container-premios {
+  margin-left: 2rem;
+}
+
+.conquistas {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.header-premios {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.header-premios img {
+  width: 2rem;
+  height: auto;
+}
+
+.linha {
+  width: 200px;
+  border: 1px solid var(--stroke);
+}
+
+#lista-premios {
+  margin-top: 1rem;
+  height: 17rem;
+  overflow-y: auto;
+  padding-right: 1rem;
+}
+
+#lista-premios::-webkit-scrollbar {
+  width: 0.5rem;
+}
+
+#lista-premios::-webkit-scrollbar-track {
+  background: var(--surface-secondary);
+  border-radius: 0.25rem;
+}
+
+#lista-premios::-webkit-scrollbar-thumb {
+  background: var(--stroke);
+  border-radius: 0.25rem;
+}
+
+#lista-premios::-webkit-scrollbar-thumb:hover {
+  background: var(--text-primary);
+}
+
+.linha-premio {
+  padding: 0.1rem;
+  font: var(--normal-text-sm);
+  gap: 0.5rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.linha-premio:hover {
+  background-color: var(--surface-secondary);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.tag {
+  padding: 0.2rem 0.5rem;
+}
+
+.info-premio {
+  display: flex;
+  gap: 1rem;
+}
+
+.info-premio div {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.info-premio div img {
+  width: 1.6rem;
+  height: auto;
+}
+
+.info-premio div span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 5ch;
+}
+
+.sem-premios {
+  height: 100%;
+  gap: 1rem;
+}
+
+.sem-premios img {
+  width: 3rem;
+  height: auto;
+}
+
+#info-nivel {
+  height: auto;
+  width: max-content;  
+  min-width: 180px;   
+}
+
+.info-item,
+.avatar-container,
+.conquistas,
+#info-nivel {
+    animation: appear 0.7s var(--delay) backwards;
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0;
+    transform: scale(0.7);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+
