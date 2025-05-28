@@ -16,8 +16,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
   const jogadorLogado = localStorage.getItem("jogadorLogado");
-
-  // Busque o jogador pelo nickname, não pelo índice!
   const jogador = jogadores.find(j => j.nickname === jogadorLogado);
 
   if (!jogador) {
