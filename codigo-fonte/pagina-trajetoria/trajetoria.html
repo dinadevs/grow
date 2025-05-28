@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-4  <head>
+  <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Grow - Trajetória</title>
@@ -15,55 +15,73 @@
     <header id="cabecalho-global"></header>
     <main class="main">
       <div class="container">
-        <nav>
-          <a href="/Checklist">Checklist</a>
-          <a href="/Loja">Loja</a>
-          <a href="/Trajetória">Trajetória</a>
-        </nav>
-        <div class="titulo-e-botoes">
+        <nav id="nav-global"></nav>
+        <section class="titulo-e-botoes">
           <button
             onclick="window.location.href = '../pagina-home/pagina-home.html';"
           >
             <img src="../global/imagens/voltar.svg" alt="voltar" />
           </button>
           <h1>Trajetória</h1>
-        </div>
+        </section>
 
-        <div id="info-trajetoria">                
-              <div>
-                <img src="../global/imagens/moeda.svg" alt="Ícone moeda">XP Conquistado
-                <span>60</span>
+        <section id="info-trajetoria">
+          <div class="info-container flex-between-center">
+            <div class="info-item bordered" style="--delay: 0.6s;">
+              <div class="info-text">
+                <span class="bordered">60</span>
               </div>
+              <p>XP Conquistado</p>
+              <img src="../global/imagens/xp.svg" alt="Ícone moeda" />
+            </div>
+
+            <div class="avatar-container" style="--delay: 0.8s;">
               <h1>#Nickname</h1>
-              <img id="avatar" src="../global/imagens/avatar-gato.png" alt="Avatar do gato">
-              <div>
-                <img src="../global/imagens/xp.svg" alt="Ícone xp">Moedas Conquistadas
-                <span>100</span>
-              </div>                
-        </div>
-        
-        <div class="premios-conquistados">
-          <h2><span>10</span>Prêmios Conquistados</h2>
-          <img src="" alt="">
-          <div class="container-premios">
-            <div class="conquistas">
-              <img src="./coracao.svg" alt="Premio 1">
-              <span>Premio da lista</span>
-              <div id="lista-premios"><span class="tag">
-                <img src="../global/imagens/coroa.svg" alt="coroa">
-                Conquistado!
-              </span></div>
-              
+              <img
+                id="avatar"
+                src="../global/imagens/avatar-gato.png"
+                alt="Avatar do gato"
+              />
+            </div>
 
-            </div>          
+            <div class="info-item bordered" style="--delay: 1s">
+              <div class="info-text">
+                <span class="bordered">606</span>
+              </div>
+              <p>Moedas Conquistadas</p>
+              <img src="../global/imagens/moeda.svg" alt="Ícone moeda" />
+            </div>
           </div>
-          <div id="info-nivel">
-            <img src="../global/imagens/trofeu.png" alt="Imagem de troféu">
-            <span id="nivel">Nível 50</span>
-          </div>
-        </div>
+        </section>
 
-        </div>
+        <section class="premios-conquistados">
+          <div class="conquistas-e-nivel">
+            <div class="container-premios">
+              <section class="conquistas">
+                <div class="header-premios">
+                  <h2><span>10</span>Conquistas</h2>
+                  <img src="../global/imagens/diamante.svg" alt="diamante" />
+                </div>
+                <div class="linha"></div>
+
+                <div id="lista-premios"></div>
+
+                <div class="sem-premios oculta flex-column-center">
+                  <img
+                    src="../global/imagens/estrela-triste.svg"
+                    alt="Nenhuma conquista"
+                  />
+                  <h3>Não há conquistas</h3>
+                </div>
+              </section>
+            </div>
+
+            <aside class="bordered" id="info-nivel">
+              <span id="nivel">Nível 50</span>
+              <img src="../global/imagens/trofeu.png" alt="Imagem de troféu" />
+            </aside>
+          </div>
+        </section>
       </div>
     </main>
     <script src="../global/componentes/componentes.js"></script>
