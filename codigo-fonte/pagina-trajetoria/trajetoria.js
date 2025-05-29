@@ -84,7 +84,7 @@ function carregaDadosJogador() {
   nickname.textContent = jogador.nickname;
 
   const spanMoedas = document.getElementById("moedas");
-  spanMoedas.textContent = jogador.moedas;
+  spanMoedas.textContent = jogador.historico_moedas;
 
   const spanNivel = document.getElementById("nivel");
   spanNivel.textContent = `Nível ${jogador.nivel}`;
