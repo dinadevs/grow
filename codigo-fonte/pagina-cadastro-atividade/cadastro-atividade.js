@@ -55,6 +55,6 @@ function salvarAtividade(e) {
  mostraToast();
 
  setTimeout(() => {
-  window.location.href = "../pagina-home/pagina-home.html"
+  window.location.href = "../pagina-atividades/atividades.html"
  },4000);
 }
