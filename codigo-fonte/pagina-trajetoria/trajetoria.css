@@ -17,34 +17,33 @@
   border-radius: 1.7rem;
 }
 
+#nav-global {
+  margin: -2rem -2rem 0 -2rem;
+}
+
 .oculta {
   display: none;
 }
 
 .titulo-e-botoes {
-  margin-top: 2rem;
+  margin-top: 1.5rem;
 }
 
 #info-trajetoria {
   margin: 1.5rem auto;
 }
 
-.info-container {
-  width: 100%;
-}
-
-.info-item, #info-nivel{
+.info-item,
+#info-nivel {
   position: relative;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: 0.5rem;
   background-color: var(--surface-primary);
   padding: 1rem;
   transition: all 0.3s ease-in-out;
 }
 
-.info-item:hover, #info-nivel:hover {
+.info-item:hover,
+#info-nivel:hover {
   transform: scale(1.05);
   filter: hue-rotate(7deg) contrast(101%) saturate(120%);
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -68,7 +67,6 @@
   background-color: var(--surface-secondary);
   padding: 0.3rem 1rem;
   box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.3);
-  font-weight: bold; 
   border-radius: 1rem;
 }
 
@@ -78,14 +76,11 @@
   transition: all 0.3s ease-in-out;
 }
 
-.avatar-container img {
+#avatar {
+  cursor: default;       
+  transition: transform 0.4s ease-in-out;
   position: relative;
   z-index: 1;
-}
-
-.avatar-container:hover img {
-  transform: scale(1.05);
-  transition: transform 0.4s ease-in-out;
 }
 
 .avatar-container::before {
@@ -105,7 +100,7 @@
   filter: blur(50px);
   animation: glow 6s ease infinite;
   z-index: 0;
-  border-radius: 50%; 
+  border-radius: 50%;
 }
 
 @keyframes glow {
@@ -121,6 +116,10 @@
 }
 
 .premios-conquistados {
+  justify-content: space-between;
+  margin: 0 3rem;
+  align-items: flex-start;
+
   --startY: 100%;
   animation: move 2.3s;
 }
@@ -131,33 +130,8 @@
   }
 }
 
-.premios-conquistados h2 {
-  display: flex;
-  gap: 1rem;
-}
-
-.conquistas-e-nivel {
-  display: flex;
-  justify-content: space-between;
-  gap: 1rem;
-  margin: 0 3rem;
-  align-items: flex-start; 
-}
-
-.container-premios {
-  margin-left: 2rem;
-}
-
-.conquistas {
-  display: flex;
-  flex-direction: column;
-  gap: 0.5rem;
-}
-
 .header-premios {
-  display: flex;
   align-items: center;
-  gap: 1rem;
 }
 
 .header-premios img {
@@ -166,13 +140,14 @@
 }
 
 .linha {
-  width: 200px;
+  width: 100%;
   border: 1px solid var(--stroke);
+  margin-top: 0.5rem;
 }
 
 #lista-premios {
   margin-top: 1rem;
-  height: 17rem;
+  height: 6rem;
   overflow-y: auto;
   padding-right: 1rem;
 }
@@ -208,16 +183,16 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
-.tag {
-  padding: 0.2rem 0.5rem;
-}
-
-.info-premio {
+.info-premio,
+.header-premios,
+.premios-conquistados {
   display: flex;
   gap: 1rem;
 }
 
-.info-premio div {
+.info-premio div,
+.info-item,
+#info-nivel {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -247,15 +222,15 @@
 
 #info-nivel {
   height: auto;
-  width: max-content;  
-  min-width: 180px;   
+  width: max-content;
+  min-width: 180px;
 }
 
 .info-item,
 .avatar-container,
 .conquistas,
 #info-nivel {
-    animation: appear 0.7s var(--delay) backwards;
+  animation: appear 0.7s var(--delay) backwards;
 }
 
 @keyframes appear {
@@ -267,5 +242,3 @@
     transform: scale(1.2);
   }
 }
-
-

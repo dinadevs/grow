@@ -15,7 +15,7 @@
     <header id="cabecalho-global"></header>
     <main class="main">
       <div class="container">
-        <nav id="nav-global"></nav>        
+        <nav id="nav-global"></nav>
         <section class="titulo-e-botoes">
           <button id="botao-voltar">
             <img src="../global/imagens/voltar.svg" alt="voltar" />
@@ -23,62 +23,62 @@
           <h1>Trajetória</h1>
         </section>
 
-        <section id="info-trajetoria">
-          <div class="info-container flex-between-center">
-            <div class="info-item bordered" style="--delay: 0.6s;">
-              <div class="info-text">
-                <span class="bordered">60</span>
-              </div>
-              <p>XP Conquistado</p>
-              <img src="../global/imagens/xp.svg" alt="Ícone moeda" />
+        <section
+          id="info-trajetoria"
+          class="flex-between-center"
+        >
+          <div class="info-item bordered" style="--delay: 0.6s">
+            <div class="info-text">
+              <span id="xp" class="bordered">60</span>
             </div>
+            <p>XP Conquistado</p>
+            <img src="../global/imagens/xp.svg" alt="Ícone moeda" />
+          </div>
 
-            <div class="avatar-container" style="--delay: 0.8s;">
-              <h1>#Nickname</h1>
-              <img
-                id="avatar"
-                src="../global/imagens/avatar-gato.png"
-                alt="Avatar do gato"
-              />
-            </div>
+          <div
+            class="avatar-container flex-column-center"
+            style="--delay: 0.8s"
+          >
+            <h1 id="nickname">#Nickname</h1>
+            <img
+              id="avatar"
+              src="../global/imagens/avatar-gato.png"
+              alt="Avatar do gato"
+            />
+          </div>
 
-            <div class="info-item bordered" style="--delay: 1s">
-              <div class="info-text">
-                <span class="bordered">606</span>
-              </div>
-              <p>Moedas Conquistadas</p>
-              <img src="../global/imagens/moeda.svg" alt="Ícone moeda" />
+          <div class="info-item bordered" style="--delay: 1s">
+            <div class="info-text">
+              <span id="moedas" class="bordered">606</span>
             </div>
+            <p>Histórico de moedas</p>
+            <img src="../global/imagens/moeda.svg" alt="Ícone moeda" />
           </div>
         </section>
 
         <section class="premios-conquistados">
-          <div class="conquistas-e-nivel">
-            <div class="container-premios">
-              <section class="conquistas">
-                <div class="header-premios">
-                  <h2><span>10</span>Conquistas</h2>
-                  <img src="../global/imagens/diamante.svg" alt="diamante" />
-                </div>
-                <div class="linha"></div>
-
-                <div id="lista-premios"></div>
-
-                <div class="sem-premios oculta flex-column-center">
-                  <img
-                    src="../global/imagens/estrela-triste.svg"
-                    alt="Nenhuma conquista"
-                  />
-                  <h3>Não há conquistas</h3>
-                </div>
-              </section>
+          <div>
+            <div class="header-premios">
+              <h2><span>10</span> Conquistas</h2>
+              <img src="../global/imagens/diamante.svg" alt="diamante" />
             </div>
+            <div class="linha"></div>
 
-            <aside class="bordered" id="info-nivel">
-              <span id="nivel">Nível 50</span>
-              <img src="../global/imagens/trofeu.png" alt="Imagem de troféu" />
-            </aside>
+            <div id="lista-premios"></div>
+
+            <div class="sem-premios oculta flex-column-center">
+              <img
+                src="../global/imagens/estrela-triste.svg"
+                alt="Nenhuma conquista"
+              />
+              <h3>Não há conquistas</h3>
+            </div>
           </div>
+
+          <aside class="bordered" id="info-nivel">
+            <span id="nivel">Nível 50</span>
+            <img src="../global/imagens/trofeu.png" alt="Imagem de troféu" />
+          </aside>
         </section>
       </div>
     </main>
