@@ -13,10 +13,10 @@ carregaComponente(
 document.addEventListener("DOMContentLoaded", () => {
   mostrarPremiosConquistados();
   configurarBotaoVoltar();
+  carregaDadosJogador();
 });
 
 function mostrarPremiosConquistados() {
-
   const premios = JSON.parse(localStorage.getItem("premios")) || {};
   const jogadorLogado = localStorage.getItem("jogadorLogado");
   const listaPremios = document.getElementById("lista-premios");
@@ -48,10 +48,6 @@ function mostrarPremiosConquistados() {
         <div class="linha-premio flex-between-center">
           <h3 class="titulo-premio">${premio.titulo}</h3>
           <div class="info-premio">
-            <span class="tag transparente">
-              <img src="../global/imagens/coracao.svg" alt="coroa">
-              Conquistado!
-            </span>
             <div class="xp">
               <img src="../global/imagens/xp.svg" alt="XP" />
               <span>${premio.xp}</span>
@@ -74,4 +70,22 @@ function configurarBotaoVoltar() {
       history.back();
     });
   }
+}
+
+function carregaDadosJogador() {
+  const jogadorLogado = localStorage.getItem("jogadorLogado");
+  const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
+  const jogador = jogadores.find(j => j.nickname === jogadorLogado);
+  
+  const spanXp = document.getElementById("xp");
+  spanXp.textContent = jogador.xp;
+
+  const nickname = document.getElementById("nickname");
+  nickname.textContent = jogador.nickname;
+
+  const spanMoedas = document.getElementById("moedas");
+  spanMoedas.textContent = jogador.moedas;
+
+  const spanNivel = document.getElementById("nivel");
+  spanNivel.textContent = `Nível ${jogador.nivel}`;
 }
