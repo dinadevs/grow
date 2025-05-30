@@ -1,0 +1,76 @@
+.formulario-nova-meta {
+  padding-top: 6rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center; 
+  width: 100%;
+}
+
+.container {
+  width: 54rem; 
+  margin: 0 auto;
+}
+
+.titulo-e-botoes {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%; 
+  margin-bottom: 3rem;
+}
+
+.input {
+  height: 48px;
+  width: 100%; 
+  padding: 0 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+.grupo-inputs-linha {
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  gap: 2rem; 
+  margin-bottom: 2rem; 
+  width: calc(30rem + 20rem + 2rem); 
+  align-items: center; 
+}
+
+.xp-moedas-container {
+  display: flex; 
+  align-items: center; 
+  gap: 1rem; 
+
+}
+
+ img {
+    width: 1.6rem;
+    height: auto;
+  }
+
+.input-pequeno {
+  width: 10rem !important; 
+}
+.toast {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  background: #4CAF50;
+  color: white;
+  padding: 1rem;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  opacity: 0;
+  transition: opacity 0.3s;
+}
+.toast.oculta {
+  opacity: 0;
+}
+.toast.visivel {
+  opacity: 1;
+}
