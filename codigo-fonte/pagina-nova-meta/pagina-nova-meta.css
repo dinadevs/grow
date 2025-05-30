@@ -45,17 +45,12 @@
   gap: 1rem; 
 
 }
-.inputs-numericos,
-.campo-moedas {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem; 
-}
-.inputs-numericos img,
-.campo-moedas img {
-  max-height: 36px; 
-  width: auto;  
-}
+
+ img {
+    width: 1.6rem;
+    height: auto;
+  }
+
 .input-pequeno {
   width: 10rem !important; 
 }
