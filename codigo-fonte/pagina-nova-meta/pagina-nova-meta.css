@@ -54,20 +54,7 @@
 .input-pequeno {
   width: 10rem !important; 
 }
-.toast {
-  position: fixed;
-  bottom: 2rem;
-  right: 2rem;
-  background: #4CAF50;
-  color: white;
-  padding: 1rem;
-  border-radius: 4px;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  opacity: 0;
-  transition: opacity 0.3s;
-}
+
 .toast.oculta {
   opacity: 0;
 }
