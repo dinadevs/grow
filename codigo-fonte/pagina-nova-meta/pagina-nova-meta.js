@@ -56,8 +56,10 @@ function salvarMeta(e) {
   const dadosForm = new FormData(form);
 
   const titulo = dadosForm.get("titulo");
-  const progresso = parseInt(dadosForm.get("progresso")); 
-  const prazo = dadosForm.get("prazo"); 
+  const dataInicio = dadosForm.get("dataInicio");
+  const xp = dadosForm.get("xp");
+  const moedas = dadosForm.get("moedas");
+  const dataFim = dadosForm.get("dataFim");
 
   let id = 0;
   if (metas[jogadorLogado].length > 0) {
@@ -68,9 +70,12 @@ function salvarMeta(e) {
   metas[jogadorLogado].push({
     id,
     titulo,
-    progresso,
-    prazo,
-    concluida: false,
+    xp,
+    moedas,
+    inicio: dataInicio,
+    fim: dataFim,
+    concluido: false,
+    pendente: false,
   });
 
   localStorage.setItem("metas", JSON.stringify(metas));
@@ -78,6 +83,6 @@ function salvarMeta(e) {
   mostraToast();
 
   setTimeout(() => {
-    window.location.href = "../pagina-checklist/checklist.html";
+    window.location.href = "../pagina-metas/pagina-metas.html";
   }, 4000);
 }
