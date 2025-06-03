@@ -12,7 +12,7 @@ carregaComponente(
 
 function configurarBotaoVoltar() {
   const btn = document.querySelector('.titulo-e-botoes button');
-  btn.onclick = () => history.back;
+  btn.onclick = () => history.back();
 }
 
 function marcarAvatarAtual() {
