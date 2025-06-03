@@ -40,7 +40,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Avatar selecionado salvo e visível na barra de status.</td>
       <td>Caroline</td>
-      <td>...</td>
+      <td>Amanda</td>
     </tr>
     <tr>
   <td><strong>CT-02:</strong><br>Cadastro de penalidade</td>
@@ -63,7 +63,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   </td>
   <td>Penalidade cadastrada, valores subtraídos e penalidade listada no histórico.</td>
   <td>Caroline</td>
-  <td>...</td>
+  <td>Amanda</td>
 </tr>
     <tr>
       <td><strong>CT-03:</strong><br>Verificar o cadastro de recompensas</td>
@@ -105,21 +105,32 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Edna</td>
     </tr>
     <tr>
-      <td><strong>CT-05</strong><br>...</td>
+      <td><strong>CT-05</strong><br>Verificar a conclusão de tarefas</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-06: Exibir atividades finalizadas para aprovação do pai ou dos responsáveis.</li>
+          <li>RF-08: Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar itens como concluídos ou não.	</li>
+          <li>RF-10: Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se a conclusão de tarefas está funcionando, se elas aparecem para aprovação e se as recompensas são contabilizadas mediante aprovação.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Faça login como filho no endereço do site.</li>
+          <li>Visualize a checklist do dia (requisito: ter cadastrado ao menos duas atividades e/ou metas).</li>
+          <li>Marque os checkboxes das tarefas.</li>
+          <li>Em outra aba, faça login como responsável desse jogador no endereço do site.</li>
+          <li>Visualize a home e clique na opção "Aprovações".</li>
+          <li>Aprove uma tarefa e negue a outra.</li>
+          <li>Recarregue a página e verifique por meio da barra de status do jogador se apenas os XPs e moedas da tarefa aprovada foram contabilizados.</li>
+          <li>Verifique também se elas sumiram da página de aprovações.</li>
+          <li>Na aba do filho, recarregue e verifique também se não é mais possível desmarcar as tarefas.</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deverá permitir que tarefas sejam concluídas, aprovadas ou negadas e as recompensas devem ser contabilizadas.</td>
+      <td>Amanda</td>
+      <td>Rodrigo</td>
     </tr>
     <tr>
       <td><strong>CT-06</strong><br>...</td>
