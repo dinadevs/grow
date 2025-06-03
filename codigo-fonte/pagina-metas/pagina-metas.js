@@ -29,26 +29,26 @@ document.addEventListener("DOMContentLoaded", () => {
     metas = JSON.parse(metas);
     if (metas[jogadorLogado]) {
       const divMetas = document.getElementById("lista-metas");
-      metas[jogadorLogado].forEach((metas, index) => {
+      metas[jogadorLogado].forEach((meta, index) => {
         divMetas.innerHTML += `
           <div class="metas" id="metas-${index}">
             <div class="linha-metas">
-              <h3 class="titulo-metas">${metas.titulo}</h3>
+              <h3 class="titulo-metas">${meta.titulo}</h3>
               <div class="info-metas">
                
               <span class="tag transparente">
               <img src="../global/imagens/calendario.svg" alt="calendario">
-              ${metas.recorrencia}
+              ${new Date(meta.inicio).toLocaleDateString("pt-BR")} -  ${new Date(meta.fim).toLocaleDateString("pt-BR")}
               </span>
 
 
                 <div class="xp">
                   <img src="../global/imagens/xp.svg" alt="XP" />
-                  <span>${metas.xp}</span>
+                  <span>${meta.xp}</span>
                 </div>
                 <div class="moedas">
                   <img src="../global/imagens/moeda.svg" alt="Moedas" />
-                  <span>${metas.moedas}</span>
+                  <span>${meta.moedas}</span>
                 </div>
               </div>
             </div>
