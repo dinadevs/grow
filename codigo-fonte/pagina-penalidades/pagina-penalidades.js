@@ -14,21 +14,11 @@ document.addEventListener("DOMContentLoaded", () => {
   const divPenalidades = document.getElementById("lista-penalidades");
   const divSemPenalidades = document.getElementById("sem-penalidades");
 
-  const jogadores = JSON.parse(localStorage.getItem("jogadores")) || [];
   const jogadorLogado = localStorage.getItem("jogadorLogado");
-  const jogador = jogadores.find(j => j.nickname === jogadorLogado);
-
-  if (!jogador) {
-    return mostrarSemPenalidades();
-  }
-
-  let historico = jogador.historico_moedas;
-
-  if (!Array.isArray(historico)) {
-    return mostrarSemPenalidades();
-  }
-
-  const penalidades = historico.filter(item => item.tipo === "penalidade");
+  const penalidadesObj = JSON.parse(localStorage.getItem("penalidades")) || {};
+  const penalidades = Array.isArray(penalidadesObj[jogadorLogado])
+    ? penalidadesObj[jogadorLogado]
+    : []
 
   if (penalidades.length === 0) {
     return mostrarSemPenalidades();
@@ -36,20 +26,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
   divPenalidades.classList.remove("oculta");
   if (divSemPenalidades) divSemPenalidades.classList.add("oculta");
-
-  penalidades.reverse().forEach((penalidade, index) => {
+  penalidades.slice().reverse().forEach((penalidade, index) => {
     divPenalidades.innerHTML += `
       <div class="penalidade" id="penalidade-${index}">
         <div class="linha-penalidade">
-          <h3 class="titulo-penalidade">${penalidade.descricao}</h3>
+          <h3 class="titulo-penalidade">${penalidade.titulo}</h3>
           <div class="info-penalidade">
             <div class="xp">
               <img src="../global/imagens/xp.svg" alt="XP" />
-              <span>${penalidade.xp}</span>
+              <span>-${penalidade.xp}</span>
             </div>
             <div class="moedas">
               <img src="../global/imagens/moeda.svg" alt="Moedas" />
-              <span>${penalidade.moedas}</span>
+              <span>-${penalidade.moedas}</span>
             </div>
             <p class="data-penalidade">${penalidade.data}</p>
           </div>
