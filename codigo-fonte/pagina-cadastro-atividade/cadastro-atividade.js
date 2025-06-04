@@ -23,6 +23,7 @@ function salvarAtividade(e) {
   const xp = parseInt(dadosForm.get("xp"));
   const moedas = parseInt(dadosForm.get("moedas"));
   const recorrencia = dadosForm.get("recorrencia");
+  const dia = dadosForm.get("dia");
 
   let id=0;
 
@@ -30,8 +31,8 @@ function salvarAtividade(e) {
     const ultimaPosicao = atividades[jogadorLogado].length - 1; 
     id = atividades[jogadorLogado][ultimaPosicao]["id"] + 1;
   }
- 
-  const jogadores = JSON.parse(localStorage.getItem("jogadores")) ||{};
+
+  const unica = recorrencia === "unica"; 
 
  atividades[jogadorLogado].push({
   id, 
@@ -39,7 +40,12 @@ function salvarAtividade(e) {
   xp,
   moedas,
   recorrencia,
+  unica,
+  dia,
   concluido:false,
+  pendente:false,
+  
+  
   
  }); 
 
@@ -49,6 +55,6 @@ function salvarAtividade(e) {
  mostraToast();
 
  setTimeout(() => {
-  window.location.href = "../pagina-checklist/pagina-checklist.html"
+  window.location.href = "../pagina-atividades/atividades.html"
  },4000);
 }

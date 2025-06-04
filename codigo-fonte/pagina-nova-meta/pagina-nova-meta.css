@@ -1,0 +1,59 @@
+.formulario-nova-meta {
+  padding-top: 5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.input {
+  width: 100%;
+  &::-webkit-outer-spin-button,
+  &::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+  }
+  -moz-appearance: textfield;
+}
+
+input[type="date"]:invalid {
+  color: grey;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+  background-image: url("../global/imagens/calendario.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.grupo-inputs-linha {
+  display: grid;
+  grid-template-columns: 30rem 20rem;
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.xp-moedas-container {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+img {
+  width: 1.6rem;
+  height: auto;
+}
+
+.inputs-numericos {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  & label { 
+    display:flex;
+    align-items: center;
+  }
+}
+

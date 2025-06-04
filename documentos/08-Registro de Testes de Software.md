@@ -1,12 +1,144 @@
 # Registro de Testes de Software
 
-Relatório com as evidências dos testes de software realizados na aplicação pela equipe, baseado no plano de testes pré-definido.
+Pré-requisitos: <a href="./04-Projeto de Interface.md"> Projeto de Interface</a></span>, <a href="./07-Plano de Testes de Software.md"> Plano de Testes de Software</a>
 
-Os resultados dos testes funcionais realizados na aplicação são descritos a seguir. [Utilize a estrutura abaixo para cada caso de teste executado]
+Os testes funcionais realizados na aplicação web são descritos a seguir.
 
-|Caso de Teste    | CT-X - Título Caso de Teste |
-|:---|:---|
-| Resultados obtidos | Descrever resultados do teste  |
-| Responsável pela execução do caso de Teste | Nome do integrante da equipe |
+<ol>
+  <li>
+  CT-01: Escolha de avatar
 
-[Inserir aqui as evidências de teste que podem ser apresentadas por print de telas ou por .gif de execução de teste]
+  Responsável: Amanda.
+
+  <video controls>
+    <source src="./videos/registro-ct01.mp4" type="video/mp4">
+  </video>
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-02: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-03: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-04: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-05: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-06: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-07: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+  
+  <li>
+  CT-08: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+
+  <li>
+  CT-09: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+
+  <li>
+  CT-10: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+
+  <li>
+  CT-11: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+
+  <hr>
+
+  <li>
+  CT-12: --
+
+  Responsável: --.
+
+  [Evidência]
+
+  </li>
+</ol>
+    
+
+## Avaliação
+
+Os testes de software mostraram que os requisitos priorizados foram atendidos, funcionando como planejado. Para as próximas iterações, serão acrescentadas melhorias na atualização de informações sem necessidade de recarregamento e responsividade da aplicação, além dos outros requisitos não funcionais.

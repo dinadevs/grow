@@ -50,36 +50,77 @@ Fernanda Cunha Silva
 
 ---
 
-### Tela de Cadastro de Prêmios (RF-05)
+### Tela de Cadastro de Metas (RF-04)
 
-O cadastro de prêmios com nome, descrição e pontuação poderá ser feito após o login do usuário.
 
-[Adicione imagem da funcionalidade/tela]
 
-#### Requisito atendido
+#### Requisitos atendidos 
 
-RF-05:	Possibilitar que os pais definam bonificações para cada estágio alcançado.
+RF-02: Permitir que pais ou responsáveis cadastrem metas e estipulem prazos.
 
 #### Artefatos da funcionalidade
 
-[Adicione os nomes dos arquivos relacionados ao desenvolvimento da funcionalidade]
+- pagina-de-cadastro.html
+- pagina-de-cadastro.css
+- pagina-de-cadastro.js
+
+#### Instrução de acesso
+-
+
+### Tela Lista de Prêmios (RF-05)
+
+![pagina-premio](./img/pagina-premio.png)
+
+#### Requisito atendido
+
+RF-05:	Possibilitar que os pais vejam as bonificações para cada estágio alcançado.
+
+#### Artefatos da funcionalidade
+
+- premios.css
+- premios.js
+- premios.html
 
 #### Instruções de acesso
 
-1. Faça **login** através da página disponivel no link [ ] .
-2. Clique em **"Pai" > "Prêmios" > "Cadastrar Prêmio"**.
-3. A tela de cadastro será exibida.
-4. Preencha os campos obrigatórios:
-   - Nome do prêmio
-   - Descrição
-   - Pontuação necessária
-5. Clique em **"Salvar"** para registrar o prêmio.
-6. A conclusão do prêmio vai gerar.
-
+1. Faça **login** através da página disponivel no link URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html com um usuário do tipo **responsável**.
+2. Clique em "Prêmios".
+3. A tela de prêmios será exibida e, se houver prêmios cadastrados, a lista poderá ser vista.
 
 #### Responsável: 
 
-Edna Martins
+Edna dos Santos Martins
+
+---
+
+### Tela de Cadastro de Prêmios (RF-05)
+
+![pagina-novo-premio](./img/pagina-novo-premio.png)
+
+#### Requisito atendido
+
+RF-05: Possibilitar que os pais definam bonificações para cada estágio alcançado.
+
+#### Artefatos da funcionalidade
+
+- novo-premio.css
+- novo-premio.js
+- novo-premio.html
+
+#### Instruções de acesso
+
+1. Faça **login** através da página disponivel no link URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html com um usuário do tipo **responsável**.
+2. Clique em "Prêmios" > "Novo prêmio".
+3. A tela de cadastro será exibida.
+4. Preencha os campos obrigatórios:
+   - Nome do prêmio
+   - Pontuação necessária (XP)
+   - Moedas necessárias
+5. Clique em "Cadastrar" para registrar o prêmio. A seguir, irá automaticamente para a lista de prêmios.
+
+#### Responsável: 
+
+Edna dos Santos Martins
 
 ---
 
@@ -132,6 +173,33 @@ RF-08: Disponibilizar um checklist para gerenciar tarefas e metas, permitindo ma
    
 #### Responsável
 Amanda Maria Felipe Severo
+
+---
+
+### Tela de Trajetória (RF-09)
+
+![pagina-trajetoria](./img/pagina-trajetoria.png)
+
+#### Requisito atendido 
+
+RF-09: Visualizar trajetória e recompensas conquistadas
+
+#### Artefatos da funcionalidade
+
+- trajetoria.html
+- trajetoria.css
+- trajetoria.js
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
+2.	Preencha as credenciais de acesso (usuário e senha) e clique em "Entrar".
+3. Clique em "trajetória". A página deverá aparecer com a trajetória e recompensas conquistadas, com ou sem a lista de conquistas.
+4. A trajetória já poderá ser observada na página, e para ver a atualização é necessário concluir uma tarefa do checklist e também que ela seja aprovada pelo responsável.
+5. Após o processo de aprovação, quando a página for recarregada, a trajetória irá atualizar.
+   
+#### Responsável
+Edna dos Santos Martins
 
 ---
 
