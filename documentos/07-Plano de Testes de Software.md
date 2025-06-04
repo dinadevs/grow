@@ -133,21 +133,25 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Rodrigo</td>
     </tr>
     <tr>
-      <td><strong>CT-06</strong><br>...</td>
+      <td><strong>CT-06</strong><br>Cadastro de metas e prazos</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-04: Permitir que pais ou responsáveis cadastrem metas e estipulem prazos</li>
         </ul>
       </td>
-      <td>...</td>
+      <td> Verificar se o cadastro de metas está sendo feito e visualizado corretamente</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Faça login no endereço do site, com um usuário do tipo responsável.</li>
+          <li>Clique em "Metas" > "Novo meta".</li>
+          <li>Preencha os campos obrigatórios .</li>
+          <li>Estipule a data de início e a data de fim .</li>
+          <li>Clique em "Cadastrar". </li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve ser exibida a mensagem "Salvo". Em seguida, ao clicar em voltar, a nova meta deve estar listada na página de metas.</td>
+      <td>Fernanda</td>
     </tr>
     <tr>
       <td><strong>CT-07</strong><br>...</td>
