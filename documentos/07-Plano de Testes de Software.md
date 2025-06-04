@@ -153,22 +153,29 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve ser exibida a mensagem "Salvo". Em seguida, ao clicar em voltar, a nova meta deve estar listada na página de metas.</td>
       <td>Fernanda</td>
     </tr>
-    <tr>
-      <td><strong>CT-07</strong><br>...</td>
+     <tr>
+      <td><strong>CT-07:</strong><br>Utilizar a loja de prêmios</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-11: Permitir que o filho utilize suas moedas para trocar por prêmios.</li>
+          <li>RF-09: Possibilitar ao usuário visualizar a trajetória e as recompensas conquistadas.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se o sistema permite a compra e o resgate de prêmios corretamente com base nas moedas e XP acumulados.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Login com usuário do tipo <strong>filho</strong>.</li>
+          <li>Acessar a aba <strong>Lojinha</strong>.</li>
+          <li>Verificar se os prêmios são exibidos corretamente.</li>
+          <li>Clicar em <strong>Comprar</strong> em um prêmio acessível (com moedas suficientes).</li>
+          <li>Clicar em <strong>Resgatar</strong> em um prêmio disponível via XP (com progresso suficiente).</li>
+          <li>Verificar se o prêmio desaparece da loja após a ação.</li>
+          <li>Verificar se moedas ou XP foram deduzidos corretamente.</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Prêmios comprados devem ser removidos e deduzir moedas. Prêmios resgatados via XP também devem ser removidos corretamente.</td>
+      <td>Rodrigo</td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>CT-08</strong><br>...</td>
