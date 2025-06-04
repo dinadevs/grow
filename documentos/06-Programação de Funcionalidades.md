@@ -134,7 +134,6 @@ RF-06: Exibir atividades finalizadas para aprovação do pai ou dos responsávei
 
 #### Artefatos da funcionalidade
 
-- mock-aprovacoes.js
 - pagina-aprovacoes.css
 - pagina-aprovacoes.js
 - pagina-aprovacoes.html
@@ -142,7 +141,8 @@ RF-06: Exibir atividades finalizadas para aprovação do pai ou dos responsávei
 
 #### Instruções de acesso
 
-1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-aprovacoes/pagina-aprovacoes.html
+1. Faça **login** através da página disponivel no link URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html com um usuário do tipo **responsável**.
+2. Clique em "Aprovações".
 2.	A lista de atividades pendentes será exibida automaticamente, com base nos dados armazenados no navegador (localStorage).
 3. Clique em "Aprovar" ou "Negar" para avaliar cada atividade.
 
@@ -231,6 +231,36 @@ RF-10: Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.
    
 #### Responsável
 Amanda Maria Felipe Severo
+
+---
+
+### Tela de Loja de Prêmios (RF-11)
+
+ ![alt text](./img/pagina-loja-premios.png)
+
+#### Requisito atendido 
+
+RF-11: Permitir que o filho utilize suas moedas para trocar por prêmios.
+
+#### Artefatos da funcionalidade
+
+- pagina-loja-premios.css
+- pagina-loja-premios.js
+- pagina-loja-premios.html
+
+
+#### Instruções de acesso
+
+1.	Abra um navegador de Internet e informe a seguinte URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
+2.	Preencha as credenciais de acesso (usuário e senha) de um usuário do tipo **filho** e clique em "Entrar".
+3. Na tela inicial do filho, clique na aba **"Lojinha"**.
+4. A loja exibirá os prêmios disponíveis.
+   - O botão **"Comprar"** estará habilitado se o jogador tiver moedas suficientes.
+   - O botão **"Resgatar"** aparecerá apenas se o jogador tiver acumulado XP suficiente desde o cadastro do prêmio.
+   - Ao clicar em um dos botões, o prêmio será removido da listagem e o progresso salvo.
+
+#### Responsável
+Rodrigo Andrade da Silva
 
 ---
 
