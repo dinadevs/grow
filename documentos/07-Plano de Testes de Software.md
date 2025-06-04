@@ -40,7 +40,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Avatar selecionado salvo e visível na barra de status.</td>
       <td>Caroline</td>
-      <td>...</td>
+      <td>Amanda</td>
     </tr>
     <tr>
   <td><strong>CT-02:</strong><br>Cadastro de penalidade</td>
@@ -63,7 +63,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
   </td>
   <td>Penalidade cadastrada, valores subtraídos e penalidade listada no histórico.</td>
   <td>Caroline</td>
-  <td>...</td>
+  <td>Amanda</td>
 </tr>
     <tr>
       <td><strong>CT-03:</strong><br>Verificar o cadastro de recompensas</td>
@@ -105,55 +105,77 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Edna</td>
     </tr>
     <tr>
-      <td><strong>CT-05</strong><br>...</td>
+      <td><strong>CT-05</strong><br>Verificar a conclusão de tarefas</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-06: Exibir atividades finalizadas para aprovação do pai ou dos responsáveis.</li>
+          <li>RF-08: Disponibilizar um checklist para gerenciar tarefas e metas, permitindo marcar itens como concluídos ou não.	</li>
+          <li>RF-10: Contabilizar moedas e/ou experiência (XP) ao completar uma tarefa.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se a conclusão de tarefas está funcionando, se elas aparecem para aprovação e se as recompensas são contabilizadas mediante aprovação.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Faça login como filho no endereço do site.</li>
+          <li>Visualize a checklist do dia (requisito: ter cadastrado ao menos duas atividades e/ou metas).</li>
+          <li>Marque os checkboxes das tarefas.</li>
+          <li>Em outra aba, faça login como responsável desse jogador no endereço do site.</li>
+          <li>Visualize a home e clique na opção "Aprovações".</li>
+          <li>Aprove uma tarefa e negue a outra.</li>
+          <li>Recarregue a página e verifique por meio da barra de status do jogador se apenas os XPs e moedas da tarefa aprovada foram contabilizados.</li>
+          <li>Verifique também se elas sumiram da página de aprovações.</li>
+          <li>Na aba do filho, recarregue e verifique também se não é mais possível desmarcar as tarefas.</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deverá permitir que tarefas sejam concluídas, aprovadas ou negadas e as recompensas devem ser contabilizadas.</td>
+      <td>Amanda</td>
+      <td>Rodrigo</td>
     </tr>
     <tr>
-      <td><strong>CT-06</strong><br>...</td>
+      <td><strong>CT-06</strong><br>Cadastro de metas e prazos</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-04: Permitir que pais ou responsáveis cadastrem metas e estipulem prazos</li>
         </ul>
       </td>
-      <td>...</td>
+      <td> Verificar se o cadastro de metas está sendo feito e visualizado corretamente</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Faça login no endereço do site, com um usuário do tipo responsável.</li>
+          <li>Clique em "Metas" > "Novo meta".</li>
+          <li>Preencha os campos obrigatórios .</li>
+          <li>Estipule a data de início e a data de fim .</li>
+          <li>Clique em "Cadastrar". </li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve ser exibida a mensagem "Salvo". Em seguida, ao clicar em voltar, a nova meta deve estar listada na página de metas.</td>
+      <td>Fernanda</td>
     </tr>
-    <tr>
-      <td><strong>CT-07</strong><br>...</td>
+     <tr>
+      <td><strong>CT-07:</strong><br>Utilizar a loja de prêmios</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-11: Permitir que o filho utilize suas moedas para trocar por prêmios.</li>
+          <li>RF-09: Possibilitar ao usuário visualizar a trajetória e as recompensas conquistadas.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se o sistema permite a compra e o resgate de prêmios corretamente com base nas moedas e XP acumulados.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Login com usuário do tipo <strong>filho</strong>.</li>
+          <li>Acessar a aba <strong>Lojinha</strong>.</li>
+          <li>Verificar se os prêmios são exibidos corretamente.</li>
+          <li>Clicar em <strong>Comprar</strong> em um prêmio acessível (com moedas suficientes).</li>
+          <li>Clicar em <strong>Resgatar</strong> em um prêmio disponível via XP (com progresso suficiente).</li>
+          <li>Verificar se o prêmio desaparece da loja após a ação.</li>
+          <li>Verificar se moedas ou XP foram deduzidos corretamente.</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Prêmios comprados devem ser removidos e deduzir moedas. Prêmios resgatados via XP também devem ser removidos corretamente.</td>
+      <td>Rodrigo</td>
+      <td></td>
     </tr>
     <tr>
       <td><strong>CT-08</strong><br>...</td>
