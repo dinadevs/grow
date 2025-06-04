@@ -99,7 +99,8 @@
   gap: 0.3rem;
 }
 
-.botao-comprar {
+.botao-comprar,
+.botao-resgatar {
   background-color: var(--green);
   color: var(--surface-primary);
   font: var(--pixel-text-sm);
@@ -107,4 +108,16 @@
   border: none;
   border-radius: 0.5rem;
   cursor: pointer;
+}
+
+.acoes-premio {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  margin-top: 0.5rem;
+}
+
+.botao-desabilitado {
+  opacity: 0.5;
+  cursor: not-allowed;
 }
