@@ -178,38 +178,45 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td></td>
     </tr>
     <tr>
-      <td><strong>CT-08</strong><br>...</td>
+      <td><strong>CT-08:</strong><br>Login do usuário</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-01: Permitir que o usuário faça login na sua conta.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se o login está sendo feito corretamente.</td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Informar o endereço do site.</li>
+          <li>Preencha o usuário e senha cadastrados.</li>
+          <li>Clique em "Login".</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e em seguida será direcionado a home.</td>
+      <td>Naiara</td>
+      <td>Fernanda</td>
     </tr>
     <tr>
-      <td><strong>CT-09</strong><br>...</td>
+      <td><strong>CT-09:</strong><br>Cadastro de atividade</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
-        </ul>
+          <li>RF-03: Permitir que pais ou responsáveis cadastrem atividades.</li> 
+          </ul>
       </td>
-      <td>...</td>
+      <td>Verificar se as atividades estão sendo cadastradas corretamente e exibidas na página de atividades com as informações fornecidas pelo pai ou responsável (XP, moedas, recorrência e dia da semana). Ao clicar em "Cadastrar", a mensagem "Tá salvo!" deve ser exibida e, em seguida, o usuário deve ser redirecionado para a lista de atividades. 
+      <td> 
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Faça login no endereço do site, com um usuário do tipo responsável.</li>
+          <li>Clique em "Atividades" > "Nova Atividade".</li>
+          <li>Preencha os campos "Título", "XP", "Moedas", "Recorrência" e, se a recorrência for semanal, preencher o campo "dia da semana".</li>
+          <li>Clique em "Cadastrar". </li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Naiara</td>
+      <td>Fernanda</td>
     </tr>
     <tr>
       <td><strong>CT-10</strong><br>...</td>
