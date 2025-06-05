@@ -53,6 +53,9 @@ function configurarBotaoComprar(item, premio, jogador, jogadores, premiosData) {
     localStorage.setItem("jogadores", JSON.stringify(jogadores));
     localStorage.setItem("premios", JSON.stringify(premiosData));
 
+    atualizarMoedas(jogador); 
+    atualizarXp(jogador);
+
     item.remove();
     alert(`Você comprou "${premio.titulo}" por ${premio.moedas} moedas!`);
   };
@@ -65,6 +68,10 @@ function configurarBotaoResgatar(item, premio, premiosData) {
   btn.onclick = () => {
     premio.conquistado = true;
     localStorage.setItem("premios", JSON.stringify(premiosData));
+
+    atualizarMoedas(jogador); 
+    atualizarXp(jogador);
+
     item.remove();
     alert(`Você resgatou "${premio.titulo}" após conquistar ${premio.xp} XP!`);
   };
