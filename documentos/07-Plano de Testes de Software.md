@@ -152,6 +152,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve ser exibida a mensagem "Salvo". Em seguida, ao clicar em voltar, a nova meta deve estar listada na página de metas.</td>
       <td>Fernanda</td>
+      <td>Edna</td>
     </tr>
      <tr>
       <td><strong>CT-07:</strong><br>Utilizar a loja de prêmios</td>
@@ -219,21 +220,28 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Fernanda</td>
     </tr>
     <tr>
-      <td><strong>CT-10</strong><br>...</td>
+      <td><strong>CT-10</strong><br>Cadastro de conta de responsável e de filhos.</td>
       <td>
         <ul>
-          <li>RF-001: ...</li>
+          <li>RF-02: Permitir que o pai/responsável cadastre a sua conta e a de seus filhos.</li>
         </ul>
       </td>
-      <td>...</td>
+      <td> Verificar se a funcionalidade de cadastro de novos usuários está operando corretamente, de acordo com os requisitos estabelecidos e as validações esperadas. </td>
       <td>
         <ol>
-          <li>...</li>
-          <li>...</li>
+          <li>Acessar o navegador.</li>
+          <li>Informar o endereço do site.</li>
+          <li>Na página de login, clicar na opçãp "Cadastre-se".</li>
+          <li>Preencher "nickname" do Responsável com um valor válido e não utilizado</li>
+          <li>Preencher "senha" do Responsável com uma senha válida.</li>
+          <li>Preencher "nickname" do Filho(a) com um valor válido e não utilizado.</li>
+          <li>Preencher "senha" do Filho(a) com uma senha válida</li>
+          <li>Clicar no botão "Cadastrar".</li>
         </ol>
       </td>
-      <td>...</td>
-      <td>...</td>
+      <td>Deve ocorrer uma validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve aparecer a mensagem "Cadastrado!" e o usuário deve ser redirecionado para a página de login.</td>
+      <td>Fernanda</td>
+      <td>Edna</td>
     </tr>
     <tr>
       <td><strong>CT-11</strong><br>...</td>
