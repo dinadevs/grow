@@ -49,6 +49,60 @@ RF-02: Permitir que pais ou responsáveis cadastrem sua conta e a de seus filhos
 Fernanda Cunha Silva
 
 ---
+### Tela lista de atividade (RF-03)
+
+![pagina-atividades](./img/pagina-atividades.png)
+
+#### Requisito atendido
+
+RF-03:	Permitir que pais ou responsáveis vejam as atividades cadastradas.
+
+#### Artefatos da funcionalidade
+
+- atividades.css
+- atividades.js
+- atividades.html
+
+#### Instruções de acesso
+
+1. Faça **login** através da página disponivel no link URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html com um usuário do tipo **responsável**.
+2. Clique em "Atividades".
+3. A tela de atividades será exibida e, se houver atividades cadastradas, a lista poderá ser vista.
+
+#### Responsável: 
+Naiara Andrade Rodrigues de Oliveira
+
+---
+### Tela de Cadastro de Atividades (RF-03)
+
+![pagina-cadastro-atividades](./img/pagina-cadastro-de-atividades.png)
+
+#### Requisito atendido
+
+RF-03:	Permitir que pais ou responsáveis cadastrem atividades.
+
+#### Artefatos da funcionalidade
+
+- cadastro-atividade.css
+- cadastro-atividades.js
+- cadastro-atividades.html
+
+#### Instruções de acesso
+
+1. Faça **login** através da página disponivel no link URL:https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html com um usuário do tipo **responsável**.
+2. Clique em "Atividades" > "Nova Atividade".
+3. A tela de cadastro será exibida.
+4. Preencha os campos obrigatórios: 
+   - Nome da atividade;
+   - Pontuação a ser conquistada (XP);
+   - Moedas a serem recebidas;
+5. Clique em "Cadastrar" para registrar a atividade. A seguir, irá automaticamente para a lista de atividades.
+
+
+#### Responsável: 
+Naiara Andrade Rodrigues de Oliveira
+
+---
 
 ### Tela de Cadastro de Metas (RF-04)
 
