@@ -6,7 +6,7 @@
   gap: 2rem;
 
   & input {
-    width: 35.5rem;
+    width: 31rem;
   }
 }
 
@@ -14,13 +14,20 @@
   display: flex;
   gap: 1rem;
   align-items: center;
+  
 
   & select {
     width: 12rem ;
+    margin-left: 3rem;
+   
+
+    
   }
 
   & input {
-    width: 6.4rem;
+    width: 12rem;
+    margin-left:3rem;
+    
 
     &::-webkit-outer-spin-button,
     &::-webkit-inner-spin-button {
@@ -41,7 +48,7 @@
   }
 
   & label + input {
-    margin-left: 2rem;
+    margin-left: 3rem;
   }
 }
 
