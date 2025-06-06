@@ -38,25 +38,37 @@ if (!jogadorLogado || !jogador) {
     return; 
   }
 
-  if (!Array.isArray(jogador.historico_moedas)) {
-    jogador.historico_moedas = [];
-  }
-
   jogador.xp -= xp;
   jogador.moedas -= moedas;
 
   if (jogador.xp < 0) jogador.xp = 0;
   if (jogador.moedas < 0) jogador.moedas = 0;
 
-  jogador.historico_moedas.push({
-    tipo: "penalidade",
-    descricao: titulo,
-    xp: -xp,
-    moedas: -moedas,
+ localStorage.setItem("jogadores", JSON.stringify(jogadores));
+
+  let penalidades = JSON.parse(localStorage.getItem("penalidades")) || {};
+
+  if (!Array.isArray(penalidades[jogadorLogado])) {
+    penalidades[jogadorLogado] = [];
+  }
+
+  let id = 1;
+  const penalidadeList = penalidades[jogadorLogado];
+  if (penalidadeList.length > 0) {
+    id = penalidadeList[penalidadeList.length - 1].id + 1;
+  }
+
+  penalidadeList.push({
+    id: id,
+    titulo: titulo,
+    xp: xp,
+    moedas: moedas,
+    exibida: false,
     data: new Date().toISOString().slice(0, 10)
   });
 
-  localStorage.setItem("jogadores", JSON.stringify(jogadores));
+  penalidades[jogadorLogado] = penalidadeList;
+  localStorage.setItem("penalidades", JSON.stringify(penalidades));
 
   mostraToast();
 
