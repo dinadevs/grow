@@ -84,6 +84,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Deve ocorrer uma validação das informações fornecidas pelo usuário, e ao clicar em "Cadastrar", deve ser exibida a mensagem "Salvo". Em seguida, o sistema deve redirecionar para a lista de prêmios.</td>
       <td>Edna</td>
+      <td>Caroline</td>
     </tr>
     <tr>
       <td><strong>CT-04:</strong><br>Verificar a tela trajetória e recompensas conquistadas.</td>
@@ -103,6 +104,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Deverá exibir a trajetória e as recompensas conquistadas.</td>
       <td>Edna</td>
+      <td>Caroline</td>
     </tr>
     <tr>
       <td><strong>CT-05</strong><br>Verificar a conclusão de tarefas</td>
