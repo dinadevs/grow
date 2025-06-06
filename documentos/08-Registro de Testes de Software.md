@@ -99,6 +99,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
 
 <video controls>
   <source src="./videos/registro-ct08.mp4" type="video/mp4">
+</video>
   
   https://github.com/user-attachments/assets/7b9bd6b5-3dcc-42e2-b123-9ab70fd917cb
 
@@ -133,6 +134,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
 
   <video controls>
   <source src="./videos/registro-ct09.mp4" type="video/mp4">
+  </video>
     
   https://github.com/user-attachments/assets/97e9e786-28cf-4c85-8575-8da86a582ea1
 
