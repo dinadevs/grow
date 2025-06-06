@@ -19,11 +19,13 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <hr>
   
   <li>
-  CT-02: --
+  CT-02: Cadastro de penalidade
 
-  Responsável: --.
+  Responsável: Amanda.
 
-  [Evidência]
+  <video controls>
+    <source src="./videos/registro-ct02.mp4" type="video/mp4">
+  </video>
 
   </li>
 
