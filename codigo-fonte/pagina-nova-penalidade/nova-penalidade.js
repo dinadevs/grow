@@ -40,6 +40,7 @@ if (!jogadorLogado || !jogador) {
 
   jogador.xp -= xp;
   jogador.moedas -= moedas;
+  jogador.nivel = Math.floor(jogador.xp / 100);
 
   if (jogador.xp < 0) jogador.xp = 0;
   if (jogador.moedas < 0) jogador.moedas = 0;
