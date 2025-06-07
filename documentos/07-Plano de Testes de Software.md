@@ -178,6 +178,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       </td>
       <td>Prêmios comprados devem ser removidos e deduzir moedas. Prêmios resgatados via XP também devem ser removidos corretamente.</td>
       <td>Rodrigo</td>
+      <td>Naiara</td>
       <td></td>
     </tr>
     <tr>
