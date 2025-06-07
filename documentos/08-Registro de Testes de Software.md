@@ -36,22 +36,26 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <hr>
   
   <li>
-  CT-03: --
+  CT-03: Verificar o cadastro de recompensas
 
-  Responsável: --.
+  Responsável: Caroline
 
-  [Evidência]
+  <video controls>
+    <source src="./videos/registro-ct02.mp4" type="video/mp4">
+  </video>
+
+  https://github.com/user-attachments/assets/6d2aa832-a4e9-4153-8546-eed3527a40ab
 
   </li>
 
   <hr>
   
   <li>
-  CT-04: --
+CT-04: Verificar a tela trajetória e recompensas conquistadas
 
-  Responsável: --.
+  Responsável: Caroline
 
-  [Evidência]
+  https://github.com/user-attachments/assets/5f7c0746-b40d-4332-a056-add6607c7e33
 
   </li>
 
