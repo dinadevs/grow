@@ -80,11 +80,15 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <hr>
   
   <li>
-  CT-07: --
+  CT-07: Utilizar a loja de prêmio
 
-  Responsável: --.
+  Responsável: Naiara.
 
-  [Evidência]
+  <video controls>
+    <source src="./videos/registro-ct01.mp4" type="video/mp4">
+  </video>
+
+  https://github.com/user-attachments/assets/057e0dd6-742f-457c-a8b2-076771305fa8
 
   </li>
 
