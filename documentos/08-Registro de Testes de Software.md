@@ -58,11 +58,15 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <hr>
   
   <li>
-  CT-05: --
+  CT-05: Verificar a conclusão de tarefas
 
-  Responsável: --.
+  Responsável: Rodrigo.
 
-  [Evidência]
+  <video controls>
+    <source src="./videos/registro-ct05.mp4" type="video/mp4">
+  </video>
+
+  https://github.com/user-attachments/assets/52622091-f73c-4ec4-bcfe-30b5e6d4b617 
 
   </li>
 
