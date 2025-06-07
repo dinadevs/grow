@@ -84,7 +84,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
   <hr>
   
   <li>
-  CT-07: Utilizar a loja de prêmio
+  CT-07: Utilizar a loja de prêmios
 
   Responsável: Naiara.
 
