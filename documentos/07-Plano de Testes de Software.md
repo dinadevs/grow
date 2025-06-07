@@ -161,9 +161,6 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>
         <ul>
           <li>RF-11: Permitir que o filho utilize suas moedas para trocar por prêmios.</li>
-          <li>RF-09: Possibilitar ao usuário visualizar a trajetória e as recompensas conquistadas.</li>
-        </ul>
-      </td>
       <td>Verificar se o sistema permite a compra e o resgate de prêmios corretamente com base nas moedas e XP acumulados.</td>
       <td>
         <ol>
@@ -188,7 +185,8 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
           <li>RF-01: Permitir que o usuário faça login na sua conta.</li>
         </ul>
       </td>
-      <td>Verificar se o login está sendo feito corretamente.</td>
+      <td> Verificar se o sistema reconhece corretamente  as credenciais de usuários cadastrados, combinações inválidas de login e/ou senha, e usuários não cadastrados. Verificar se as informações estão salvas no LocalStorage.   
+</td>
       <td>
         <ol>
           <li>Acessar o navegador.</li>
@@ -197,7 +195,7 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
           <li>Clique em "Login".</li>
         </ol>
       </td>
-      <td>Deve ocorrer a validação das informações fornecidas pelo usuário, e em seguida será direcionado a home.</td>
+      <td> Se as credenciais forem válidas, o usuário deverá ser redirecionado para a página inicial (home). Caso as credenciais sejam inválidas ou o usuário não esteja cadastrado, o sistema deverá exibir um alerta.</td>
       <td>Naiara</td>
       <td>Fernanda</td>
     </tr>
