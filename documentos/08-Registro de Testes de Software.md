@@ -96,7 +96,7 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
     <source src="./videos/registro-ct01.mp4" type="video/mp4">
   </video>
 
-  https://github.com/user-attachments/assets/057e0dd6-742f-457c-a8b2-076771305fa8
+  [Visualização GitHub](https://github.com/user-attachments/assets/77db906a-ff4d-4626-85fc-d1e1c904071b)
 
   </li>
 
