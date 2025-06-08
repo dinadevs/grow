@@ -77,13 +77,18 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
   <hr>
   
   <li>
-  CT-06: --
+  CT-06: Cadastro de metas
 
-  Responsável: --.
+  Responsável: Edna.
 
-  [Evidência]
+  <video controls>
+    <source src="./videos/registro-ct06.mp4" type="video/mp4">
+  </video>
+
+  [Visualização GitHub](https://github.com/user-attachments/assets/93412584-8124-42d3-aabc-df399e07ae39)
 
   </li>
+
 
   <hr>
   
@@ -176,11 +181,15 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
   <hr>
 
   <li>
-  CT-10: --
+  CT-10: Cadastro de conta.
 
-  Responsável: --.
+  Responsável: Edna.
 
-  [Evidência]
+   <video controls>
+    <source src="./videos/registro-ct10.mp4" type="video/mp4">
+  </video>
+
+  [Visualização GitHub](https://github.com/user-attachments/assets/aff9c19d-232c-4820-a2f0-c6b2e7b17dad)
 
   </li>
 
