@@ -14,7 +14,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
     <source src="./videos/registro-ct01.mp4" type="video/mp4">
   </video>
 
-  https://github.com/user-attachments/assets/15273d5e-c395-4d14-b97b-3591b5e0e28c
+  [Visualização GitHub](https://github.com/user-attachments/assets/15273d5e-c395-4d14-b97b-3591b5e0e28c)
 
   </li>
 
@@ -29,7 +29,7 @@ Os testes funcionais realizados na aplicação web são descritos a seguir.
     <source src="./videos/registro-ct02.mp4" type="video/mp4">
   </video>
 
-  https://github.com/user-attachments/assets/b121b311-265b-41b7-b67b-b2e9656c209d
+  [Visualização GitHub](https://github.com/user-attachments/assets/b121b311-265b-41b7-b67b-b2e9656c209d)
 
   </li>
 
