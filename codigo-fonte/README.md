@@ -20,3 +20,27 @@ O site em HTML/CSS/JS é um projeto estático, logo pode ser utilizado tanto em 
 - Cadastro: HTML, CSS, JS e imagens.
 - Login: HTML, CSS, JS e imagens.
 - Global: HTML, CSS, JS e imagens.
+
+### [0.1.1] - 08/06/2025
+#### Atualizado
+- Global: imagens. 
+
+#### Adicionado
+- Aprovação de tarefas: HTML, CSS, JS e imagens. 
+- Cadastro de atividades:  HTML, CSS, JS e imagens. 
+- Lista de Atividades:  HTML, CSS, JS e imagens. 
+- Checklist:  HTML, CSS, JS e imagens. 
+- Home:  HTML, CSS, JS e imagens. 
+- Loja de prêmios:  HTML, CSS, JS e imagens. 
+- Cadastro de metas:  HTML, CSS, JS e imagens. 
+- Lista de metas:  HTML, CSS, JS e imagens. 
+- Cadastro de penalidades:  HTML, CSS, JS e imagens. 
+- Lista de penalidades:  HTML, CSS, JS e imagens. 
+- Cadastro de prêmios:  HTML, CSS, JS e imagens. 
+- Lista de prêmios:  HTML, CSS, JS e imagens. 
+- Trajetória:  HTML, CSS, JS e imagens. 
+- Escolha do Avatar:  HTML, CSS, JS e imagens. 
+
+
+
+
