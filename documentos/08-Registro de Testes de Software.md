@@ -112,13 +112,13 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
 
   Responsável: Fernanda.
 
-<p>Usuário preenche os campos "Nickname" e "Senha", se as informações de usuário forem válidas, o login será bem sucedido..</p>
+<p>Usuário preenche os campos "Nickname" e "Senha", se as informações de usuário forem válidas, o login será bem sucedido.</p>
 
 <video controls>
   <source src="./videos/registro-ct08.mp4" type="video/mp4">
 </video>
   
-  https://github.com/user-attachments/assets/7b9bd6b5-3dcc-42e2-b123-9ab70fd917cb
+  [Visualização GitHub](https://github.com/user-attachments/assets/7b9bd6b5-3dcc-42e2-b123-9ab70fd917cb)
 
   <p> Informações de login inválidas.</p>
   
@@ -127,16 +127,12 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
  <figcaptiion>Figura- Login inválido</figcaptiion>
 </figure>
 
-![Image](https://github.com/user-attachments/assets/fd5c25a5-319b-4dd5-b57e-865ac2a3ae36)
-
 <p> Informações armazenadas no LocalStorage.</p>
 
 <figure>
  <img src="./img/registro-ct08LocalStorage.png"/>
  <figcaptiion>Figura- LocalStorage login</figcaptiion>
 </figure>
-
-![Image](https://github.com/user-attachments/assets/692fac47-bc60-4efa-8f86-d304af2ffdda)
 
   </li>
 
@@ -153,34 +149,28 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
   <source src="./videos/registro-ct09.mp4" type="video/mp4">
   </video>
     
-  https://github.com/user-attachments/assets/97e9e786-28cf-4c85-8575-8da86a582ea1
+  [Visualização GitHub](https://github.com/user-attachments/assets/97e9e786-28cf-4c85-8575-8da86a582ea1)
 
-<p>Campos sem preenchimento> 
+<p>Campos sem preenchimento</p> 
 
 <figure>
- <img src="./img/registro-ct09.png.png"/>
- <figcaptiion>Figura- LocalStorage cadastro de atividades</figcaptiion>
+ <img src="./img/registro-ct09.png"/>
+ <figcaption>Figura - Campos sem preenchimento</figcaption>
 </figure>
 
-![Image](https://github.com/user-attachments/assets/634c648e-e46d-45a6-b7cf-11c3076b392f)
-
-<p> Informações armazenadas no LocalStorage.</p>>
+<p>Informações armazenadas no LocalStorage.</p>
 
 <figure>
  <img src="./img/registro-ct09LocalStorage.png"/>
  <figcaptiion>Figura- LocalStorage cadastro de atividades</figcaptiion>
 </figure>
 
-![Image](https://github.com/user-attachments/assets/01221a97-f56f-42cf-b6c9-c778c025ea44)
-
   </li>
 
   <hr>
 
   <li>
-  <hr>
-
-  <li>
+    
   CT-10: Cadastro de conta.
 
   Responsável: Edna.
@@ -190,28 +180,6 @@ CT-04: Verificar a tela trajetória e recompensas conquistadas
   </video>
 
   [Visualização GitHub](https://github.com/user-attachments/assets/aff9c19d-232c-4820-a2f0-c6b2e7b17dad)
-
-  </li>
-
-  <hr>
-
-  <li>
-  CT-11: --
-
-  Responsável: --.
-
-  [Evidência]
-
-  </li>
-
-  <hr>
-
-  <li>
-  CT-12: --
-
-  Responsável: --.
-
-  [Evidência]
 
   </li>
 </ol>
