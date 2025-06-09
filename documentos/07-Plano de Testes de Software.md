@@ -244,39 +244,5 @@ Os testes funcionais a serem realizados na aplicação são descritos a seguir.
       <td>Fernanda</td>
       <td>Edna</td>
     </tr>
-    <tr>
-      <td><strong>CT-11</strong><br>...</td>
-      <td>
-        <ul>
-          <li>RF-001: ...</li>
-        </ul>
-      </td>
-      <td>...</td>
-      <td>
-        <ol>
-          <li>...</li>
-          <li>...</li>
-        </ol>
-      </td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <td><strong>CT-12</strong><br>...</td>
-      <td>
-        <ul>
-          <li>RF-001: ...</li>
-        </ul>
-      </td>
-      <td>...</td>
-      <td>
-        <ol>
-          <li>...</li>
-          <li>...</li>
-        </ol>
-      </td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
   </tbody>
 </table>
