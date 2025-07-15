@@ -40,7 +40,7 @@ O objetivo geral do projeto é desenvolver um sistema de gamificação que auxil
 
 # Hospedagem ☁️ 
 
-* Insira o endereço eletrônico público de acesso ao conteúdo publicado. 
+https://icei-puc-minas-pmv-ads.github.io/pmv-ads-2025-1-e1-proj-web-t3-v2-grow/codigo-fonte/pagina-login/login.html
 
 # Código-Fonte 💾
 
